@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN"> 
-
-<!-- Mirrored from www.haiku-os.org/docs/welcome/zh_CN/bugreports.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Aug 2021 02:02:45 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <!-- 
  *
@@ -98,7 +95,7 @@
 <br />
 在确定它是一个独特的错误之后，您需要尽可能的找出有关的详细信息：</p>
 <ul>
-	<li><p>尝试在当前版本的Haiku系统中重现您的问题。  有许多用于测试的预编译镜像都是<a href="http://download.haiku-os.org/">可用的</a>。</p></li>
+	<li><p>尝试在当前版本的Haiku系统中重现您的问题。  有许多用于测试的预编译镜像都是<a href="http://download.haiku-os.org">可用的</a>。</p></li>
 	<li><p>包括基本的信息，例如以何种方式测试 Haiku（利用真实的硬件，VMware，还是 QEMU）。</p></li>
 	<li><p>Mention which revision you are running. You can find this information in <span class="menu">About Haiku...</span> from the Deskbar menu. Also mention what kind of Haiku build you are testing (x86_gcc2, x86_64). The downloadable images are named accordingly, for a self-built image you should know how you built it.</p></li>
 	<li><p>描述您所遇到的问题。尽量把问题讲得精确和明白：详细的描述系统的行为反馈，和您期望的反馈。</p></li>
@@ -140,9 +137,9 @@ Note that in KDL your keyboard may not work. PS/2 keyboards always do, with USB 
 <tr><td class="onelinetop"><span class="cli">co</span> (aka continue)</td><td> </td><td>离开内核调试状态；如果可能的话，继续正常的系统操作。</td></tr>
 <tr><td><span class="cli">reboot</span></td><td> </td><td>立即重启系统。您将会丢失所有未保存的数据，甚至包括那些已经保存，但是还未写入硬盘的数据。</td></tr>
 </table>
-<p>获取更多信息，请参阅 <a href="../../../documents/dev/welcome_to_kernel_debugging_land.html">欢迎使用内核调试工具</a>。</p>
+<p>获取更多信息，请参阅 <a href="http://www.haiku-os.org/documents/dev/welcome_to_kernel_debugging_land">欢迎使用内核调试工具</a>。</p>
 <p>KDL输出信息将会写入到串行端口（如果您拥有另一台与之相连接的计算机，您可以通过中断程序重定向输出信息）和系统日志。如果您无法离开KDL，它将无法写入系统日志文件。尽管如此，还有一个系统引导调试选项，允许您捕获系统信息（参阅下文）。</p>
-<p>您可以从KDL输出中生成 QR 代码，而它们可以通过智能手机或相似设备转换为文本内容。有关如何使用该功能从 KDL 获取数据，详情参考 <a href="../../../blog/mmlr/2012-07-01_qr_encode_your_kdl_output.html">QR Encode your KDL Output</a> 。</p>
+<p>您可以从KDL输出中生成 QR 代码，而它们可以通过智能手机或相似设备转换为文本内容。有关如何使用该功能从 KDL 获取数据，详情参考 <a href="http://www.haiku-os.org/blog/mmlr/2012-07-01_qr_encode_your_kdl_output">QR Encode your KDL Output</a> 。</p>
 
 <h3><a href="#"><img src="../images/up.png" style="border:none;float:right" alt="index" /></a>
 <a id="syslog" name="syslog">系统日志</a></h3>
@@ -190,20 +187,5 @@ Note that in KDL your keyboard may not work. PS/2 keyboards always do, with USB 
 </span></div>
 </div>
 
-<!-- Fathom -->
-<script>
-(function(f, a, t, h, o, m){
-	a[h]=a[h]||function(){
-		(a[h].q=a[h].q||[]).push(arguments)
-	};
-	o=f.createElement('script'),
-	m=f.getElementsByTagName('script')[0];
-	o.async=1; o.src=t; o.id='fathom-script';
-	m.parentNode.insertBefore(o,m)
-})(document, window, '../../../../metrics.haiku-os.org/tracker.js', 'fathom');
-fathom('trackPageview');
-</script>
-<!-- / Fathom --></body>
-
-<!-- Mirrored from www.haiku-os.org/docs/welcome/zh_CN/bugreports.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Aug 2021 02:02:46 GMT -->
+</body>
 </html>

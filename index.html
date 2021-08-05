@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+    <meta name=generator content="Hugo 0.69.2">
+    <meta charset=utf-8>
+    <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta name=copyright content="2001-2021 Haiku Inc., Haiku-chinese, Inc. ">
+    <meta property="og:site_name" content="Haiku Project">
+    <meta property="og:title" content="Haiku Project">
+    <meta property="og:url" content="https://www.haiku-os.org/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.haiku-os.org/images/haiku_600x315.png">
+    <meta name=description content="Haiku是一种专门针对个人电脑的开源操作系统。受到BeOS的启发，Haiku十分快速、易于使用而且非常强大。">
+    <meta name=keywords content="haiku,haiku os,operating system,beos,open source,openbeos">
+    <title>主页 | Haiku Project</title>
+    <link rel=canonical href=https://www.haiku-os.org/>
+    <link rel="shortcut icon" href=https://www.haiku-os.org/favicon.ico>
+    <link href=https://www.haiku-os.org/css/bootstrap.min.css rel=stylesheet>
+    <link href=https://www.haiku-os.org/css/bootstrap4_fixes.css rel=stylesheet>
+    <link href=https://www.haiku-os.org/css/shijin4.css rel=stylesheet>
+    <link href=https://www.haiku-os.org/index.xml rel=alternate type=application/rss+xml title="Haiku Project">
+</head>
+
+<body>
+    <div id=page><a href=./><img src=./images/haiku_logo_white.svg alt=Home id=logo height=100 style=padding-left:3px></a>
+        <div id=top-links><a href=./get-haiku title="下载" class=toggleopacity><img src=./images/download_32.png text="下载" alt=Download></a>
+            <a href=./contact title="联系我们" class=toggleopacity><img src=./images/App_Mail_32.png text="联系我们" alt=Contact></a>
+            <a href=./community/donating_to_haiku title="为Haiku工程打赏" class=toggleopacity><img src=./images/App_Finance_32.png alt=Donate text="为Haiku工程打赏"></a>
+            <a href=https://dev.haiku-os.org title="报告错误" class=toggleopacity><img src=./images/bug_tracker_32.png alt="Report Bugs" text="报告错误"></a>
+            <a href=https://depot.haiku-os.org title="从HaikuDepot下载Haiku程序" class=toggleopacity><img src=./images/installer_32.png alt=HaikuDepot text="从HaikuDepot下载Haiku程序"></a></div>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light"><button class="navbar-toggler collapsed" id=navbar-toggler type=button data-toggle=collapse data-target=#navbar-collapseme aria-controls=navbar-collapseme aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button>
+            <div class="collapse navbar-collapse" id=navbar-collapseme>
+                <ul class="navbar-nav mr-auto">
+                    <li class=nav-item><a class=nav-link href=./about/>关于</a>
+                    </li>
+                    <li class=nav-item><a class=nav-link href=./community/>社区</a>
+                    </li>
+                    <li class=nav-item><a class=nav-link href=./development/>开发</a>
+                    </li>
+                    <li class=nav-item><a class=nav-link href=./documents/>文档</a>
+                    </li>
+                </ul>
+                <form class=form-inline role=search action=https://www.google.com/search><input type=hidden name=as_epq value=site:www.haiku-os.org>
+                    <div class=input-group><input type=text class=form-control placeholder=搜索 name=as_q>
+                        <span class=input-group-append><button type=submit class="btn btn-outline-secondary">&#x1f50d;</button></span></div>
+                </form>
+            </div>
+        </nav>
+        <div class=row id=preface>
+            <div class=col-md-4 id=preface-first>
+                <p class=intro>Haiku是一种专门针对个人电脑的开源操作系统。受到BeOS的启发，Haiku十分快速、易于使用而且非常强大。</p>
+                <ul>
+                    <li><a href=./about/faq/>常见问题</a>
+                    </li>
+                    <li><a href=./slideshows/haiku-tour/>Haiku 体验</a>
+                    </li>
+                    <li><a href=./docs/userguide/en/contents.html>Haiku 用户指南</a></li>
+                    <li><a href=./guides/>Haiku 指南</a>
+                    </li>
+                </ul>
+            </div>
+            <div class=col-md-4 id=preface-middle>
+                <div class=preface-install-badge style=width:340px;min-height:126px;max-width:100%><a href=./get-haiku/><img src=./images/GET_HAIKU.PNG></a>
+                </div>
+                <div class=preface-install-links>
+                    <h2>INSTALL HAIKU</h2>
+                    <ul>
+                        <li><a href=./get-haiku/installation-guide/>安装指南</a>
+                        </li>
+                        <li><a href=./get-haiku/release-notes/>发布说明</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=preface-community-links>
+                    <h2>MEET THE COMMUNITY</h2>
+                    <ul>
+                        <li><a href=./community/ml/>邮件列表</a>
+                        </li>
+                        <li><a href=./community/irc/>IRC频道</a>
+                        </li>
+                        <li><a href=https://discuss.haiku-os.org/>论坛</a>
+                        </li>
+                        <li><a href=./community/getting-involved/>参与</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class=col-md-4 id=preface-last>
+                <style>
+                    .fundraising {
+                        text-align: center;
+                        font-size: 1.6em;
+                        margin-bottom: 40px;
+                        height: auto;
+                        color: #000
+                    }
+
+                    .fundraising-meter {
+                        background-image: url(/images/piggy-bank.png);
+                        background-repeat: no-repeat;
+                        background-position: 50% 0;
+                        width: 100%
+                    }
+
+                    .fundraising-progress-bar-borders {
+                        position: relative;
+                        left: 48px;
+                        width: 20px;
+                        height: 128px;
+                        border: 1px solid #666;
+                        margin: auto;
+                        border-right: 1px solid #060606;
+                        border-bottom: 1px solid #060606;
+                        opacity: .9
+                    }
+
+                    .fundraising-progress-bar-background {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #fafafa;
+                        font-size: 1.2em;
+                        opacity: .9;
+                        border: 1px solid #666;
+                        margin: 0;
+                        top: -2px;
+                        left: -2px;
+                        width: 20px;
+                        height: 128px
+                    }
+
+                    #fundraising-progress-bar-filler {
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+                        height: 0;
+                        background: #3c3;
+                        border-top: 1px solid #666;
+                        transition: height .8s ease-out
+                    }
+
+                    #fundraising-goal-text,
+                    #fundraising-current-text {
+                        position: relative;
+                        left: 26px
+                    }
+
+                    #fundraising-goal-text {
+                        top: -26px;
+                        border-bottom: 1px solid #666;
+                        font-size: .8em
+                    }
+
+                    #fundraising-current-text {
+                        top: -4px;
+                        border-top: 1px solid #666;
+                        font-size: .8em
+                    }
+
+                    #preface ul.fundraising-details {
+                        margin-top: 10px
+                    }
+                </style>
+                <h2 class=fundraising>资金募集状况 <span id=fundraising-year></span></h2>
+                <div class=content>
+                    <div style=margin-top:36px>
+                        <div class=fundraising-meter>
+                            <div class=fundraising-progress-bar-borders>
+                                <div class=fundraising-progress-bar-background><span id=fundraising-goal-text>Loading...</span>
+                                    <div id=fundraising-progress-bar-filler><span id=fundraising-current-text>Loading...</span></div>
+                                </div>
+                            </div>
+                            <p style=text-align:center;margin-top:40px>更新时间: <span id=fundraising-updated>Loading...</span><br><br>一欧元约合 <span id=fundraising-eur-to-usd>Loading...</span><br><a href=https://haiku-inc.org/donate target=_blank>支持一下</a><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=row id=main-front>
+            <div class=col-md-3>
+                <div class=card>
+                    <div class=card-heading>
+                        <div class=block-icon style="background:url(/images/microphone_48.png)no-repeat 0"></div>
+                        <h4 class=title><a href=./news/>新闻</a>
+                        </h4>
+                    </div>
+                    <ul>
+                        <li><a href=https://www.haiku-os.org/news/2021-07-26_media_release_the_haiku_project_celebrates_the_release_of_beta_3/>Media Release: The Haiku Project Celebrates the Release of Beta 3</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/news/2021-07-13_haiku_r1beta3_timeline_update/>Haiku R1/Beta3 Timeline Update</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/news/2021-07-01_haiku_inc_sponsoring_hardware_purchases_for_risc_v_port/>Haiku, Inc. sponsoring hardware purchases for RISC-V port</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/news/2021-06-22_important_change_required_for_haiku_nightly_and_r1beta2_users/>Important Change Required for Haiku Nightly and R1/Beta2 Users</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/news/2021-06-14_haiku_r1beta3_timeline_approved/>Haiku R1/Beta3 Timeline Approved</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/news/2021-05-19_haiku_is_moving_to_oftc/>Haiku's IRC channels are moving to OFTC!</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/news/2021-05-17_haiku_mentors_4_students_in_gsoc/>Haiku to mentor 4 students in Google Summer of Code 2021</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/news/2020-12-07-contest-results/>System Sounds Contest Wrap-up</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/news/2020-10-04-wallpaper-contest/>Call for Wallpapers</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/news/2020-09-11-system-sound-contest/>Contest for System Sounds</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=card>
+                    <div class=card-heading>
+                        <div class=block-icon style="background:url(/images/styled_edit_48.png)no-repeat 0"></div>
+                        <h4 class=title><a href=./blog/>Blog-O-Sphere</a>
+                        </h4>
+                    </div>
+                    <ul>
+                        <li><a href=https://www.haiku-os.org/blog/jt15s/2021-07-29_update_3_from_the_promotion_team/>Update #3 from the Promotion Team</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/blog/saloni/2021-07-27_gsoc_2021progress_report_of_improvements_to_clang-format/>GSOC 2021:Progress Report of Improvements to clang-format</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/blog/ritz/2021-07-21_gsoc_2021_progress_update_3_coding_style_checker_bot_for_gerrit/>GSoC 2021 Progress Update 3: Coding style checker bot for Gerrit</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/blog/pulkomandy/2021-07-10-haiku_activity_report_june_2021/>Haiku activity report - June 2021</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/blog/jadedctrl/2021-07-09_gsoc_2021_progress_update_2_modernizing_cardie_caya/>GSoC 2021 Progress Update 2: Modernizing Cardie (Caya)</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/blog/xiaojie/2021-07-06_gsoc_2021_xfs_support_progress_update/>GSoC 2021: XFS support progress update</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/blog/ritz/2021-06-27_gsoc_2021_progress_update_2_coding_style_checker_bot_for_gerrit/>GSoC 2021 Progress Update 2: Coding style checker bot for Gerrit</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/blog/jt15s/2021-06-08_translation_work_needed_in_preparation_for_beta_3/>Translation Work Needed in Preparation for Beta 3</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/blog/jadedctrl/2021-06-07_gsoc_2021_progress_update_1_modernizing_caya/>GSoC 2021 Progress Update 1: Modernizing Caya</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/blog/ritz/2021-06-05_gsoc_2021_project_update_coding_style_checker_bot_for_gerrit/>GSoC 2021 Progress Update 1: Coding style checker bot for Gerrit</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=card>
+                    <div class=card-heading>
+                        <div class=block-icon style="background:url(/images/File_Text_48.png)no-repeat 0"></div>
+                        <h4 class=title><a href=./articles/>最新文章</a>
+                        </h4>
+                    </div>
+                    <ul>
+                        <li><a href=https://www.haiku-os.org/community/getting-involved/promotion/promotion-team/>Promotion Team</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/community/getting-involved/promotion/>Promotion</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/community/gsoc/2021/students/>Students</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/community/gsoc/2021/ideas/>Ideas</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/get-haiku/r1beta3/release-notes/>R1/beta3 – Release Notes</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/get-haiku/r1beta2/release-notes/>R1/beta2 – Release Notes</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/guides/building/compiling-sparc/>Compiling Haiku for SPARC</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/guides/building/compiling-riscv64/>Compiling Haiku for RISCV64</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/guides/virtualizing/qtqemu/>Virtualizing Haiku in QtQEMU</a>
+                        </li>
+                        <li><a href=https://www.haiku-os.org/guides/virtualizing/digitalocean/>Emulating Haiku on DigitalOcean</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class=col-md-9>
+                <div class=node>
+                    <h3>活动</h3>
+                </div>
+                <div id=activity-tabs>
+                    <ul class="nav nav-tabs" role=tablist>
+                        <li class=active><a href=#source>代码变动</a></li>
+                        <li><a href=#tickets>提交</a></li>
+                        <li><a href=#pkgs>软件包</a></li>
+                        <li><a href=#ml>邮件列表</a></li>
+                        <li><a href=#nightlies>Nightly 镜像</a></li>
+                    </ul>
+                    <div class=tab-content>
+                        <div class="tab-pane active" id=source>
+                            <div style=text-align:right;margin-top:4px><a target=_blank href=https://cgit.haiku-os.org/haiku/log/>更多</a>
+                            </div>
+                        </div>
+                        <div class=tab-pane id=tickets>
+                            <div class=loader><span>&#8635;</span></div>
+                            <div style=text-align:right;margin-top:4px><a target=_blank href=https://dev.haiku-os.org/timeline>更多</a></div>
+                        </div>
+                        <div class=tab-pane id=pkgs>
+                            <div class=loader><span>&#8635;</span></div>
+                            <div style=text-align:right;margin-top:4px><a target=_blank href="https://depot.haiku-os.org/#!/?viewcrttyp=MOSTRECENT">更多</a></div>
+                        </div>
+                        <div class=tab-pane id=ml>
+                            <div class=loader><span>&#8635;</span></div>
+                            <div style=text-align:right;margin-top:4px><a target=_blank href=https://www.freelists.org/archive/haiku-development/>更多</a>
+                            </div>
+                        </div>
+                        <div class=tab-pane id=nightlies>
+                            <p>为了测试的目的，我们不断地构建和发布新的、前沿的 Haiku版本。您可以下载并安装这些版本，以查看最新的功能和bug修复。</p>
+                            <p>注意Nightly 镜像可能不稳定。另外，官方版本中包含的一些包需要单独安装。</p>
+                            <p>如果你对此没有意见，你可以在我们的 <a href=https://download.haiku-os.org target=_blank>Nightly 镜像页面</a>找到进一步的说明。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="node teaser">
+                    <h2 class=title><a href=https://www.haiku-os.org/blog/jt15s/2021-07-29_update_3_from_the_promotion_team/>Update #3 from the Promotion Team</a>
+                    </h2>
+                    <div class=meta>Blog post by <a target=_blank href=https://discuss.haiku-os.org/users/jt15s/>jt15s</a> on Thu, 2021-07-29 12:28
+                        <div class=terms><a href=./tags/haiku rel=tag>haiku</a>,
+                            <a href=./tags/software rel=tag>software</a>,
+                            <a href=./tags/promotion rel=tag>promotion</a></div>
+                    </div>
+                    <p>Hello all! This is the third update from the Haiku Promotion Team. Beta3 Released As you have noticed, Beta3 has been released! Huge shout out to kallisti5, who was the release coordinator for Beta3. Making a major release of Haiku
+                        is a daunting task to all involved! New Team Members Since I last wrote in March this year, we welcomed the following members to the Team: animortis AlwaysLivid jeremyf Switching to IRC/Matrix It was brought to our attention that
+                        the way the Promotion Team communicated was not a very transparent one – we communicated through a group private message on the Haiku forums.</p>
+                    <div class=links><a class=blog-item href=./blog/jt15s/>jt15s's blog</a>
+                        <a class=readmore-item href=https://www.haiku-os.org/blog/jt15s/2021-07-29_update_3_from_the_promotion_team/>查看更多</a>
+                    </div>
+                </div>
+                <div class="node teaser">
+                    <h2 class=title><a href=https://www.haiku-os.org/blog/saloni/2021-07-27_gsoc_2021progress_report_of_improvements_to_clang-format/>GSOC 2021:Progress Report of Improvements to clang-format</a>
+                    </h2>
+                    <div class=meta>Blog post by <a target=_blank href=https://discuss.haiku-os.org/users/saloni/>saloni</a> on Tue, 2021-07-27 12:17
+                        <div class=terms><a href=./tags/haiku rel=tag>haiku</a>,
+                            <a href=./tags/software rel=tag>software</a>,
+                            <a href=./tags/gsoc-2021 rel=tag>gsoc 2021</a>,
+                            <a href=./tags/clang-format rel=tag>clang-format</a>,
+                            <a href=./tags/gsoc rel=tag>gsoc</a>,
+                            <a href=./tags/haiku-format rel=tag>haiku-format</a></div>
+                    </div>
+                    <p>This blog will contain all the information about what I have done till now. I started with the input preferences directory and started solving the issues according to haiku guidelines. A few changes have been made to clang-format.
+                        This work takes a lot of time because it needs a complete understanding of how the llvm code works. As there was number of files, it was difficult to figure out which file should contain the solution of the problem but PulkoMandy
+                        really helps me alot.</p>
+                    <div class=links><a class=blog-item href=./blog/saloni/>saloni's blog</a>
+                        <a class=readmore-item href=https://www.haiku-os.org/blog/saloni/2021-07-27_gsoc_2021progress_report_of_improvements_to_clang-format/>查看更多</a>
+                    </div>
+                </div>
+                <div class="node teaser">
+                    <h2 class=title><a href=https://www.haiku-os.org/news/2021-07-26_media_release_the_haiku_project_celebrates_the_release_of_beta_3/>Media Release: The Haiku Project Celebrates the Release of Beta 3</a>
+                    </h2>
+                    <div class=meta>News posted on Mon, 2021-07-26 12:59
+                        <div class=terms><a href=./tags/haiku rel=tag>haiku</a>,
+                            <a href=./tags/software rel=tag>software</a>,
+                            <a href=./tags/beta3 rel=tag>beta3</a>,
+                            <a href=./tags/r1/beta3 rel=tag>r1/beta3</a>,
+                            <a href=./tags/media-release rel=tag>media release</a></div>
+                    </div>
+                    <p>FOR IMMEDIATE RELEASE July 25, 2021 THE HAIKU PROJECT CELEBRATES THE RELEASE OF BETA 3 Poetry is in motion. The Haiku Project, its developers and team members announced the Haiku operating system released its third beta release, version
+                        R1/Beta3, July 25th, 2021. Version R1B3 continues the trend of more frequent releases to provide users and developers with an up to date and stable platform to work on. This release combines the best of Haiku’s history as a spiritual
+                        successor of BeOS and the hard work of a passionate community.</p>
+                    <div class=links><a class=readmore-item href=https://www.haiku-os.org/news/2021-07-26_media_release_the_haiku_project_celebrates_the_release_of_beta_3/>查看更多</a>
+                    </div>
+                </div>
+                <div class="node teaser">
+                    <h2 class=title><a href=https://www.haiku-os.org/blog/ritz/2021-07-21_gsoc_2021_progress_update_3_coding_style_checker_bot_for_gerrit/>GSoC 2021 Progress Update 3: Coding style checker bot for Gerrit</a>
+                    </h2>
+                    <div class=meta>Blog post by <a target=_blank href=https://discuss.haiku-os.org/users/ritz/>ritz</a> on Wed, 2021-07-21 17:55
+                        <div class=terms><a href=./tags/haiku rel=tag>haiku</a>,
+                            <a href=./tags/software rel=tag>software</a>,
+                            <a href=./tags/gsoc rel=tag>gsoc</a>,
+                            <a href=./tags/gsoc2021 rel=tag>gsoc2021</a></div>
+                    </div>
+                    <p>Tl;dr I have completed the bot with basic functionality for my local gerrit instance Link to Introductory blog Link to Progress 1 Link to Progress 2 As I have said before I divided my project in the following parts For every event
+                        (change, patch etc.), trigger the Concourse CI pipeline. Implement pipeline in concourse CI for fetching the Git repo and running the haiku-format tool on the relevant files and creating appropriate reports out of the tool.</p>
+                    <div
+                        class=links><a class=blog-item href=./blog/ritz/>ritz's blog</a>
+                        <a class=readmore-item href=https://www.haiku-os.org/blog/ritz/2021-07-21_gsoc_2021_progress_update_3_coding_style_checker_bot_for_gerrit/>查看更多</a>
+                </div>
+            </div>
+            <div class="node teaser">
+                <h2 class=title><a href=https://www.haiku-os.org/news/2021-07-13_haiku_r1beta3_timeline_update/>Haiku R1/Beta3 Timeline Update</a>
+                </h2>
+                <div class=meta>News posted on Tue, 2021-07-13 10:14
+                    <div class=terms><a href=./tags/haiku rel=tag>haiku</a>,
+                        <a href=./tags/software rel=tag>software</a>,
+                        <a href=./tags/beta3 rel=tag>Beta3</a>,
+                        <a href=./tags/release rel=tag>release</a>,
+                        <a href=./tags/timeline rel=tag>timeline</a>,
+                        <a href=./tags/update rel=tag>update</a></div>
+                </div>
+                <p>The Haiku Project&rsquo;s release coordinator for the R1/Beta3 release, kallisti5, has made the decision to bump back the release of R1/Beta3 by one week. The updated timeline is here. The Beta3 release introduces an important update to
+                    Haiku WebKit, which subsequently produces some rendering regressions. While several of the bugs have already been fixed in Haiku WebKit this week, one final bug remains, which involves an issue with disappearing text.</p>
+                <div class=links><a class=readmore-item href=https://www.haiku-os.org/news/2021-07-13_haiku_r1beta3_timeline_update/>查看更多</a>
+                </div>
+            </div>
+            <div class="node teaser">
+                <h2 class=title><a href=https://www.haiku-os.org/blog/pulkomandy/2021-07-10-haiku_activity_report_june_2021/>Haiku activity report - June 2021</a>
+                </h2>
+                <div class=meta>Blog post by <a target=_blank href=https://discuss.haiku-os.org/users/pulkomandy/>PulkoMandy</a> on Sat, 2021-07-10 08:53
+                    <div class=terms><a href=./tags/haiku rel=tag>haiku</a>,
+                        <a href=./tags/software rel=tag>software</a>,
+                        <a href=./tags/activity-report rel=tag>activity report</a>,
+                        <a href=./tags/june rel=tag>June</a></div>
+                </div>
+                <p>Hello, it&rsquo;s time for the June activity report! (yes, not much innovation in the tagline for these reports lately. I&rsquo;m out of ideas, or maybe just lazy to find new ones). Before we dig into the report, two important announcements
+                    (in case you are not following the other news on the website, since both were already announced separately). The beta 3 release process is going well, and there are some testing candidate images available for testing.</p>
+                <div class=links><a class=blog-item href=./blog/pulkomandy/>PulkoMandy's blog</a>
+                    <a class=readmore-item href=https://www.haiku-os.org/blog/pulkomandy/2021-07-10-haiku_activity_report_june_2021/>查看更多</a>
+                </div>
+            </div>
+            <div class="node teaser">
+                <h2 class=title><a href=https://www.haiku-os.org/blog/jadedctrl/2021-07-09_gsoc_2021_progress_update_2_modernizing_cardie_caya/>GSoC 2021 Progress Update 2: Modernizing Cardie (Caya)</a>
+                </h2>
+                <div class=meta>Blog post by <a target=_blank href=https://discuss.haiku-os.org/users/jadedctrl/>JadedCtrl</a> on Fri, 2021-07-09 11:58
+                    <div class=terms><a href=./tags/gsoc rel=tag>gsoc</a>,
+                        <a href=./tags/gsoc2021 rel=tag>gsoc2021</a>,
+                        <a href=./tags/software rel=tag>software</a></div>
+                </div>
+                <p>Looks like it&rsquo;s time for me to clutter the blog again! To start: Since the last update, Caya has been hard-forked and renamed to &ldquo;Cardie&rdquo; (short for &ldquo;cardinal&rdquo;), which at least fits the &ldquo;bird theme&rdquo;
+                    of libpurple clients. … And the name&rsquo;s fitting, since it&rsquo;s now a fairly functional libpurple client. :-) libpurple support There are a few features not implemented yet, which keeps it behind the XMPP add-on in terms of
+                    functionality, but the core is there: Configuring and managing accounts for any protocol, joining/creating/leaving rooms, chatting, sending/receiving your own status, room invitations, managing roster, purple-side chat commands, etc.</p>
+                <div
+                    class=links><a class=blog-item href=./blog/jadedctrl/>JadedCtrl's blog</a>
+                    <a class=readmore-item href=https://www.haiku-os.org/blog/jadedctrl/2021-07-09_gsoc_2021_progress_update_2_modernizing_cardie_caya/>查看更多</a>
+            </div>
+        </div>
+        <div class="node teaser">
+            <h2 class=title><a href=https://www.haiku-os.org/blog/xiaojie/2021-07-06_gsoc_2021_xfs_support_progress_update/>GSoC 2021: XFS support progress update</a>
+            </h2>
+            <div class=meta>Blog post by <a target=_blank href=https://discuss.haiku-os.org/users/xiaojie/>Xiaojie</a> on Tue, 2021-07-06 01:33
+                <div class=terms><a href=./tags/haiku rel=tag>haiku</a>,
+                    <a href=./tags/software rel=tag>software</a></div>
+            </div>
+            <p>XFS project progress Hi, I am going to make a short summary of the XFS project work since last post. Anyway, you can find my post named &lsquo;GSoC 2021 Project: XFS support progress&rsquo; on the forum. It records part of the work. Of course,
+                the most is on Gerrit. topic:&ldquo;xfs&rdquo; on Gerrit We could find all remaining patches are merged. But, by the way, not all problems. There is a problem leaving.</p>
+            <div class=links><a class=blog-item href=./blog/xiaojie/>Xiaojie's blog</a>
+                <a class=readmore-item href=https://www.haiku-os.org/blog/xiaojie/2021-07-06_gsoc_2021_xfs_support_progress_update/>查看更多</a>
+            </div>
+        </div>
+        <div class="node teaser">
+            <h2 class=title><a href=https://www.haiku-os.org/news/2021-07-01_haiku_inc_sponsoring_hardware_purchases_for_risc_v_port/>Haiku, Inc. sponsoring hardware purchases for RISC-V port</a>
+            </h2>
+            <div class=meta>News posted on Thu, 2021-07-01 08:50
+                <div class=terms><a href=./tags/risc-v rel=tag>RISC-V</a>,
+                    <a href=./tags/riscv64 rel=tag>riscv64</a>,
+                    <a href=./tags/hardware rel=tag>hardware</a>,
+                    <a href=./tags/haiku-inc rel=tag>haiku-inc</a>,
+                    <a href=./tags/donations rel=tag>donations</a></div>
+            </div>
+            <p>RISC-V is an interesting, relatively new and open source hardware platform. The inventors of RISC-V created a company called HiFive and that company recently released a desktop-class System on a Chip (SoC) board called HiFive Unmatched. Long
+                before this release Haiku developer Alexander von Gluck (kallisti5) had pre-ordered this board and had begun work on the Haiku port to RISC-V, making some progress on the boot loader, u-boot support and memory mapping.</p>
+            <div class=links><a class=readmore-item href=https://www.haiku-os.org/news/2021-07-01_haiku_inc_sponsoring_hardware_purchases_for_risc_v_port/>查看更多</a>
+            </div>
+        </div>
+        <div class="node teaser">
+            <h2 class=title><a href=https://www.haiku-os.org/blog/ritz/2021-06-27_gsoc_2021_progress_update_2_coding_style_checker_bot_for_gerrit/>GSoC 2021 Progress Update 2: Coding style checker bot for Gerrit</a>
+            </h2>
+            <div class=meta>Blog post by <a target=_blank href=https://discuss.haiku-os.org/users/ritz/>ritz</a> on Sun, 2021-06-27 14:50
+                <div class=terms><a href=./tags/haiku rel=tag>haiku</a>,
+                    <a href=./tags/software rel=tag>software</a>,
+                    <a href=./tags/gsoc rel=tag>gsoc</a>,
+                    <a href=./tags/gsoc2021 rel=tag>gsoc2021</a></div>
+            </div>
+            <p>Link to Introductory blog Link to Progress 1 On my quest to finding a way to trigger my jobs anytime a commit happens in gerrit I was looking into this repo and trying to make it work. I tried using it as a resource but it turns out either
+                it&rsquo;s not public anymore or it was deleted. Then I went through the list of forks in that repo and found this.</p>
+            <div class=links><a class=blog-item href=./blog/ritz/>ritz's blog</a>
+                <a class=readmore-item href=https://www.haiku-os.org/blog/ritz/2021-06-27_gsoc_2021_progress_update_2_coding_style_checker_bot_for_gerrit/>查看更多</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div style=float:right><a href=https://www.netlify.com><img src=https://www.netlify.com/img/global/badges/netlify-dark.svg alt="Deploys by Netlify"></a></div>
+        <p>&copy; 2001-2021 Haiku, Inc. , Haiku-chinese, Inc. &mdash; Haiku&reg; 以及 HAIKU 的标志&reg; 都为 <a href=https://www.haiku-inc.org target=_blank>Haiku, Inc. </a> 的注册商标</p>
+        <p class=last><a href=./index.xml>主要捐赠</a> |
+            <a href=./blog/index.xml>Blog-O-Sphere 捐赠</a> |
+            <a href=./community/organization/policies/>公共政策</a> |
+            <a href=https://twitter.com/haikuOS>Twitter</a> |
+            <a href=https://mastodon.xyz/@haiku>Mastodon</a> |
+            <a href=https://www.linkedin.com/company/haiku-inc->LinkedIn</a></p>
+    </footer>
+    </div>
+    <script src=./js/activity.js></script>
+    <script src=./js/donationchart.js></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel=stylesheet>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel=stylesheet>
+    <script src=./js/navbar.js></script>
+    <!-- Fathom -->
+    <script>
+        (function(f, a, t, h, o, m) {
+            a[h] = a[h] || function() {
+                (a[h].q = a[h].q || []).push(arguments)
+            };
+            o = f.createElement('script'),
+                m = f.getElementsByTagName('script')[0];
+            o.async = 1;
+            o.src = t;
+            o.id = 'fathom-script';
+            m.parentNode.insertBefore(o, m)
+        })(document, window, 'https://metrics.haiku-os.org/tracker.js', 'fathom');
+        fathom('trackPageview');
+    </script>
+    <!-- / Fathom -->
+</body>
+
+</html>

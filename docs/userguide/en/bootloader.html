@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-
-<!-- Mirrored from www.haiku-os.org/docs/userguide/en/bootloader.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Aug 2021 01:13:19 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <!-- 
  *
@@ -140,7 +137,7 @@ On computers that use UEFI for booting instead of the classic BIOS, you need to 
 <li><p>Activating <span class="menu">Disable user add-ons</span> will prevent using any add-ons (drivers, translators, etc.) you have installed in the user hierarchy under your Home folder.</p></li>
 <li><p>If activating <span class="menu">Use fail-safe graphics driver</span> solves your troubles by falling back to VESA graphics, you can make the setting permanent by removing the <tt>#</tt> of the line <i>#fail_safe_video_mode true</i> in the text file <span class="path">/boot/home/config/settings/kernel/drivers/kernel</span>.</p></li>
 <li><p>If the offending driver, add-on etc. is installed in the system hierarchy, things get a bit more complicated, because that area is read-only. Here, the <span class="menu">Disable system components</span> comes into play. With it, you can navigate through the whole system hierarchy and disable the component that's messing things up for you by checking an entry with the <span class="key">SPACE</span> or <span class="key">RETURN</span> key. <span class="key">ESC</span> returns you up one level to the parent directory.</p>
-<p>Online, there's the guide <a href="../../../guides/daily-tasks/blacklist-packages.html">Disabling components of packages</a> showing how to make that setting stick.</p></li>
+<p>Online, there's the guide <a href="https://www.haiku-os.org/guides/daily-tasks/blacklist-packages">Disabling components of packages</a> showing how to make that setting stick.</p></li>
 <li><p>Under <span class="menu">Select boot volume</span> you can specify what former "version" of Haiku to boot. Every time you un/install a package, the old state is saved and you can boot into it by choosing it from the list presented in the boot loader options.<br />
 So, if you encounter boot problems after installing some package, boot a Haiku state from before that time and uninstall the offending package.</p></li>
 </ul>
@@ -174,20 +171,5 @@ The different symbols roughly correspond to these boot stages:</p>
 </span></div>
 </div>
 
-<!-- Fathom -->
-<script>
-(function(f, a, t, h, o, m){
-	a[h]=a[h]||function(){
-		(a[h].q=a[h].q||[]).push(arguments)
-	};
-	o=f.createElement('script'),
-	m=f.getElementsByTagName('script')[0];
-	o.async=1; o.src=t; o.id='fathom-script';
-	m.parentNode.insertBefore(o,m)
-})(document, window, '../../../../metrics.haiku-os.org/tracker.js', 'fathom');
-fathom('trackPageview');
-</script>
-<!-- / Fathom --></body>
-
-<!-- Mirrored from www.haiku-os.org/docs/userguide/en/bootloader.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Aug 2021 01:13:47 GMT -->
+</body>
 </html>

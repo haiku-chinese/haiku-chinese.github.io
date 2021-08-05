@@ -7,7 +7,7 @@
  */
 
 var toggler = document.getElementById("navbar-toggler"),
-	navbar = document.getElementById("navbar-collapseme");
-toggler.onclick = function () {
-	navbar.classList.toggle('collapse');
+    navbar = document.getElementById("navbar-collapseme");
+toggler.onclick = function() {
+    navbar.classList.toggle('collapse');
 };

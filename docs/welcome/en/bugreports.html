@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"> 
-
-<!-- Mirrored from www.haiku-os.org/docs/welcome/en/bugreports.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Aug 2021 01:12:33 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <!-- 
  *
@@ -91,7 +88,7 @@ When creating a new account, be certain to <b>provide your email address</b> as 
 <p>Before reporting a bug, please <a href="http://dev.haiku-os.org/query?status=new&amp;status=assigned&amp;status=reopened&amp;status=closed&amp;summary=%7Etext+you+want+to+search+for&amp;order=priority">make sure</a> that it does not yet exist. You can also use the <a href="http://dev.haiku-os.org/search?q=&amp;noquickjump=1&amp;ticket=on">search</a> function for this.<br />
 After you have established that it's a unique bug, make your information as accurate as possible:</p>
 <ul>
-	<li><p>Attempt to reproduce your issue on the current revision of Haiku. Pre-built images for testing purposes are  <a href="http://download.haiku-os.org/">available</a> online.</p></li>
+	<li><p>Attempt to reproduce your issue on the current revision of Haiku. Pre-built images for testing purposes are  <a href="http://download.haiku-os.org">available</a> online.</p></li>
 	<li><p>Include basic information such as how you are testing Haiku (on real hardware, on VMWare, on QEMU, etc.).</p></li>
 	<li><p>Mention which revision you are running. You can find this information in <span class="menu">About Haiku...</span> from the Deskbar menu. Also mention what kind of Haiku build you are testing (x86_gcc2, x86_64). The downloadable images are named accordingly, for a self-built image you should know how you built it.</p></li>
 	<li><p>Describe the problem you are experiencing. Try to be as accurate as you can: describe the actual behavior, and the behavior you expected.</p></li>
@@ -133,9 +130,9 @@ Note that in KDL your keyboard may not work. PS/2 keyboards always do, with USB 
 <tr><td class="onelinetop"><span class="cli">co</span> (aka <span class="cli">continue</span>)</td><td> </td><td>Leaves the kernel debugger and continues normal operation of the system, if that is possible.</td></tr>
 <tr><td><span class="cli">reboot</span></td><td> </td><td>Reboots the system immediately. You will lose all unsaved data and even those that have been saved, but have not yet been written back to disk.</td></tr>
 </table>
-<p>For more information, see the article <a href="../../../documents/dev/welcome_to_kernel_debugging_land.html">Welcome to Kernel Debugging Land</a>.</p>
+<p>For more information, see the article <a href="http://www.haiku-os.org/documents/dev/welcome_to_kernel_debugging_land">Welcome to Kernel Debugging Land</a>.</p>
 <p>The KDL output is written to the serial port (if you have one, a respective cable, and a second computer to connect with, you can capture the output there via a terminal program) and to the syslog. If you can't leave KDL it won't be written to the syslog file, though. There's a boot loader debug option that allows you to capture it nonetheless (see below).</p>
-<p>You can generate QR codes from KDL output that can then be converted to text using smartphones or similar devices. See the blog post <a href="../../../blog/mmlr/2012-07-01_qr_encode_your_kdl_output.html">QR Encode your KDL Output</a> on how to get data out of KDL using that feature.</p>
+<p>You can generate QR codes from KDL output that can then be converted to text using smartphones or similar devices. See the blog post <a href="http://www.haiku-os.org/blog/mmlr/2012-07-01_qr_encode_your_kdl_output">QR Encode your KDL Output</a> on how to get data out of KDL using that feature.</p>
 
 <h3><a href="#"><img src="../images/up.png" style="border:none;float:right" alt="index" /></a>
 <a id="syslog" name="syslog">Syslog</a></h3>
@@ -184,20 +181,5 @@ as 'fixed'.</p>
 </span></div>
 </div>
 
-<!-- Fathom -->
-<script>
-(function(f, a, t, h, o, m){
-	a[h]=a[h]||function(){
-		(a[h].q=a[h].q||[]).push(arguments)
-	};
-	o=f.createElement('script'),
-	m=f.getElementsByTagName('script')[0];
-	o.async=1; o.src=t; o.id='fathom-script';
-	m.parentNode.insertBefore(o,m)
-})(document, window, '../../../../metrics.haiku-os.org/tracker.js', 'fathom');
-fathom('trackPageview');
-</script>
-<!-- / Fathom --></body>
-
-<!-- Mirrored from www.haiku-os.org/docs/welcome/en/bugreports.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Aug 2021 01:12:59 GMT -->
+</body>
 </html>

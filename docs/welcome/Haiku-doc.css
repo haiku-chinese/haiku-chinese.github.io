@@ -269,13 +269,13 @@ table.index a:hover, table.index a:active {
 	min-height: 42px;
 }
 .box-info {
-	background: #e4ffde url(https://www.haiku-os.org/docs/welcome/images/alert_info_32.png) 15px 15px no-repeat;
+	background: #e4ffde url(images/alert_info_32.png) 15px 15px no-repeat;
 }
 .box-warning {
-	background: #fffbc6 url(https://www.haiku-os.org/docs/welcome/images/alert_warning_32.png) 15px 15px no-repeat;
+	background: #fffbc6 url(images/alert_warning_32.png) 15px 15px no-repeat;
 }
 .box-stop {
-	background: #ffeae6 url(https://www.haiku-os.org/docs/welcome/images/alert_stop_32.png) 15px 15px no-repeat;
+	background: #ffeae6 url(images/alert_stop_32.png) 15px 15px no-repeat;
 }
 
 /* More layout and styles */
