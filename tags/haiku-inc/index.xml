@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>haiku-inc on Haiku Project</title><link>https://www.haiku-os.org/tags/haiku-inc/</link><description>Recent content in haiku-inc on Haiku Project</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>2001-2021 Haiku Inc.</copyright><lastBuildDate>Thu, 01 Jul 2021 08:50:00 +0400</lastBuildDate><atom:link href="https://www.haiku-os.org/tags/haiku-inc/index.xml" rel="self" type="application/rss+xml"/><item><title>Haiku, Inc. sponsoring hardware purchases for RISC-V port</title><link>https://www.haiku-os.org/news/2021-07-01_haiku_inc_sponsoring_hardware_purchases_for_risc_v_port/</link><pubDate>Thu, 01 Jul 2021 08:50:00 +0400</pubDate><guid>https://www.haiku-os.org/news/2021-07-01_haiku_inc_sponsoring_hardware_purchases_for_risc_v_port/</guid><description>RISC-V is an interesting, relatively new and open source hardware platform. The inventors of RISC-V created a company called HiFive and that company recently released a desktop-class System on a Chip (SoC) board called HiFive Unmatched. Long before this release Haiku developer Alexander von Gluck (kallisti5) had pre-ordered this board and had begun work on the Haiku port to RISC-V, making some progress on the boot loader, u-boot support and memory mapping.</description></item><item><title>Haiku, Inc. board of director elections complete</title><link>https://www.haiku-os.org/news/2015-07-01_haiku_inc_board_director_elections_complete/</link><pubDate>Wed, 01 Jul 2015 20:13:27 +0000</pubDate><guid>https://www.haiku-os.org/news/2015-07-01_haiku_inc_board_director_elections_complete/</guid><description>The Haiku, Inc. board of directors has the pleasure of announcing several new members to help support the project.
+What is Haiku, Inc.?Haiku, Inc. is a 501(c)(3) non-profit organization dedicated to supporting the Haiku Project and the development of Haiku® (the "Software"). Haiku, Inc. does not have any technical decision making power within the Haiku project at large. The current board of directors: Axel Dörfler (axeld) Rene Gollent (DeadYak) Ryan Leavengood (leavengood) Urias McCullough (umccullough) Alexander von Gluck IV (kallisti5) Sadly, Bruno Albuquerque (BGA, Vice President) and Matthew Madia (mmadia, Secretary) have decided to step down from their positions on the board.</description></item><item><title>Miracles do happen; Development contract for April!</title><link>https://www.haiku-os.org/news/2014-03-31_miracles_do_happen_development_contract_april/</link><pubDate>Mon, 31 Mar 2014 20:40:27 +0000</pubDate><guid>https://www.haiku-os.org/news/2014-03-31_miracles_do_happen_development_contract_april/</guid><description>Wow. Thanks to our donors' generousity, Adrien is able to continue for a seventh month of improving WebPositive, WebKit and its related techologies. $2145 has been raised this past month! This is spot on with the number mentioned in last month's contract announcement article. If you did not hear, Adrien has started working on HTML5 Audio/Video support, specifically the audio portion. As usual, he is publishing weekly progress reports on his blog.</description></item><item><title>Funded development continues into March!</title><link>https://www.haiku-os.org/news/2014-02-28_funded_development_continues_march/</link><pubDate>Sat, 01 Mar 2014 04:20:43 +0000</pubDate><guid>https://www.haiku-os.org/news/2014-02-28_funded_development_continues_march/</guid><description>&lt;p>Within these past 4 weeks, over $1,200 USD and &amp;EUR;900 EUR have been raised! Thanks directly to this fundraising, Adrien is now able to be funded through the month of March. With the addition of the newest monthly subscribers, we reached a milestone and now raise over $1,000 per month through recurring monthly donations!&lt;/p></description></item><item><title>Contract extension and 2013 financial review.</title><link>https://www.haiku-os.org/news/2014-02-06_contract_extension_and_2013_financial_review/</link><pubDate>Fri, 07 Feb 2014 03:01:07 +0000</pubDate><guid>https://www.haiku-os.org/news/2014-02-06_contract_extension_and_2013_financial_review/</guid><description>&lt;p>
+Pawel's contract has concluded with his work being merged into Haiku's master repository. Hopefully within the next few days, he will be able to post another blog post to summarize the improvements.
+&lt;/p>
+&lt;p>
+Now the even better news -- the recent donations from everyone has made it possible for Adrien to continue for another month! If another $1200 USD is raised by the end of this month, then there will definitely be enough funds to keep him coding through March (At the moment, our reserves would drop to below $800 USD, which is something we try to avoid.)
+&lt;/p></description></item><item><title>Happy Contract Extensions!</title><link>https://www.haiku-os.org/news/2014-01-01_happy_contract_extensions/</link><pubDate>Wed, 01 Jan 2014 19:17:14 +0000</pubDate><guid>https://www.haiku-os.org/news/2014-01-01_happy_contract_extensions/</guid><description>
+&lt;p>
+This may be the final chapter of contract extensions, as the available funds will be plummeting to less than $1500 USD.
+&lt;/p></description></item><item><title>An excellent donation from Google, extended contracts, and Google Code-In update</title><link>https://www.haiku-os.org/news/2013-11-30_excellent_donation_google_extended_contracts_and_google_codein_update/</link><pubDate>Sat, 30 Nov 2013 12:26:55 +0000</pubDate><guid>https://www.haiku-os.org/news/2013-11-30_excellent_donation_google_extended_contracts_and_google_codein_update/</guid><description>
+&lt;p>
+This is excellent news.
+&lt;/p>
+&lt;p>
+As mentioned in the last contract announcement article, the available funding of Haiku, Inc. was starting to dry up.
+It had gotten so low, that Adrien and Paweł were told not to expect a third month of contractual development.
+&lt;/p>
+&lt;p>
+However ... &lt;strong>Google has contacted the project and informed us of a $5,000 USD donation!&lt;/strong>
+The donation is being processed and should be deposited in the next few weeks.
+To simply say "Thank you." is not enough to express the depth of our gratitude.
+Instead, many agree that actions speak louder than words.
+This donation will immediately be used to finance Adrien and Paweł's contracts for an additional month.
+There are few, if any, better uses for this money than to provide two previous Google Summer of Code students the opportunity to flip bits, not burgers.
+... and by the way, Thank you Google! :-D
+&lt;/p></description></item><item><title>Good news everybody -- contracts and more!</title><link>https://www.haiku-os.org/news/2013-10-20_good_news_everybody_contracts_and_more/</link><pubDate>Sun, 20 Oct 2013 21:32:38 +0000</pubDate><guid>https://www.haiku-os.org/news/2013-10-20_good_news_everybody_contracts_and_more/</guid><description>
+&lt;p>
+If there was ever an example of the saying "Money talks and ...", this is it.
+Since publishing the "HAIKU needs you!" article in late August, over $5,000 has been raised!
+This is from 110 individuals who made a combined 75 recurring monthly donations and 72 one-time donations.
+The yearly total is soaring over $20,000 with the help of 322 donors making 354 recurring and 322 one-time donations.
+&lt;strong>Because of their efforts and generosity, we are able to finance another month of contractual development for both Adrien and Pawel!&lt;/strong>
+Thank you and congratulations to everyone who helped!
+&lt;/p></description></item><item><title>HAIKU needs you!</title><link>https://www.haiku-os.org/news/2013-08-29_haiku_needs_you/</link><pubDate>Fri, 30 Aug 2013 00:42:24 +0000</pubDate><guid>https://www.haiku-os.org/news/2013-08-29_haiku_needs_you/</guid><description>&lt;p>We have heard you. Other areas of Haiku need some loving. Though, we need your contribution to make this awesome.&lt;/p>
+&lt;p>First and foremost, the package management contracts are going well and are starting to wind down. Ingo is expected to finish his last month within the next week. Oliver will have another 160 hours (spread over two months). As for actual progress, as seen in Ingo&amp;rsquo;s recent blog post, it has been amazing. Hybrids are working (even ground work is done for future possible x86_64 + x86-gcc4 + x86-gcc2 combinations!). Building and updating Haiku for new platforms (e.g., various ARM platforms) is easier for developers. The tool for building ported software, haikuporter, is much more versatile, functional and reduces complexities for porters. They have requested wide spread testing of the &lt;a href="http://www.haiku-files.org/unsupported-builds/package-management-preview">HaikuPM images&lt;/a>, in anticipation of merging the changes back into master branch.&lt;/p>
+&lt;p>On to current news &amp;ndash; two developers, Adrien &amp;ldquo;PulkoMandy&amp;rdquo; Destugues and Pawel &amp;ldquo;pdziepak&amp;rdquo; Dziepak wish to have the opportunity to dedicate full-time hours improving different aspects of Haiku. Adrien plans to work on our port of WebKit and our native browser, Webpositive. His first task will be to bring the Services Kit to maturation, which was a former Google Summer of Code project. Pawel desires to enhance CPU scheduler, with respect to utilizing caches better, performance on HyperThread enabled processors and power-savvy (as in wattage consumption) features. As of now, there are only enough funds to provide each developer with a single month of contractual development!&lt;/p></description></item><item><title>BIG contracts and a call to support HAIKU!</title><link>https://www.haiku-os.org/news/2013-05-27_big_contracts_and_call_support_haiku/</link><pubDate>Mon, 27 May 2013 15:42:01 +0000</pubDate><guid>https://www.haiku-os.org/news/2013-05-27_big_contracts_and_call_support_haiku/</guid><description>
+&lt;img src="../../files/todo-donate.png" border="8" align="right" />
+&lt;p>
+We are excited to finally share this news about development contracts!
+We are going to be funding a minimum 800 hours of HAIKU development and with your help, many more hours!
+And to help you preview the progress, there is a set of &lt;a href="http://www.haiku-files.org/unsupported-builds/package-management-preview">pre-built package management images&lt;/a> available!
+&lt;/p>
+&lt;p>
+As you know, Ingo and Oliver have been working these past months on Haiku's package management for extremely low rates -- to the tune of &amp;euro;12.50 per hour.
+It is a commendable and fortunate event to have developers who are able to devote large blocks of time in their schedules for such a meager pay scale.
+This time, we are going to try new models for each of them, in order to secure even more dedicated development time.
+&lt;/p></description></item><item><title>Research into crowdfunding</title><link>https://www.haiku-os.org/blog/mmadia/2013-05-25_research_crowdfunding/</link><pubDate>Sat, 25 May 2013 13:49:59 +0000</pubDate><guid>https://www.haiku-os.org/blog/mmadia/2013-05-25_research_crowdfunding/</guid><description>
+&lt;p>
+The allure of crowdsourcing is appealing. Notions of being able to
+reach out to countless new people, who may become interested in HAIKU
+and what it represents have and continue to captivate my attention. Over
+the past month, we at Haiku, Inc. have researched, discussed, and
+discussed some more, two crowdsourcing alternatives --
+&lt;a href="http://www.kickstarter.com/">Kickstarter&lt;/a>
+and &lt;a href="http://www.indiegogo.com/">Indiegogo&lt;/a>.
+&lt;/p></description></item><item><title>Raising funds for Haiku through Goodsearch</title><link>https://www.haiku-os.org/blog/mmadia/2013-05-11_raising_funds_haiku_through_goodsearch/</link><pubDate>Sat, 11 May 2013 17:10:14 +0000</pubDate><guid>https://www.haiku-os.org/blog/mmadia/2013-05-11_raising_funds_haiku_through_goodsearch/</guid><description>Last month on the [haiku-inc] mailing list, Arman &amp;ldquo;Kulluminatii&amp;rdquo; Chahal suggested adding Haiku to Goodsearch. &amp;ldquo;What is Goodsearch?&amp;quot;, you may ask. It&amp;rsquo;s a Yahoo! powered search engine that will donate money (about a penny) to your favorite non-profit or school. They provide other ways to help earn money &amp;ndash; shopping online, participating in online surveys, completing special offers and more! This past week, the registration process completed and Haiku is now a participating non profit!</description></item><item><title>Google donates $5,000 USD. "Thank you" is not enough.</title><link>https://www.haiku-os.org/news/2013-01-27_google_donates_5000_usd_thank_you_not_enough/</link><pubDate>Sun, 27 Jan 2013 16:16:10 +0000</pubDate><guid>https://www.haiku-os.org/news/2013-01-27_google_donates_5000_usd_thank_you_not_enough/</guid><description>
+&lt;img src="../../files/star-thank-you.png" border="8" align="right" />
+&lt;p>
+What an upbeat way to start the new year!
+&lt;strong>Google, Inc. has donated Five-Thousand Dollars to Haiku, Inc.&lt;/strong>
+Earlier in December, a Google employee contacted the project to coordinate
+their donation. The transaction was received this month and shows as part
+of 2013's fundraising progress. This donation will greatly assist in securing
+additional development time specifically for HAIKU!
+Thank you Google, Inc!
+&lt;/p></description></item><item><title>Two contractors, each for two months!</title><link>https://www.haiku-os.org/news/2012-08-20_two_contractors_each_two_months/</link><pubDate>Mon, 20 Aug 2012 21:26:22 +0000</pubDate><guid>https://www.haiku-os.org/news/2012-08-20_two_contractors_each_two_months/</guid><description>That's right -- Oliver Tappe and Ingo Weinhold have been accepted for individual contracts![1, 2] Each of them will be working for two 160 hour periods. That adds up to an additional 640 hours of dedicated HAIKU development time for a total cost of €8,000 EUR. The area of focus will be Haiku's package management. (See A brief summary of HAIKU's package management. for an explanation of how package management will work.</description></item><item><title>He's back, back in the Haiku groove!</title><link>https://www.haiku-os.org/news/2012-06-30_hes_back_back_haiku_groove/</link><pubDate>Sat, 30 Jun 2012 16:49:42 +0000</pubDate><guid>https://www.haiku-os.org/news/2012-06-30_hes_back_back_haiku_groove/</guid><description>&lt;p>&lt;img src="../../files/lighter.png" border="8" align="left" />&lt;/p>
+&lt;p>Ok it hasn&amp;rsquo;t been years since Michael was here, on IRC passin&amp;rsquo; his time away.
+To the left and to the right, commits towering to the sky.
+It&amp;rsquo;s outta sight in the dead of night
+Here he is, again in this project, with a fistful of keystrokes
+And baby, you better believe.&lt;/p>
+&lt;p>He&amp;rsquo;s back, back in the Haiku groove!
+He&amp;rsquo;s back, back in the Haiku groove!
+(Ok, enough ripping off &lt;a href="http://www.youtube.com/watch?v=L-4vMQOOiUY">KISS lyrics&lt;/a>)&lt;/p>
+&lt;p>Michael Lotz has been casually making commits in his &lt;a href="https://github.com/mmlr/haiku/commits/key_store">KeyStore feature branch&lt;/a>! First as a reminder to everyone, as Michael &lt;a href="../../blog/mmlr/2011-11-28_bugs_back_wireless_and_friends">explained&lt;/a> the KeyStore API will be able to &amp;ldquo;securely manage keys, passwords, certificates, etc. in a central place and generic way (so that it can be used by other applications as well)&amp;quot;. More details on its design and functionality are mentioned in &lt;a href="../../blog/mmlr/2011-12-23_api_design_hard_finding_bugs_can_be_made_easy">Michael&amp;rsquo;s blog&lt;/a>. As you can imagine the KeyStore API will add much appreciated functionality to Haiku, specifically in the area of managing wifi connections.&lt;/p></description></item><item><title>A new development contractor!</title><link>https://www.haiku-os.org/news/2012-05-20_new_development_contractor/</link><pubDate>Sun, 20 May 2012 16:03:56 +0000</pubDate><guid>https://www.haiku-os.org/news/2012-05-20_new_development_contractor/</guid><description>
+&lt;img src="../../files/WebPositive.png" border="8" align="right" />
+&lt;p>
+Announcing development contracts is one of the best feelings.
+It is a time when a volunteer developer is given the opportunity
+to dedicate a large block of time for their hobby -- developing HAIKU!
+This is made possible through the countless donations from people like you,
+who love Haiku and are willing to give what is right for them, to make Haiku a better
+operating system. Thank you to all of
+&lt;a href="http://www.haiku-inc.org/public-sponsors.html">our supporters, both public and anonymous&lt;/a>!
+&lt;/p>
+&lt;p>
+This time, we are pleased to announce that &lt;strong>Alexandre Deckner will be working
+on the WebKit port and, if time allows, WebPositive&lt;/strong>. You may remember "aldeck"
+primarily from his work on Tracker -- squashing bugs, rewriting sections for better
+performance and updating it to &lt;a href="https://github.com/aldeck/haiku/tree/tracker_layout">utilize the Layout API&lt;/a>.
+As Alexandre states, &lt;i>
+"Good web support is something crucial for any operating system these days,
+it is for some users the main software they will use on a computer and one
+of the first things a new user will try on Haiku. To summarize, Haiku has
+to provide the best web experience possible and i believe i can help to go
+in that direction."&lt;/i>
+&lt;/p></description></item><item><title>RealLife(TM)</title><link>https://www.haiku-os.org/news/2012-04-22_reallifetm/</link><pubDate>Sun, 22 Apr 2012 22:09:20 +0000</pubDate><guid>https://www.haiku-os.org/news/2012-04-22_reallifetm/</guid><description>
+&lt;p>
+To be honest, this article is something I have been dreading.
+It's one of those situations, where you hope and pray that it gets better before you take action, but it hasn't.
+&lt;/p>
+&lt;p>
+Michael has landed onto some tough times.
+The injury from some weeks ago has healed well enough.
+However, RealLife&amp;trade; has prevented him from focusing on Haiku.
+It involves his personal life outside of Haiku. That's all we know and that's all we need to know.
+With everything that has happened and will continue to play out over the next weeks, Michael has decided to cease the contract.
+In the future, he does plan to contribute to Haiku.
+For now though, he needs to take a step back.
+&lt;/p></description></item><item><title>2011: From the desk of Haiku, Inc.</title><link>https://www.haiku-os.org/news/2012-01-03_2011_desk_haiku_inc/</link><pubDate>Tue, 03 Jan 2012 03:42:16 +0000</pubDate><guid>https://www.haiku-os.org/news/2012-01-03_2011_desk_haiku_inc/</guid><description>
+&lt;img src="../../files/haiku-inc.png" border="8" align="left" />
+&lt;p>
+2011 has been an amazing year for Haiku in many ways. It is easy to
+see the improvements in Haiku (the operating system) by looking at
+the nightly builds or the bug tracker. In quite such a tangible way.
+&lt;a href="http://www.haiku-inc.org">Haiku, Inc.&lt;/a> serves as the business arm of the project, if you will,
+collecting donations, handling paperwork, dealing with web hosting,
+etc. It is a little harder to see some of the improvements in
+Haiku, Inc. sometimes - they are a little more "behind the scenes",
+so we wanted to take this time to talk about all of the good stuff
+that has happened!
+&lt;/p></description></item><item><title>(R) II: Return to the USPTO</title><link>https://www.haiku-os.org/news/2011-07-14_r_ii_return_uspto/</link><pubDate>Thu, 14 Jul 2011 01:53:15 +0000</pubDate><guid>https://www.haiku-os.org/news/2011-07-14_r_ii_return_uspto/</guid><description>On July 12th, 2011, Haiku&amp;reg; received its registration with the United States Patent and Trademark Office (USPTO). This registration is for "Haiku" the name (as opposed to the HAIKU logo&amp;reg;, which became a registered trademark in March). More precisely, this new registration is known as a "standard character claim" and affords much more protection than the "stylized mark" registration of the logo. Now for a quick crash course in trademarks.</description></item><item><title>Haikuware Donates $10,000 to Haiku!!!</title><link>https://www.haiku-os.org/news/2011-07-07_haikuware_donates_10000_haiku/</link><pubDate>Thu, 07 Jul 2011 20:30:25 +0000</pubDate><guid>https://www.haiku-os.org/news/2011-07-07_haikuware_donates_10000_haiku/</guid><description>
+&lt;img src="../../files/diamond_200.png" border="8" align="right" />
+&lt;p>
+That's right, you read that right. And no, today is not April 1st.
+&lt;a href="http://www.haikuware.com">Haikuware&lt;/a>
+has donated Ten-Thousand Dollars to Haiku, Inc.
+&lt;/p>
+&lt;p>
+Haiku, Inc. gratefully values each and every dollar that is is donated.
+A contribution of this magnitude, well, it simply is astounding.
+&lt;b>In other words, thank you once again, Haikuware!&lt;/b>
+&lt;/p></description></item><item><title>The time is now: Michael Lotz on a long term contract.</title><link>https://www.haiku-os.org/news/2011-06-29_time_now_michael_lotz_long_term_contract/</link><pubDate>Wed, 29 Jun 2011 23:35:12 +0000</pubDate><guid>https://www.haiku-os.org/news/2011-06-29_time_now_michael_lotz_long_term_contract/</guid><description>
+&lt;img src="../../files/target.png" border="8" align="right" />
+&lt;p>
+Haiku, Inc. is ecstatic to announce
+&lt;b>Michael Lotz (AKA "mmlr") on a 6 month contract&lt;/b> developing Haiku!!
+There is the intention to renew this contract for another 6 months,
+making Michael to be the first person to be paid to work on Haiku for an
+entire year and you can make that a reality!
+&lt;/p>
+&lt;p>
+The goal of his contract would be to work on anything and everything
+to bring Haiku closer to its first production quality release, better known
+as "R1". The scope, variety and quality of code that Michael has produced
+over the past six years and even more recently, gives Haiku, Inc. the fullest
+confidence in his ability to succeed in every task that he works on.
+&lt;b>Simply put, Michael gets the job done and done right.&lt;/b>
+&lt;/p></description></item><item><title>Haiku, Inc. accepts a second development contract in 2011!</title><link>https://www.haiku-os.org/news/2011-06-12_haiku_inc_accepts_second_development_contract_2011/</link><pubDate>Sun, 12 Jun 2011 16:44:13 +0000</pubDate><guid>https://www.haiku-os.org/news/2011-06-12_haiku_inc_accepts_second_development_contract_2011/</guid><description>
+&lt;img src="../../files/code-o-matic.png" border="8" align="right" />
+&lt;p>On the Haiku, Inc. mailing list, &lt;strong>Ingo Weinhold proposed a development contract.&lt;/strong>
+You may know Ingo better by his commit id "bonefish", as he recently merged his POSIX signals development branch back into trunk as &lt;a href="https://dev.haiku-os.org/changeset/42116">r42116&lt;/a>.
+His proposal is for &lt;strong>160 hours relating to furthering package management with a €2,000 EUR payout.&lt;/strong>
+That is roughly a meager $18 USD per hour!
+&lt;/p></description></item><item><title>Haikuware donates $2,000 to Haiku, Inc.</title><link>https://www.haiku-os.org/news/2011-04-30_haikuware_donates_2000_haiku_inc/</link><pubDate>Sat, 30 Apr 2011 16:28:26 +0000</pubDate><guid>https://www.haiku-os.org/news/2011-04-30_haikuware_donates_2000_haiku_inc/</guid><description>A big and heartfelt thank-you goes out to Haikuware and its supporters. Over this weekend, a $2,002.09 donation has been made to Haiku, Inc. on behalf of Haikuware&amp;rsquo;s financial contributors. The current funds available to Haiku, Inc. are now over $13,000 dollars!
+This donation will be earmarked for contractual work on any of the R1 requirements. Additionally, there are intentions to use other finances to supply developers with the necessary hardware to resolve issues and improve support for them.</description></item><item><title>Haiku Trademark Registration - Achievement Unlocked!</title><link>https://www.haiku-os.org/news/2011-04-01_haiku_trademark_registration_achievement_unlocked/</link><pubDate>Fri, 01 Apr 2011 07:00:00 +0000</pubDate><guid>https://www.haiku-os.org/news/2011-04-01_haiku_trademark_registration_achievement_unlocked/</guid><description>We are happy to announce that the trademark registration process of the HAIKU logo&amp;reg; has finally been completed (pdf) by Haiku, Inc. Over the last year or two, Haiku, Inc. has been seeking to cleanup the Haiku trademark usage. The official registration of the logo was a major part of that process.There are several benefits of having Federal trademark registration, which include fortifying the protection of the mark and entitling additional methods of resolving trademark infringers.</description></item><item><title>Haiku, Inc. accepts contract relating to package management</title><link>https://www.haiku-os.org/news/2010-12-27_haiku_inc_accepts_contract_relating_package_management/</link><pubDate>Mon, 27 Dec 2010 23:50:26 +0000</pubDate><guid>https://www.haiku-os.org/news/2010-12-27_haiku_inc_accepts_contract_relating_package_management/</guid><description>&lt;p>As seen with the poll for the &lt;a href="https://dev.haiku-os.org/wiki/FutureHaikuFeatures">must-have features for R1&lt;/a>, &lt;strong>the lack of proper package management is clearly one of the items that are delaying the release of R1&lt;/strong>. More importantly though, as package management is an actual lacking feature (as opposed to a bug in an existing implementation), even the beta cycle is being blocked as a result. In order to progress, Haiku needs package management.&lt;/p></description></item><item><title>Stephan back at the wheel &amp; a website for Haiku, Inc.</title><link>https://www.haiku-os.org/news/2010-08-12_stephan_back_wheel_website_haiku_inc/</link><pubDate>Thu, 12 Aug 2010 00:24:37 +0000</pubDate><guid>https://www.haiku-os.org/news/2010-08-12_stephan_back_wheel_website_haiku_inc/</guid><description>Axel has now completed his contract, and intends to pursue the Haikuware bounty for implementing the missing bits of WiFi support over the next weeks. Your generous donations are allowing us to continue contracting Haiku developers for money. Thank-You-All for supporting these efforts! Stephan has submitted (edit: and has been accepted for) a development contract -- 160 hours at $2000 USD. Originally he proposed for additional features relating to WebPositive.</description></item><item><title>Some TODO's You CANDO</title><link>https://www.haiku-os.org/blog/mmadia/2010-08-02_some_todos_you_cando/</link><pubDate>Mon, 02 Aug 2010 01:19:54 +0000</pubDate><guid>https://www.haiku-os.org/blog/mmadia/2010-08-02_some_todos_you_cando/</guid><description>
+&lt;p>
+Over the next few weeks, I'll be trying to document some tangible non-C/C++ tasks.
+They'll usually be things that I've wanted to do or have been meaning to do, but
+for whatever reason haven't gotten around to doing them.
+&lt;/p>
+&lt;p>
+For each task, there'll a description of what it is,
+how it helps the project, and hopefully some information to help you get started.
+&lt;/p></description></item><item><title>Opportunity to Pay Axel to Code Haiku!</title><link>https://www.haiku-os.org/news/2010-07-14_opportunity_pay_axel_code_haiku/</link><pubDate>Wed, 14 Jul 2010 15:10:01 +0000</pubDate><guid>https://www.haiku-os.org/news/2010-07-14_opportunity_pay_axel_code_haiku/</guid><description>
+&lt;p>
+We are excited to tell you about another proposal for contract development!
+This time, it is from &lt;strong>Axel Dörfler. He is proposing to work 120 hours at $14
+per hour, for a total of $1,680.&lt;/strong> To remind you of the sheer awesomeness of this,
+Axel has been with the Project since nearly the beginning -- he joined a few
+months after it was started in 2001. Axel was also
+&lt;a href="../../blog/axeld/2005-10-13/haikus_first_employee">Haiku's first employee back&lt;/a>
+in 2005! This is a chance to get him back in the saddle -- or, according to some jokes,
+back in the basement -- coding Haiku full time for a few weeks.
+&lt;/p>
+&lt;div class="alert alert-info">
+&lt;strong>Astonishing Update:&lt;/strong> In a mere &lt;strike>24 hours, over $800&lt;/strike> &lt;strike>36 hours, over $1,100&lt;/strike> &lt;strong>42hours, over $3,000&lt;/strong> has been donated! Your response has been overwhelmingly amazing. Thank you for all of your support!
+&lt;/div></description></item><item><title>A summary of Haiku, Inc.'s accomplishments in the past year</title><link>https://www.haiku-os.org/blog/mmadia/2010-05-30_summary_haiku_incs_accomplishments_past_year/</link><pubDate>Sun, 30 May 2010 14:24:03 +0000</pubDate><guid>https://www.haiku-os.org/blog/mmadia/2010-05-30_summary_haiku_incs_accomplishments_past_year/</guid><description>
+&lt;p>
+Some days ago, I realized that Haiku, Inc. never gave an official
+status update on its progress. Looking back at where we were last
+year, a lot of progress has been made. While &lt;strong>this is not an official
+statement from the BOD&lt;/strong>, these are just my personal observations and
+recollections.
+&lt;/p></description></item><item><title>Haiku Inc.: Contractors (yes more!), Donation Analysis, and Google Checkout</title><link>https://www.haiku-os.org/news/2010-04-07_haiku_inc_contractors_yes_more_donation_analysis_and_google_checkout/</link><pubDate>Tue, 06 Apr 2010 22:22:33 +0000</pubDate><guid>https://www.haiku-os.org/news/2010-04-07_haiku_inc_contractors_yes_more_donation_analysis_and_google_checkout/</guid><description>
+&lt;p>
+In this installment, we are proud to announce Ingo Weinhold's contract,
+a brief summary of our donation history, and a new method for accepting donations.
+&lt;/p></description></item><item><title>Haiku Inc.: Contractors, Haiku Code Drive, and Available Funds.</title><link>https://www.haiku-os.org/news/2010-03-22_haiku_inc_contractors_haiku_code_drive_and_available_funds/</link><pubDate>Mon, 22 Mar 2010 20:28:03 +0000</pubDate><guid>https://www.haiku-os.org/news/2010-03-22_haiku_inc_contractors_haiku_code_drive_and_available_funds/</guid><description>
+&lt;p>Several hot topics are covered in this update; new development contracts,
+changes to our Haiku Code Drive program, and some notes about our immediate
+finances.&lt;/p></description></item><item><title>Donation rally successful</title><link>https://www.haiku-os.org/news/2010-03-05_donation_rally_successful/</link><pubDate>Fri, 05 Mar 2010 12:38:40 +0000</pubDate><guid>https://www.haiku-os.org/news/2010-03-05_donation_rally_successful/</guid><description>&lt;p>It&amp;rsquo;s not just Stippi&amp;rsquo;s project that&amp;rsquo;s a huge success (see the WebKit/Web+ progress documented in his &lt;a href="../../blog/stippi"> blog posts&lt;/a>). Our call for donations for this kind of contractual work is also doing very well!
+In the two weeks since our announcement to hire developers for specific projects, donations have picked up significantly. Since then we received over $1,600USD and a few more people opting for small but recurrent monthly funding.&lt;/p>
+&lt;p>Our thanks go out to all contributors! This shows that our Haiku community is strong and effective when called upon!&lt;/p></description></item><item><title>Haiku Inc. is hiring - funds needed</title><link>https://www.haiku-os.org/news/2010-02-21_haiku_inc_hiring_funds_needed/</link><pubDate>Sun, 21 Feb 2010 16:03:43 +0000</pubDate><guid>https://www.haiku-os.org/news/2010-02-21_haiku_inc_hiring_funds_needed/</guid><description>&lt;p>The Haiku project rests on the shoulders of volunteer individuals who spend their free time developing, bughunting and in general advancing the system. Unfortunately everyone's time is limited and working for a living takes a major cut into what could be dedicated to Haiku work. It would be great if a developer could take off work for a few weeks to fully concentrate on Haiku development.&lt;/p>
+&lt;p>And this is exactly what we would like to make possible! Starting now:&lt;/p></description></item><item><title>Haiku Inc. Transition Update</title><link>https://www.haiku-os.org/news/2008-02-04_haiku_inc_transition_update/</link><pubDate>Thu, 07 Feb 2008 10:06:35 +0000</pubDate><guid>https://www.haiku-os.org/news/2008-02-04_haiku_inc_transition_update/</guid><description>
+&lt;div class="field field-type-text field-field-body">
+&lt;div class="field-items">
+&lt;div class="field-item odd">
+&lt;p>It has been several months since we announced the departure of project founder Michael Phipps from Haiku and the transition period that ensued for Haiku Inc. This is an attempt to give the community a most probably long awaited update on where we stand today, what has been done so far and what remains to be done to bring the Haiku Inc. transition to a successful conclusion.&lt;/p>
+&lt;h3>Who we are&lt;/h3>
+&lt;p>First, let's try to put a face to the transition team, so that you know who is behind all this. Under the initiative of Stephan (Stippi) Aßmus, a "transition team" was setup with the main goal of
+reorganizing Haiku Inc.. To that end, an interim board of directors (BOD) endorsed by the Haiku admins is being put in place; this BOD is only transitional and will eventually be replaced by one elected with votes from a broader representation base. The interim BOD has not been formally sworn in yet, but it is scheduled to include the following individuals:&lt;/p></description></item><item><title>Haiku Recognition Award for Project Founder Michael Phipps</title><link>https://www.haiku-os.org/news/2008-01-23_haiku_recognition_award_for_parting_project_founder/</link><pubDate>Thu, 24 Jan 2008 00:14:53 +0000</pubDate><guid>https://www.haiku-os.org/news/2008-01-23_haiku_recognition_award_for_parting_project_founder/</guid><description>
+&lt;div class="field field-type-text field-field-body">
+&lt;div class="field-items">
+&lt;div class="field-item odd">
+&lt;p>&lt;span class="inline right">&lt;img src="http://haiku-os.org/files/screenshots/2008-01-23_mphipps-farewell-video.png" alt="Farewell video for Michael Phipps" title="Farewell video for Michael Phipps" class="image img_assist_custom" height="245" width="300">&lt;span class="caption" style="width: 298px;">&lt;strong>Farewell video:&lt;/strong> &lt;a href="http://www.youtube.com/watch?v=pareAq4BmDM" target="_blank">YouTube&lt;/a> | &lt;a href="http://www.archive.org/details/HaikuRecognitionAwardForProjectFounderMichaelPhipps" target="_blank">Download&lt;/a>&lt;/span>&lt;/span>
+Project founder, long time leader and Haiku visionary Michael Phipps departed from the project last year. Michael's list of achievements is long: he did not just provide an overall vision for Haiku, but he also set up &lt;a href="../../about/haiku_inc">Haiku Inc.&lt;/a>, and over the years put in countless hours of work, keeping the development effort on track whenever it seemed to drift away from the goals, and single-handedly managing the infrastructure supporting the project. Without Michael, Haiku would most probably not be what it has become today.&lt;/p>
+&lt;p>Michael gave his goodbye in a &lt;a href="http://haiku-os.org/blog/mphipps/2007-09-18/what_a_long_strange_trip_its_been">moving letter to the Haiku community&lt;/a> but, somehow, it feels as if we never reciprocated with a proper farewell. So we decided to do something special to show our heartfelt appreciation. We are thereby presenting Michael Phipps with the first ever &lt;a href="../../files/screenshots/2008-01-24_mphipps_award.thumbnail.jpg" onclick="launch_popup(2012, 800, 572); return false;" target="_blank">Haiku Recognition Award&lt;/a>. This is a very special award with a personal touch, as it has been signed by members of the community present at the recent BeGeistert 018 conference held in Düsseldorf, Germany, and is also accompanied by a &lt;a href="http://www.youtube.com/watch?v=pareAq4BmDM" target="_blank">farewell video&lt;/a>.&lt;/p></description></item><item><title>Haiku's First Employee</title><link>https://www.haiku-os.org/blog/axeld/2005-10-13_haikus_first_employee/</link><pubDate>Thu, 13 Oct 2005 08:34:00 +0000</pubDate><guid>https://www.haiku-os.org/blog/axeld/2005-10-13_haikus_first_employee/</guid><description>This blog is supposed to accompany my Haiku development efforts while being employed by the non-profit organisation behind Haiku , Haiku Inc.
+Thanks to the donations you made to Haiku Inc., I will work full time until the end of november - that means 8 hours a day, 5 days a week. I&amp;rsquo;m not getting rich by doing this, but it should be enough to pay my bills. I don&amp;rsquo;t even get more money if you would donate more - it would just make such an event more likely to happen again.</description></item></channel></rss>

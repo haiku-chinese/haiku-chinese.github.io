@@ -1,0 +1,940 @@
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom"><channel><title>Haiku Project</title><link>https://www.haiku-os.org/</link><language>en-US</language><author>Haiku Inc.</author><rights>(C) 2001-2021 Haiku, Inc. All rights reserved.</rights><updated>Mon, 11 Jan 2016 00:00:00 +0000</updated><item><title>Update #3 from the Promotion Team</title><link>https://www.haiku-os.org/blog/jt15s/2021-07-29_update_3_from_the_promotion_team/</link><author>jt15s</author><pubDate>Thu, 29 Jul 2021 12:28:21 +1000</pubDate><guid>https://www.haiku-os.org/blog/jt15s/2021-07-29_update_3_from_the_promotion_team/</guid><description>&lt;p>Hello all! This is the third update from the Haiku Promotion Team.&lt;/p>
+&lt;h2 id="beta3-released">Beta3 Released&lt;/h2>
+&lt;p>As you have noticed, Beta3 has been released! Huge shout out to kallisti5, who was the release coordinator for Beta3. Making a major release of Haiku is a daunting task to all involved!&lt;/p>
+&lt;h2 id="new-team-members">New Team Members&lt;/h2>
+&lt;p>Since I last wrote in March this year, we welcomed the following members to the Team:&lt;/p>
+&lt;ul>
+&lt;li>animortis&lt;/li>
+&lt;li>AlwaysLivid&lt;/li>
+&lt;li>jeremyf&lt;/li>
+&lt;/ul>
+&lt;h2 id="switching-to-ircmatrix">Switching to IRC/Matrix&lt;/h2>
+&lt;p>It was brought to our attention that the way the Promotion Team communicated was not a very transparent one – we communicated through a group private message on the Haiku forums. Thus, the decision was made to switch to IRC/Matrix, because it is a trusted technology, and it can be accessed from all major platforms including Haiku. Now, anyone can see what we are discussing and working on and can participate in our discussions! If you wish to join, we have a discussion room at #haiku-promo on OFTC, with bridges to Matrix.&lt;/p>
+&lt;h2 id="promotion-team-kanban">Promotion Team Kanban&lt;/h2>
+&lt;p>We were also informed that our Kanban, quite paradoxically, did not work on Haiku. We are still considering options to switch, including trying out a solution from Atlassian, or using the existing Haiku development tracker. We will post on this blog once a decision has been made.&lt;/p>
+&lt;h2 id="social-media-accounts">Social Media Accounts&lt;/h2>
+&lt;p>You may have seen that we have requested access to the Haiku Twitter and LinkedIn accounts. We believe that the accounts have become a lot like RSS feeds, which, is not inherently bad, but for an open-source project like ours with users and developers asking for help on social media platforms, we could do a lot better. We will keep you updated once the policies for the accounts have been finalised and we start posting on the accounts.&lt;/p>
+&lt;h2 id="haikus-20th-anniversary">Haiku’s 20th Anniversary&lt;/h2>
+&lt;p>Now that Beta3 is released, the next big event on the cards is our 20th Anniversary! If you go to the history page on this website, you can see that we started on the 18th of August 2001.
+We will need someone to design 20th Anniversary graphics for us, so if you are up to the task, don’t hesitate to send me a PM on the forums or post in the IRC/Matrix room.
+Currently, we have merchandise planned for this special occasion (we should have more news to share on that soon), but any ideas for events or other items for purchase are welcomed.&lt;/p>
+&lt;h2 id="looking-ahead-to-beta4">Looking ahead to Beta4&lt;/h2>
+&lt;p>After Beta3, there will be Beta4. Why are we thinking of Beta4 so soon, you might ask? Well, the time after a major release is often a time when activity tends to slump for a bit. We want to keep that momentum going, so we are thinking of what we can do for the next major release.&lt;/p>
+&lt;p>We are considering putting on spotlight on many of Haiku’s built-in apps. Many of them have been neglected for years and need a developer’s TLC (tender, loving care). For example, the Mail app uses an older protocol, and the UI needs some improvement! To do this, we will put out Calls for Contributions, blog posts that let people know what needs work.&lt;br>
+Additionally, there are many things that have been on our “wish list” for a while that need contributors. A single-sign-on system for all of Haiku’s web services (i.e., Trac, Gerrit, forums) is something that we have wanted for a long time. Furthermore, we still need to migrate from Pootle to another web translation service since Pootle is no longer maintained. We also need a major reorganisation of our website and documentation, as the organisation of our documentation is quite confusing. We will most likely put out Calls for Contributions for these, wherever applicable.&lt;br>
+A tentative release date set on Trac is the 31st of January 2022. This is a tentative release date meaning that it is subject to change. Beta3 had the initial tentative date of sometime in April, however it was released on the 25th of July (or 26th depending on where you live in the world). It is the aim of the Haiku Project to have a major release at least once a year.&lt;br>
+Additionally, there will be more tickets that will be assigned to Beta4; we have 688 active tickets in the R1 milestone so expect plenty more tickets to be added!
+If you have anything you want to see in Beta4, a &lt;a href="https://discuss.haiku-os.org/t/beta-4-wishlist/11092">Beta4 wish list thread&lt;/a> has been started on the forums so feel free to post there.&lt;/p>
+&lt;h2 id="closing-words">Closing Words&lt;/h2>
+&lt;p>As always, if you have any feedback or suggestions for the Promotion Team don’t hesitate to contact us via IRC/Matrix, or post in the forums under the Marketing category. Stay safe!&lt;/p></description></item><item><title>GSOC 2021:Progress Report of Improvements to clang-format</title><link>https://www.haiku-os.org/blog/saloni/2021-07-27_gsoc_2021progress_report_of_improvements_to_clang-format/</link><author>saloni</author><pubDate>Tue, 27 Jul 2021 12:17:53 +0530</pubDate><guid>https://www.haiku-os.org/blog/saloni/2021-07-27_gsoc_2021progress_report_of_improvements_to_clang-format/</guid><description>&lt;p>This blog will contain all the information about what I have done till now.&lt;/p>
+&lt;p>I started with the input preferences directory and started solving the issues according to haiku guidelines.&lt;/p>
+&lt;p>A few changes have been made to clang-format. This work takes a lot of time because it needs a complete understanding of how the llvm code works. As there was number of files, it was difficult to figure out which file should contain the solution of the problem but PulkoMandy really helps me alot.
+While working on this project I learn new things which were really good!&lt;/p>
+&lt;h2 id="preserve-the-indentation-of-comments">Preserve the indentation of comments&lt;/h2>
+&lt;p>In the Haiku coding style, comments are sometimes indented one level more than the code (when they refer to the line above them) but clang-format doesn’t accept these one level indented comments and change their indentation to previous line indentation&lt;/p>
+&lt;pre>&lt;code> if (a)
+ return ;
+  // Comment to remain as it is
+else {
+ return;
+}
+&lt;/code>&lt;/pre>
+&lt;p>So, this comment was previously getting equal to indentation of return statement. Then, I write some code which checks the indentation of previous line and compares with the original line and formats according.
+&lt;a href="https://github.com/viveris/llvm-project/commit/b2338537b8699662efaa5b51f1cf1daf6ae28c0a">Please have a review&lt;/a>&lt;/p>
+&lt;p>After this I added a functionality that this code should only work when “haiku” is passed as argument because some people may not want that for their project.
+&lt;a href="https://github.com/viveris/llvm-project/commit/05661e0e9937699753192b298f04ecc5c46206f9">Please have a review&lt;/a>&lt;/p>
+&lt;h2 id="removal-of-braces-for-multiline-control-statements">Removal of braces for multiline control statements&lt;/h2>
+&lt;p>According to haiku guidelines, if there is single line control statement then the braces should be removed otherwise not.&lt;/p>
+&lt;pre>&lt;code>if (acceptFirstClickBox) {
+acceptFirstClick
+= acceptFirstClickBox-&amp;gt;Value() == B_CONTROL_ON;
+}
+&lt;/code>&lt;/pre>
+&lt;p>In the above case clang-format was removing the braces for such conditions. So, I got a &lt;a href="https://reviews.llvm.org/D95168">patchset&lt;/a> from llvm which I firstly set as the base code for this.
+&lt;a href="https://github.com/viveris/llvm-project/commit/ca492a8015c091fccb4fd1cc6f910f2f1a48a99b">Base code &lt;/a>&lt;/p>
+&lt;p>After that some changes were made and the redundant braces remover code was removed.
+&lt;a href="https://github.com/viveris/llvm-project/commit/d69e542e38fb23c834cd96feac961498ff2c1cf4">Revert the redundant code&lt;/a>&lt;/p>
+&lt;p>After that finally, the final commit was made which removes the extra changes and sets the correct indentation mode matching with Haiku.
+&lt;a href="https://github.com/viveris/llvm-project/commit/c5377b0c71dab755a2dc121f9e14b015d4a4d122">Please have a review&lt;/a>&lt;/p>
+&lt;h2 id="line-break-after-return-type-in-function-definitions">Line break after return type in function definitions&lt;/h2>
+&lt;p>Functions with one arguments were not properly detected. But the functions with no or more than one argument, code formatted correctly.&lt;/p>
+&lt;pre>&lt;code>void
+MouseView::MouseUp(BPoint) {
+fButtons = 0;
+Invalidate(_ButtonsRect());
+fOldButtons = fButtons;
+}
+&lt;/code>&lt;/pre>
+&lt;p>In this above example the clang format was not breaking after the return type with one argument but when I passed no or more than 1 argument it breaks correctly, This issue took alot of time as firstly I tried with different configuration but nothing works then I supposed that any function needs to be called for the break after return type but found nothing.&lt;/p>
+&lt;p>Then I tried with llvm latest code also but even then it doesn&amp;rsquo;t formatted correctly. After that, I came to know that this was a problem in llvm code and was mising this specific case. At,last I write the code for this specific case in the &lt;strong>isFunctionDeclarationName&lt;/strong> function.
+&lt;a href="https://github.com/viveris/llvm-project/commit/f488bd9b43130e186cb0f86067f8d0a447b3f7b8">Please have review&lt;/a>&lt;/p>
+&lt;h2 id="ongoing-review">Ongoing review&lt;/h2>
+&lt;h3 id="unusual-indentation-of-blayoutbuilder-block">Unusual indentation of BLayoutBuilder block&lt;/h3>
+&lt;p>The block was getting formatted incorrectly&lt;/p>
+&lt;pre>&lt;code> BLayoutBuilder::Group&amp;lt;&amp;gt;(this, B_VERTICAL)
+.AddGroup(B_HORIZONTAL)
+.SetInsets(B_USE_WINDOW_SPACING, B_USE_WINDOW_SPACING,
+B_USE_WINDOW_SPACING, 0)
+.Add(fSettingsView)
+.End()
+.Add(new BSeparatorView(B_HORIZONTAL))
+.AddGroup(B_HORIZONTAL)
+.Add(fDefaultsButton)
+.Add(fRevertButton)
+.AddGlue()
+.End();
+&lt;/code>&lt;/pre>
+&lt;p>The clang-format formats this block such that the indentation level of all these lines become equal which was against Haiku guidelines. So according to the community this block needs special handling. The options was:&lt;/p>
+&lt;ul>
+&lt;li>Have some very specific code to detect the use of BLayoutBuilder and the specific indentation it needs&lt;/li>
+&lt;li>Annotate the sourcecode with some comments to tell clang-format to not touch this part of the code.&lt;/li>
+&lt;/ul>
+&lt;p>As the haiku code contains number of such block, so it will become messy to use &lt;strong>clang-format&lt;/strong> &lt;strong>off&lt;/strong>. So, I just proceed with first option.
+As, I was not familiar with how the indentation of this block is to be done as differnt file was following different rule so, I planned a meeting with Preetpal in which she explains me the process for this block and I write some code for this which correctly indented this block even after giving any incorrect indentation.
+&lt;a href="https://github.com/saloniig/llvm-project/commit/45d221cda510e9dba5bc1f1e94d21d1393caa59e">Please have a review&lt;/a>&lt;/p>
+&lt;p>Then one issue remained unsolved in which the .SetInsets line was exceeding the column limit i.e. 80 according to Haiku guidelines. This line was not getting properly breaked and merged. After spending time with the code looking into this issue I found that when I changed this block LineComment block the block was getting formatted correctly as expected.
+I looked into this to find such condition and change it according to the requirements but found nothing.
+So, now I am working on this to write some code that will call required functions to format it correctly. I made some changes and write some code but it breaks at some point. I am looking for it and is working side by side on it.&lt;/p>
+&lt;h3 id="extra-space-before--operator-in-for-loop">Extra space before ++ operator in for loop&lt;/h3>
+&lt;p>In for loop the extra space was added before the ++ operator.&lt;/p>
+&lt;pre>&lt;code>for (itr = fMouseSettingsObject.begin(); itr != fMouseSettingsObject.end();
+++itr)
+&lt;/code>&lt;/pre>
+&lt;p>Then, I take a look at files and see the configurations and made the changes for Haiku.
+&lt;a href="https://github.com/saloniig/llvm-project/commit/8b7b1163109295afa7af86c19c4e338cbe8a7b89">Please have a review&lt;/a>
+But the PulkoMandy suggested me that there can be much better option than this and suggested me to look into ContinuationIndentor.cpp file which will contain some function which is violating our defined options style configuration which were&lt;/p>
+&lt;blockquote>
+&lt;p>UseTab set to &lt;strong>UT_Always&lt;/strong> so even if it tries to do alignment, it
+should be using only tabs.
+set bracket style to &lt;strong>BAS_DontAlign&lt;/strong> so it should not be aligning things this way.&lt;/p>
+&lt;/blockquote>
+&lt;p>But we both look into it and tried to find appropriate function but till now got nothing. It’s a WIP task and working on that also.&lt;/p>
+&lt;h3 id="tabs-are-converted-into-spaces">Tabs are converted into spaces&lt;/h3>
+&lt;p>Output of Haiku-format is converting tabs into spaces :&lt;/p>
+&lt;pre>&lt;code>
+private:
+BString fTitle;
+BBitmap* fPrimaryIcon;
+bool fSelected;
+&lt;/code>&lt;/pre>&lt;p>whereas the expected output is :&lt;/p>
+&lt;pre>&lt;code>
+private:
+BString fTitle;
+BBitmap* fPrimaryIcon;
+bool fSelected;
+&lt;/code>&lt;/pre>&lt;p>The basic idea is :&lt;/p>
+&lt;pre>&lt;code>indented 1 tab: qualifiers (volatile, virtual, static)
+indented 3 tabs: type of fields and return type of functions
+indented 2 tabs: function or field name
+&lt;/code>&lt;/pre>
+&lt;p>I have writted the code for it that need some changes which is under progress.&lt;/p>
+&lt;p>You can find the sources on &lt;a href="https://github.com/viveris/llvm-project">Github&lt;/a> and my weekly blogs &lt;a href="https://hackace2.wordpress.com/category/gsoc/">here&lt;/a>.&lt;/p>
+&lt;p>Thankyou :)&lt;/p></description></item><item><title>Media Release: The Haiku Project Celebrates the Release of Beta 3</title><link>https://www.haiku-os.org/news/2021-07-26_media_release_the_haiku_project_celebrates_the_release_of_beta_3/</link><author>jt15s</author><pubDate>Mon, 26 Jul 2021 12:59:08 +1000</pubDate><guid>https://www.haiku-os.org/news/2021-07-26_media_release_the_haiku_project_celebrates_the_release_of_beta_3/</guid><description>&lt;p align="left">FOR IMMEDIATE RELEASE&lt;/p>
+&lt;p align="left">July 25, 2021&lt;/p>
+&lt;h1 id="the-haiku-project-celebrates-the-release-of-beta-3">THE HAIKU PROJECT CELEBRATES THE RELEASE OF BETA 3&lt;/h1>
+&lt;p>Poetry is in motion. The Haiku Project, its developers and team members announced the
+Haiku operating system released its third beta release, version R1/Beta3, July 25th, 2021.
+Version R1B3 continues the trend of more frequent releases to provide users and
+developers with an up to date and stable platform to work on.&lt;/p>
+&lt;p>This release combines the best of Haiku’s history as a spiritual successor of BeOS and the
+hard work of a passionate community. It provides several new features and performance
+improvements that make Haiku even better.&lt;/p>
+&lt;p>Beta 3 includes the new Czech translation for the system and bundled applications. With this
+addition, Haiku is now available in 28 different languages. The Haiku Project is thankful to
+those who have given their time to ensure Haiku is available in a wide variety of languages
+so the operating system can be used all over the world.&lt;/p>
+&lt;p>WebKit, the backend of the bundled web browser developed by the Haiku team,
+WebPositive, received multiple major improvements. This provides a good base for further
+improvements as well as an improved browsing and website rendering experience in
+WebPositive, which developers will continue to focus on for the next release, Beta 4 and as
+Haiku nears its first initial release, R1.&lt;/p>
+&lt;p>Additional improvements include:&lt;/p>
+&lt;ul>
+&lt;li>A better installation process, with various fixes to the disk partitioner (DriveSetup
+GUI) to make the process easier and go more smoothly.&lt;/li>
+&lt;li>Improved hardware drivers, with a focus on:
+&lt;ul>
+&lt;li>improvements to Wi-Fi networking to match FreeBSD 13&lt;/li>
+&lt;li>audio drivers, mass storage, USB&lt;/li>
+&lt;li>performance on NVIDIA graphics cards (GeForce 6200-GeForce Go 6400).&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Significantly improved WebPositive stability and compatibility.&lt;/li>
+&lt;li>Software updates can now be resumed in case of network issues.&lt;/li>
+&lt;li>New and updated ports of various software, including deprecating Python 2 and
+making Python 3 the default version installed&lt;/li>
+&lt;li>Greater POSIX compatibility&lt;/li>
+&lt;li>Numerous bug fixes.&lt;/li>
+&lt;/ul>
+&lt;p>All of these improvements have been implemented for the community and by the community,
+to provide greater control to the end-user over the devices they use every day.&lt;/p>
+&lt;p>A complete list of changes can be found at
+&lt;a href="https://www.haiku-os.org/get-haiku/r1beta3/release-notes/">https://www.haiku-os.org/get-haiku/r1beta3/release-notes/&lt;/a>.&lt;/p>
+&lt;p>Of course, all this would not be possible without the generous donations from donors all over
+the world, as well as a passionate and hardworking community. The Haiku Project thanks
+those who have contributed with their time or with their donations.&lt;/p>
+&lt;p>Haiku could always use developers and volunteers, with plenty of opportunities for anyone
+interested to make their mark and the computing world a better place.&lt;/p>
+&lt;p>Haiku is a free and open-source operating system for personal computing - the download is
+provided as an ISO file which can be burned to physical media to be installed onto physical
+hardware, or used in a virtual machine.&lt;/p>
+&lt;p>For more information, to download or to volunteer, visit &lt;a href="https://haiku-os.org">https://haiku-os.org&lt;/a> or
+&lt;a href="https://haiku-os.org/community/getting-involved/">https://haiku-os.org/community/getting-involved/&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>ENDS&lt;/strong>&lt;/p>
+&lt;p>For media enquiries, please contact:
+&lt;a href="mailto:contact@haiku-os.org">contact@haiku-os.org&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://www.haiku-os.org/get-haiku/">&lt;img src="./images/GET_HAIKU.png"/>&lt;/a>
+&lt;a href="./files/R1_Beta3_Press_Kit.zip">&lt;img src="./images/download_32.png"/>&lt;strong>Download press kit here&lt;/strong>&lt;/a>&lt;/p>
+&lt;h2 id="notes-to-editors">NOTES TO EDITORS&lt;/h2>
+&lt;p>Note that screenshots, logos and other resources are included in the press kit for this
+release for use in publications.&lt;/p>
+&lt;h3 id="about-haiku">About Haiku:&lt;/h3>
+&lt;p>Haiku is a free and open-source operating system inspired by BeOS and licensed under the
+MIT license. Specifically targeting personal computing, Haiku is a fast, efficient, simple to
+use, easy to learn, and yet very powerful system for computer users of all levels, and can be
+downloaded freely from the official project website as an ISO file. Maintained by a
+passionate and friendly volunteer community (known collectively as the &amp;ldquo;Haiku Project&amp;rdquo;),
+Haiku welcomes all volunteers and contributors regardless of their skill level or background.
+For more information please visit &lt;a href="https://haiku-os.org">https://haiku-os.org&lt;/a>&lt;/p>
+&lt;h3 id="about-haiku-inc">About Haiku Inc:&lt;/h3>
+&lt;p>Haiku Inc. is a 501(c)(3) non-profit organization (registered in the United States) dedicated to
+supporting the Haiku Project and the development of Haiku. Haiku Inc. holds the trademark
+registrations for Haiku, collects donations on behalf of and manages finances for the Haiku
+Project. In the past, donations collected have been used to fund paid development contracts
+and the Haiku Code Drive - a program similar to Google&amp;rsquo;s Summer of Code. For more
+information, please visit &lt;a href="https://haiku-inc.org">https://haiku-inc.org&lt;/a>&lt;/p></description></item><item><title>GSoC 2021 Progress Update 3: Coding style checker bot for Gerrit</title><link>https://www.haiku-os.org/blog/ritz/2021-07-21_gsoc_2021_progress_update_3_coding_style_checker_bot_for_gerrit/</link><author>ritz</author><pubDate>Wed, 21 Jul 2021 17:55:41 +0530</pubDate><guid>https://www.haiku-os.org/blog/ritz/2021-07-21_gsoc_2021_progress_update_3_coding_style_checker_bot_for_gerrit/</guid><description>&lt;p>Tl;dr I have completed the bot with basic functionality for my local gerrit instance&lt;/p>
+&lt;p>Link to &lt;a href="https://discuss.haiku-os.org/t/gsoc-2021-coding-style-checker-bot-for-gerrit-haiku-project/10772">Introductory blog&lt;/a>&lt;br>
+Link to &lt;a href="https://discuss.haiku-os.org/t/gsoc-2021-progress-update-1-coding-style-checker-bot-for-gerrit-haiku-project/10814">Progress 1&lt;/a>&lt;br>
+Link to &lt;a href="https://discuss.haiku-os.org/t/gsoc-2021-progress-update-2-coding-style-checker-bot-for-gerrit-haiku-project/10962">Progress 2&lt;/a>&lt;/p>
+&lt;p>As I have said before I divided my project in the following parts&lt;/p>
+&lt;ul>
+&lt;li>For every event (change, patch etc.), trigger the Concourse CI pipeline.&lt;/li>
+&lt;li>Implement pipeline in concourse CI for fetching the Git repo and running the haiku-format tool on the relevant files and creating appropriate reports out of the tool.&lt;/li>
+&lt;li>Implement REST API call to post the result back to Gerrit reviews as a robot comment.&lt;/li>
+&lt;/ul>
+&lt;p>Since last time I started working on creating a report that could be displayed under patchset comments by the bot. I started by looking at various flags of &lt;code>clang-format&lt;/code> command out of which &lt;code>--dry-run&lt;/code>, &lt;code>--Werror&lt;/code> seemed to be working just fine. But I wanted to run the tool only on the files that have been updated/added since last commit and not the entire project. Eventually I found a better way for this i.e. &lt;code>git-clang-format&lt;/code> python script which is already present in the &lt;a href="https://github.com/viveris/llvm-project/blob/viv_haiku_format/clang/tools/clang-format/git-clang-format">llvm project&lt;/a>. After installing &lt;code>clang-format&lt;/code>, we just need to put this script in &lt;code>/usr/bin/&lt;/code> folder. We can invoke the script using &lt;code>git clang-format&lt;/code> directly. &lt;code>git clang-format --diff --style=haiku HEAD~1&lt;/code> would run &lt;code>clang-format&lt;/code> with haiku style on the files that have been updated/added since last commit and showcase the diff of it. In order to use this diff information later I dumped the output of the previous command in a file named &lt;code>diff.txt&lt;/code>. To use it in my concourse workflow, I added the &lt;code>git-clang-format&lt;/code> script on my local server that I created last time using golang to host the &lt;code>clang-format&lt;/code> file. Now this seemed rather promising so I went ahead onto the next task i.e. Implement REST API call to post the result back to Gerrit reviews as a robot comment.&lt;/p>
+&lt;p>Before starting GSoC, I had already achieved posting the comments on Gerrit using REST API. Anybody interested can look into &lt;a href="https://gerrit-review.googlesource.com/Documentation/config-robot-comments.html">https://gerrit-review.googlesource.com/Documentation/config-robot-comments.html&lt;/a> and &lt;a href="https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html">https://gerrit-review.googlesource.com/Documentation/rest-api-changes.html&lt;/a> &lt;code>Set Review&lt;/code> Section&lt;/p>
+&lt;p>The following is the API signature:&lt;/p>
+&lt;pre>&lt;code>POST /changes/{change-id}/revisions/{revision-id}/review
+[HEADER]
+- Authorization: 'Basic &amp;lt;Basic-Auth-Key&amp;gt;'
+- Content-Type: application/json
+[BODY]
+{
+&amp;quot;tag&amp;quot;: &amp;quot;test tag&amp;quot;,
+&amp;quot;message&amp;quot;: &amp;quot;Hi! This is robot!&amp;quot;,
+&amp;quot;labels&amp;quot;: {
+&amp;quot;Verified&amp;quot;: 1
+}
+}
+&lt;/code>&lt;/pre>
+&lt;p>Now the url for calling the above API requires &lt;code>change-id&lt;/code> and &lt;code>revision-id&lt;/code>. After searching for it I found that &lt;code>change-id&lt;/code> and &lt;code>revision-id&lt;/code> are already stored in the &lt;code>.gerrit_version.json&lt;/code> file inside the container under the cloned repo folder which is created by the gerrit resource. Below is a sample &lt;code>.gerrit_version.json&lt;/code>&lt;/p>
+&lt;pre>&lt;code>[
+{
+&amp;quot;change_id&amp;quot;: &amp;quot;test~master~I2a33f7448147f9aab068df24e4a31bb7f0e974f4&amp;quot;,
+&amp;quot;revision&amp;quot;: &amp;quot;916609dc2d5f6d4a51bb6510fc37d4366efbae97&amp;quot;,
+&amp;quot;created&amp;quot;: &amp;quot;2021-06-03T15:38:59Z&amp;quot;
+}
+]
+&lt;/code>&lt;/pre>
+&lt;p>Now I needed to parse &lt;code>change_id&lt;/code> and &lt;code>revision&lt;/code> from this json file so I used the &lt;code>jq&lt;/code> utility. I created the necessary commands for &lt;code>jq&lt;/code> and stored &lt;code>change_id&lt;/code> and &lt;code>revision&lt;/code> in the &lt;code>CHANGE_ID&lt;/code> and &lt;code>REVISION_ID&lt;/code> variable respectively. I then created a basic logic for assigning +1 to the &lt;code>verified&lt;/code> variable in case the files are formatted correctly according to haiku coding guidelines and -1 in case the files are not properly formatted. Then I constructed the necessary json input for the API.&lt;/p>
+&lt;p>I pulled up the curl command for calling the API from postman, added the variables created previously at necessary fields and added the entire curl command formed inside the pipeline.yml file. Now it was time for testing the pipeline so I ran a new build manually, everything seemed to be working perfectly except the fact that it would also print terminal color codes along with diff in the patchset comments (patchset comments in gerrit do not seem to support coloring text). After looking for various ways to remove it I settled with using &lt;code>git config color.diff false&lt;/code>. Now it was time for the final test.&lt;/p>
+&lt;p>First I created a new change set in my local gerrit that &lt;strong>added&lt;/strong> a new &lt;strong>unformatted&lt;/strong> .cpp file and everything worked perfectly. &lt;code>clang-format&lt;/code> ran only one file and gave &amp;ldquo;-1&amp;rdquo; in &amp;ldquo;Verified&amp;rdquo; in the patchset along with the diff in the comment.&lt;/p>
+&lt;p>Then I added another change set in my local gerrit that &lt;strong>updated&lt;/strong> already existing .cpp to the &lt;strong>formatted&lt;/strong> one according to haiku guidelines. This time again everything worked perfectly and &lt;code>clang-format&lt;/code> ran only on this updated cpp file and did not report any issues, only &amp;ldquo;Verified&amp;rdquo; was changed to &amp;ldquo;+1&amp;rdquo;.&lt;/p>
+&lt;p>The following pipeline.yml was used for it.&lt;/p>
+&lt;pre>&lt;code>resource_types:
+- name: gerrit
+type: registry-image
+source:
+repository: docker.io/bluedocks/gerrit-resource
+resources:
+- name: test
+type: gerrit
+source:
+url: &amp;quot;http://hrithik:8090&amp;quot;
+query: &amp;quot;status:open project:test&amp;quot;
+jobs:
+- name: job
+public: true
+plan:
+- get: test
+trigger: true
+- task: check_coding_style
+config:
+inputs:
+- name: test
+platform: linux
+image_resource:
+type: registry-image
+source:
+repository: ubuntu
+tag: 20.04
+run:
+path: /bin/sh
+args:
+- -c
+- |
+apt update &amp;amp;&amp;amp; apt install -y wget curl jq python3 git python-is-python3
+# setup clang-format and git-clang-format
+wget http://hrithik:9000//clang-format
+wget http://hrithik:9000//git-clang-format
+chmod 777 ./clang-format
+chmod 777 ./git-clang-format
+mv ./clang-format /usr/bin
+mv ./git-clang-format /usr/bin
+cd ./test
+git config color.diff false
+git clang-format --diff --style=haiku -q HEAD~1 &amp;gt; diff.txt
+cat diff.txt
+# check if diff.txt is empty or not and set verified
+if [ -s diff.txt ]
+then
+verified=-1
+else
+verified=1
+fi
+echo &amp;quot;verified: $verified&amp;quot;
+BASE_URL=http://hrithik:8090
+CHANGE_ID=$(jq -r '.change_id' ./.gerrit_version.json)
+REVISION_ID=$(jq -r '.revision' ./.gerrit_version.json)
+TOKEN=Y2hlY2tlcmJvdDpnUlBONXdQQ0tVOTIxTUNzNitBc1dXclNSYzd4Mm9wWlNXNzNtYTRUOFE=
+jq --null-input -M --rawfile message diff.txt --arg verified $verified \
+'{
+&amp;quot;tag&amp;quot;: &amp;quot;test tag&amp;quot;,
+&amp;quot;message&amp;quot;: &amp;quot;```\n\($message)\n```&amp;quot;,
+&amp;quot;labels&amp;quot;: {
+&amp;quot;Verified&amp;quot;: $verified
+}
+}' &amp;gt; data.json
+curl --location --request POST &amp;quot;${BASE_URL}/a/changes/${CHANGE_ID}/revisions/${REVISION_ID}/review&amp;quot; \
+--header &amp;quot;Authorization: Basic ${TOKEN}&amp;quot; \
+--header 'Content-Type: application/json' \
+--data-binary '@data.json'
+&lt;/code>&lt;/pre>
+&lt;p>So end to end everything is working well on my local machine :)&lt;/p>
+&lt;p>Now my main focus would be on integrating my work in haiku infrastructure.&lt;/p>
+&lt;p>As always suggestions and ideas are welcome.&lt;/p></description></item><item><title>Haiku R1/Beta3 Timeline Update</title><link>https://www.haiku-os.org/news/2021-07-13_haiku_r1beta3_timeline_update/</link><author>jt15s</author><pubDate>Tue, 13 Jul 2021 10:14:26 +1000</pubDate><guid>https://www.haiku-os.org/news/2021-07-13_haiku_r1beta3_timeline_update/</guid><description>&lt;p>The Haiku Project&amp;rsquo;s release coordinator for the R1/Beta3 release, kallisti5, has made the decision to bump back
+the release of R1/Beta3 by one week.&lt;/p>
+&lt;p>&lt;a href="https://dev.haiku-os.org/wiki/R1/Beta3/Timeline">&lt;strong>The updated timeline is here.&lt;/strong>&lt;/a>&lt;/p>
+&lt;p>The Beta3 release introduces an important update to Haiku WebKit, which subsequently produces some rendering regressions.&lt;/p>
+&lt;p>While several of the bugs have already been fixed in Haiku WebKit this
+week, one final bug remains, which involves an issue with disappearing text.&lt;/p>
+&lt;p>Given the amazing progress made by developers working on WebKit and
+WebPositive in the last week, the release has been pushed back by a week
+to give them additional time to fix the issue.&lt;/p>
+&lt;p>It is possible for Haiku WebKit updates to be issued post-release, however it is a priority of the Haiku Project to ensure that the browsing experience in Haiku is as best as it can be, especially considering that the web browsers are an important part of any operating system and that WebPositive is a major focus point for reviewers.&lt;/p>
+&lt;p>We thank you for your understanding and your patience.&lt;/p></description></item><item><title>Haiku activity report - June 2021</title><link>https://www.haiku-os.org/blog/pulkomandy/2021-07-10-haiku_activity_report_june_2021/</link><author>pulkomandy</author><pubDate>Sat, 10 Jul 2021 08:53:07 +0200</pubDate><guid>https://www.haiku-os.org/blog/pulkomandy/2021-07-10-haiku_activity_report_june_2021/</guid><description>&lt;p>Hello, it&amp;rsquo;s time for the June activity report! (yes, not much innovation in the
+tagline for these reports lately. I&amp;rsquo;m out of ideas, or maybe just lazy to find new ones).&lt;/p>
+&lt;p>Before we dig into the report, two important announcements (in case you are not
+following the other news on the website, since both were already announced separately).&lt;/p>
+&lt;p>The beta 3 release process is going well, and there are some &lt;a href="https://discuss.haiku-os.org/t/haiku-r1-beta3-test-candidate-2-availability/10980/26"> testing candidate images available for testing. If you have some time to install one of these and
+see if everything is running fine on your hardware, that would be great!&lt;/a>&lt;/p>
+&lt;p>The second announcement is that Haiku Inc. recently funded RISC-V hardware for
+two Haiku developers, X512 and kallisti5. They have both been working on the
+RISC-V port and X512 got it booting to the desktop on virtual machines. The
+next step is getting it to run on real hardware, and, as expected (if you already
+have done similar things), the virtual and real hardware don&amp;rsquo;t behave in exactly
+the same way. Anyway, you can find progress reports on the forums if you want to
+know more about the low level details of this.&lt;/p>
+&lt;p>Of course, this hardware sponsoring would not be possible without the donations
+and sponsoring from the community. Thanks to everyone who made this possible!
+See &lt;a href="./community/organization/funding/">our funding page&lt;/a> for more
+information about ways to donate money to Haiku.&lt;/p>
+&lt;p>If you are a Haiku developer or contributor, you can contact &lt;a href="https://haiku-inc.org">Haiku inc&lt;/a> for your
+funding requests, it can be for buying some specific hardware, or negociating a
+paid contract if that allows you to spend more time working on Haiku or related
+things. You can also join our &lt;a href="https://liberapay.org/Haiku">Liberapay team&lt;/a>
+to collect a part of the donations sent to the team, and make your Liberapay profile
+more visible to donators if they want to target you directly. You need an invitation
+to join the team, please contact one of the existing team members so they can invite you.&lt;/p>
+&lt;p>With that being said, let&amp;rsquo;s look at what happened in Haiku sourcecode this month!
+Of course with the release announcement, everyone has been scrambling to get their
+changes in at the last minute, so it has been a bit more busy than usual (this
+is only my arbitrary and subjective perception of things, with no statistics to
+back it).&lt;/p>
+&lt;p>This report covers revisions hrev55130-hrev55223.&lt;/p>
+&lt;h3>POSIX compatibility&lt;/h3>
+&lt;p>The USER and GROUP variables (indicating the current user and group id) are now
+set even for applications running outside of Terminal. This also fixes compatibility
+with BeOS, which did this correctly.&lt;/p>
+&lt;p>korli modified the strace utility (which is used to log system calls made by an
+application) to translate signal numbers to human readable names.&lt;/p>
+&lt;p>He also added an implementation of ppoll, which is not yet part of the POSIX
+standard, but will be added in the next version of it.&lt;/p>
+&lt;p>korli (definitely our POSIX person) also added some commonly present fields in
+the rusage struct. While we already implemented all the fields required by POSIX,
+several other UNIX systems implement a few more, and it&amp;rsquo;s very common that applications
+will try to use these without testing if they are available. This results in annoying
+build failures and requires custom patches. Currently, the new fields are always set
+to 0, the plan is to implement some of them later. Even if this is not required by
+POSIX, and potentially misleading, it seems a good idea to introduce all the fields
+at the same time, so we only introduce one new version of the rusage structure, saving
+us some complications in providing binary compatibility with previous applications.&lt;/p>
+&lt;p>He also added the &lt;strong>STDC_NO_THREADS&lt;/strong> define to our header files since we don&amp;rsquo;t
+currently have support for C11 native threads.&lt;/p>
+&lt;p>madmax fixed the behavior of the confstr function in some edge cases, improving
+the behavior of the getconf command line utility.&lt;/p>
+&lt;h3>Font rendering and text management&lt;/h3>
+&lt;p>madmax has fixed several issues with font rendering. First, he fixed font metrics
+for bitmap fonts (which are rendered using fixed bitmaps, rather than vector
+graphics).&lt;/p>
+&lt;p>John Scipione largely reworked the code of BTextView to compute the text position
+in the view. Mainly this avoids a problem in Tracker where the text would sometimes
+be completely outside the view when trying to rename an icon.&lt;/p>
+&lt;p>PulkoMandy added the Noto Emoji font to the font fallback system, providing some
+more of the missing characters commonly used in text and websites.&lt;/p>
+&lt;h3>Drivers&lt;/h3>
+&lt;p>kallisti5 fixed some problems in the XHCI (USB3) driver, making it better at
+recovering from error situations.&lt;/p>
+&lt;p>rudolfc made a lot of progress on the Intel video card driver, improving support
+for VGA, DVI and HDMI output on SandyBridge and IvyBridge systems, which was not
+really working before. DisplayPort is also working on some devices already, but
+may need a little more testing. This work also enables some machines to drive two displays, in clone
+mode so far. Many parts of the driver were reworked to allow for this, and it
+opens for support of more modern cards later on, as well as maybe more work on
+actual dual screen (not cloned) support (but let&amp;rsquo;s not get ahead of ourselves).&lt;/p>
+&lt;p>mmu_man extended the &amp;ldquo;poke&amp;rdquo; driver to allow opening by multiple applications at
+the same time, and to set the IOPL flag when the device is opened. This driver
+allows any application to perform I/O access. It previously allowed that only
+through dedicated ioctl system calls, but with the IOPL flag, it also enables
+applications to directly use the IN and OUT assembler instructions on x86 CPUs.
+This is similar to the equivalent driver in FreeBSD and can be used to port tools
+like Flashrom, which requires such low level access to handle some devices.&lt;/p>
+&lt;p>The wavelan wifi driver is now completely removed. This driver was ported from
+FreeBSD, and the FreeBSD version was removed in FreeBSD 13. After some investigation,
+it seems this driver supports only very old hardware that couldn&amp;rsquo;t connect to
+WPA Wifi networks, so, it seems a bit useless in the modern days. There was no
+reason to keep it up to date.&lt;/p>
+&lt;p>korli added suppot for controlling the keyboard backlight on asus laptops.&lt;/p>
+&lt;p>korli disabled the intel pstates (power saving/CPU idling) driver for Atom Silvermont
+and Airmont CPUs, which are not compatible with the way the driver works currently,
+resulting in unbootable systems.&lt;/p>
+&lt;p>PulkoMandy reworked the SDHCI (SD cards) driver which could in some cases try
+to send a command to the hardware before the previous one was completed, resulting
+in de-synchronization between the driver and the hardware, and the OS waiting forever
+for a reply from the hardware. While the driver is still not working perfectly
+with all hardware, at least it should now not freeze the system.&lt;/p>
+&lt;h3>Kernel&lt;/h3>
+&lt;p>korli fixed some permission flags on x86 processors related to handling of
+signals, I/O access, and disallowing user threads to enable or disable interrupts.
+This allows DosBox to run correctly (it unintentionally disabled interrupts, which
+led to kernel panics later on). Besides this fix specific to DosBox, this led
+to some other changes in related areas after studying what other OS are doing
+there.&lt;/p>
+&lt;p>korli also improved the C++ demangler in the kernel debugger to handle some more
+cases, allowing to get readable information from C++ symbol names in kenrel
+panic backtraces.&lt;/p>
+&lt;h3>Non-X86 architectures&lt;/h3>
+&lt;p>Work continues on merging X512 RISC-V work in Haiku. This month, we merged some
+parts of the virtio driver rework, updates to the uname command to report the
+new CPU architecture, various initial patches to the kernel headers, addition
+of the RISC-V architecture to our ELF handling code, implementation of the
+system_info function, data alignment problems in the AHCI (SATA) driver, and
+made the classic ATI driver (for mach64 cards) work outside of x86 platforms,
+so he could use it with QEMU emulating a RISC-V machine (a combination that
+may be a bit unlikely on real hardware).&lt;/p>
+&lt;p>Han Pengfei continues the work on the ARM port. Starting with fixing some build
+failures due to a change in the kernel console font (also used by the ARM
+bootloader when there is no hardware textmode available and only a framebuffer).
+He also rewrote the ARM linker script using the RISC-V one as a base, which
+fixed some issues with the early initialization of Haiku. Now we finally have
+some output on the UART port, making it much easier to debug the next issues
+without being completely in the dark.&lt;/p>
+&lt;h3>bootloader&lt;/h3>
+&lt;p>The EFI loader now always include support for GPT partitions. Previously, this
+support was only enabled for x86 systems (and the bootloader was not running on
+anything else), but with the progress on RISC-V, kallisti5 could now find and
+fix the problem.&lt;/p>
+&lt;p>X512 added support for the J and K keys to navigate up and down in the bootloader
+menu. This is useful on platforms where the BIOS (or equivalent firmware) does
+not provide a keyboard driver good enough to use the arrow keys.&lt;/p>
+&lt;p>kallisti5 packaged a copy of the EFI bootloader file in the system partition.
+This makes it a bit easier to find it when preparing an EFI machine for booting
+Haiku (previously it had to be copied from the EFI partition which is not mounted
+by default). Later on this can be used to automatically update the bootloader,
+whereas this currently needs to be done manually.&lt;/p>
+&lt;p>jessicah, kallisti5 and beaglejoe (almost a new contributor, they had submitted another patch in February but had not been properly greeted then, so, welcome!) reworked the enumeration of available boot partitions in the EFI
+bootloader, which in some cases would find several partitions, but not manage
+to decide which one to boot from. This was a long running problem and in fact
+pre-dates the beta 2 release. tqh was also involved previously in reworking
+various parts of the code to simplify it, and these last few commits completed
+the work.&lt;/p>
+&lt;p>jessicah also modified the bootloader to always put the bootsplash icons at the same
+position. Before this change, the official bootloader (with the Haiku logo) and
+test builds (not using the logo) would align the icons differently. When using
+mismatched kernels and bootloaders, this would result in a glitch with misaligned
+icons. Not anymore!&lt;/p>
+&lt;h3>File Systems&lt;/h3>
+&lt;p>The ongoing GSoC project about XFS is going well, and finally all the remaning
+patches from the previous years have been finalized and merged. The next phase
+of the GSoC project will be on doing new development on access to filesystem
+attributes, and then start the work on write support.&lt;/p>
+&lt;p>korli fixed handling of inodes with &amp;ldquo;metadata checksum&amp;rdquo; in the ext2/3/4 filesystem.
+These inodes have a checksum covering more bytes than is the default in ext2.
+The implementation in Haiku didn&amp;rsquo;t agree with the Linux one on how much data should be used.&lt;/p>
+&lt;h3>Applications and user interface&lt;/h3>
+&lt;p>Jessica Tallon made her first contributions (welcome!) with automatic resizing
+of the HaikuDepot screenshot window to always match the screenshot size, and
+also added support for playing webradios from m3u playlists in MediaPlayer.&lt;/p>
+&lt;p>madmax fixed the scrolling of large menus that don&amp;rsquo;t fit on screen, as well
+as computation of the width of items in the menus.&lt;/p>
+&lt;p>korli fixed TextSearch to not attempt to open directories as files and search
+for text in them.&lt;/p>
+&lt;p>nielx fixed problems with the recently added i18n (language translation) support
+in the Cortex application (which is a bit specific because it reuses some strings
+many times from different add-ons, and we didn&amp;rsquo;t want translators to re-translate
+them multiple times).&lt;/p>
+&lt;p>CodeForEvolution added an animated icon to the shutdown dialog when waiting for
+applications to terminate. This was one of the nice little details from the BeOS
+user interface that had been missing in Haiku for a long time.&lt;/p>
+&lt;p>apl-haiku continues his work on HaikuDepot, and moved several tasks to background
+threads, to provide a more smooth running experience to users.&lt;/p>
+&lt;h3>Documentation&lt;/h3>
+&lt;p>John Scipione updated the documentation for BTextView with a general class overview.&lt;/p>
+&lt;p>AlwaysLivid updated the README to include a &amp;ldquo;getting involved&amp;rdquo; link. This is part
+of a much larger ongoing work to completely reorganize the website and more clearly
+separate user oriented and developer oriented documentation, to facilitate onboarding
+of both new users and new developers.&lt;/p>
+&lt;h3>Sourcecode cleanup&lt;/h3>
+&lt;p>mt continues his work on running Haiku code through various static analyzers to
+find and fix problems. This month the work includes removing some &amp;ldquo;set but never
+used&amp;rdquo; variables, fixing some printf format strings, and correcting invalid
+ASSERT calls in the gutenprint printer driver. He also fixed the
+build in DEBUG mode for the new libnetservices library (providing an updated version
+of our HTTP APIs).&lt;/p>
+&lt;p>AlwaysLivid removed a copy of the libunwind code that had been added to Haiku but
+never used for anything.&lt;/p>
+&lt;p>David Sebek (another new contributor, welcome!) fixed some format string problems
+in devfs when built in debug mode. This is part of a larger patch series to fix
+&amp;ldquo;trim&amp;rdquo; support on SATA disks, the other parts are still being reviewed on Gerrit.&lt;/p>
+&lt;h3>Media&lt;/h3>
+&lt;p>PulkoMandy reverted an old change that broke listing of audio and video formats
+in the Media Kit. This restored support for Youtube video playbacks (and unfortunately,
+it is still possible to crash app_server by playing a video in Youtube).&lt;/p>
+&lt;p>mt modified the cddb lookup tool (which allows to get album and track names online
+for audio CDs) to point to a new online database, since the previously used freedb
+is now offline.&lt;/p>
+&lt;p>CodeForEvolution added MIME types for Markdown files and fixed some other minor
+issues in the MIME database.&lt;/p>
+&lt;h3>Buildsystem&lt;/h3>
+&lt;p>The usual work around a new release was done by kallisti5 (the release manager for the
+upcoming beta3 release): updating the version reported in our system headers,
+increasing the release image size to fit everything in, and switching our
+package repositories to a new, less confusing identifier. Historically, repositories
+were identified by their URL, but this proved problematic when attempting to set
+up repository mirrors. The identifier and URL had been separated before the
+beta2 release, but, in order to provide a smooth upgrade path to beta1 users,
+the distincion had not been put into full use yet, and the identifier was still
+an HTTP URL. It is now instead a &amp;ldquo;tag:&amp;rdquo; URI, following IETF best practises on
+the matter.&lt;/p>
+&lt;p>jessicah replaced the use of mtools in building the EFI bootable images with our
+own tool fatshell. This reduces our dependencies to uncommon 3rd party tools,
+making Haiku easier to build on more platforms.&lt;/p>
+&lt;h3>Networking&lt;/h3>
+&lt;p>PulkoMandy fixed a bug in handling of HEAD requests and 204 responses in the HTTP
+client. Both of these are special because the response has only headers and no
+contents. The code was a bit confused about that and would return an error when
+in fact, everything was fine. In particular, this made it impossible to load
+some pages on the Gerrit code review tool, which is a bit annoying since that is
+the main place where we handle patches and code review.&lt;/p>
+&lt;p>The web browser was finally updated to a more recent WebKit release. This was
+made possible because the buildbots for creating haikuports packages are now
+running a pre-release version of beta3. This was needed to build the latest versions
+of WebKit, which rely on new APIs in the app_server not yet available in beta 2.&lt;/p>
+&lt;p>This new WebKit version has some known regressions, that will be fixed in a later
+update (some are already fixed thanks to the work of jessicah, nephele and PulkoMandy
+to investigate the problems, but one important issue remains with text sometimes
+completely disappearing from webpages).&lt;/p></description></item><item><title>GSoC 2021 Progress Update 2: Modernizing Cardie (Caya)</title><link>https://www.haiku-os.org/blog/jadedctrl/2021-07-09_gsoc_2021_progress_update_2_modernizing_cardie_caya/</link><author>jadedctrl</author><pubDate>Fri, 09 Jul 2021 11:58:06 -0500</pubDate><guid>https://www.haiku-os.org/blog/jadedctrl/2021-07-09_gsoc_2021_progress_update_2_modernizing_cardie_caya/</guid><description>&lt;p>Looks like it&amp;rsquo;s time for me to clutter the blog again!&lt;/p>
+&lt;p>To start: Since the last update, Caya has been hard-forked and renamed to
+&lt;a href="https://github.com/jadedctrl/cardie">&amp;ldquo;Cardie&amp;rdquo;&lt;/a> (short for &amp;ldquo;cardinal&amp;rdquo;),
+which at least fits the &amp;ldquo;bird theme&amp;rdquo; of libpurple clients.&lt;/p>
+&lt;p>… And the name&amp;rsquo;s fitting, since it&amp;rsquo;s now a fairly functional libpurple client.
+:-)&lt;/p>
+&lt;p>&lt;a href="./files/blog/jadedctrl/cardie-2.png">&lt;img style="max-width: 80%" src="./files/blog/jadedctrl/cardie-2.png" />&lt;/a>&lt;/p>
+&lt;h1 id="libpurple-support">libpurple support&lt;/h1>
+&lt;p>There are a few features not implemented yet, which keeps it behind the XMPP
+add-on in terms of functionality, but the core is there: Configuring
+and managing accounts for any protocol, joining/creating/leaving rooms,
+chatting, sending/receiving your own status, room invitations, managing roster,
+purple-side chat commands, etc.&lt;/p>
+&lt;p>This means Cardie is now (at a base-level) usable for just about any protocol
+that purple supports, even through third-party plugins.&lt;/p>
+&lt;p>Getting started on the add-on was a bit tricky, and it took a few days to
+get things working― libpurple didn&amp;rsquo;t take too well to multiple instances
+running simultaneously (as the other protocols do, in dedicated threads), and
+symbols failed to load with the add-on― leading me to take a &lt;em>slightly&lt;/em>
+different approach compared to the other add-ons: A background process runs in
+parallel to Cardie when purple account(s) are used, and each account&amp;rsquo;s thread
+exchanges messages with that process.&lt;/p>
+&lt;p>Aside from that, it&amp;rsquo;s gone fairly smoothly― libpurple&amp;rsquo;s pleasant to work with,
+and the folks over at #pidgin are friendly and helpful.&lt;/p>
+&lt;h1 id="add-on-changes">Add-on changes&lt;/h1>
+&lt;p>In add-on news that&amp;rsquo;s dyed something other than purple, I got together a
+native IRC add-on within a day. It isn&amp;rsquo;t polished by any means, and was done
+more as practice and proof of concept: Writing a protocol add-on really doesn&amp;rsquo;t
+take that long. I&amp;rsquo;d recommend using libpurple&amp;rsquo;s IRC plugin if you can though,
+it&amp;rsquo;s definitely more featureful― though in both cases, you might want to use
+ZNC as a go-between, since SSL in both the native add-on and with libpurple
+isn&amp;rsquo;t quite working yet.&lt;/p>
+&lt;p>As for more underlying changes to the add-on spec, protocol add-ons can now
+specify custom chat commands, &amp;ldquo;templates&amp;rdquo; for certain parts of the GUI (for
+contacts&amp;rsquo; &amp;ldquo;edit&amp;rdquo; window and room joining/creation), and custom items in the
+user-list right-click menu. These are optional, only there if you need/want
+the flexibility.&lt;/p>
+&lt;h1 id="ui-changes">UI changes&lt;/h1>
+&lt;p>As far as general UI/functionality goes, user commands are now supported
+(&amp;quot;/help&amp;rdquo;, &amp;ldquo;/kick&amp;rdquo;, &amp;ldquo;/ban&amp;rdquo;, etc), there is tab-completion for usernames,
+time-stamps with messages, unique color per chat-user, roster management,
+and the room list is now organized by associated account.&lt;/p>
+&lt;p>Finally, windows/dialogues with a &amp;ldquo;neutral&amp;rdquo; context have a drop-down menu where
+the user can select the account they&amp;rsquo;d like to deal with― for example, you can
+select the correct account in the &amp;ldquo;Join a room&amp;rdquo; window, among others― but in
+contexts tied to a specific account (inviting someone to a room), the option is
+unavailable.&lt;/p>
+&lt;h1 id="next-up">Next up&lt;/h1>
+&lt;p>For the last phase of GSoC, I&amp;rsquo;m planning on finishing off the last few bits
+unsupported by the purple add-on (getting SSL working foremost, remote logs,
+user statuses, contact images, roster saving), and writing ports for a couple
+plugins. (On that note, I&amp;rsquo;d like to thank Begasus for updating the
+libpurple port and kindly reporting some compilation errors with Cardie!)&lt;/p>
+&lt;p>Aside from that, I&amp;rsquo;m going to focus on some well-needed polishing and bugfixing―
+there are some usability/UI tweaks that especially need to happen, much of
+which I&amp;rsquo;ve put into the
+&lt;a href="https://github.com/JadedCtrl/Cardie/issues">issue tracker&lt;/a>. If there&amp;rsquo;s any
+problems you notice, or anything you&amp;rsquo;d like to see, please pop it in.&lt;/p>
+&lt;p>Cheers!&lt;/p></description></item><item><title>GSoC 2021: XFS support progress update</title><link>https://www.haiku-os.org/blog/xiaojie/2021-07-06_gsoc_2021_xfs_support_progress_update/</link><author>xiaojie</author><pubDate>Tue, 06 Jul 2021 01:33:24 +0800</pubDate><guid>https://www.haiku-os.org/blog/xiaojie/2021-07-06_gsoc_2021_xfs_support_progress_update/</guid><description>&lt;h1 id="xfs-project-progress">XFS project progress&lt;/h1>
+&lt;p>Hi, I am going to make a short summary of the XFS project work since last post.&lt;/p>
+&lt;p>Anyway, you can find my post named &lt;a href="https://discuss.haiku-os.org/t/gsoc-2021-project-xfs-support-progress/10790">&lt;em>&amp;lsquo;GSoC 2021 Project: XFS support progress&amp;rsquo;&lt;/em>&lt;/a> on the forum. It records part of the work. Of course, the most is on Gerrit. &lt;a href="https://review.haiku-os.org/q/topic:%22xfs%22+(status:open%20OR%20status:merged)">topic:&amp;ldquo;xfs&amp;rdquo; on Gerrit&lt;/a>&lt;/p>
+&lt;p>We could find all remaining patches are merged. But, by the way, not all problems. There is a problem leaving. To be honest, I just learned how to use GDB under linux to debug today&amp;hellip; I lack big project experience before so it is also new skills for me. Now I need to fix it soon and then move to next step quickly, if there is no other changes, it will be attributes read support. So it is also why I choose to write summary at this time. I need to continue my attempt afterwards.&lt;/p>
+&lt;p>Above is current state about XFS work progress. Then, let me review my work and study.&lt;/p>
+&lt;p>Before I turn to fix the problems on Gerrit. I send many emails to CruxBox. That&amp;rsquo;s not good. But I don&amp;rsquo;t know how to do my work at that time and just want to solve all problems at once. So I always want to find a perfect solution&amp;hellip;and ask many &amp;lsquo;strange&amp;rsquo; and not smart questions at that time, such as could we use smart pointers&amp;hellip; :P Anyway, thanks for CruxBox&amp;rsquo;s nice.&lt;/p>
+&lt;p>The turning point of the matter happened after CruxBox pushed a patch by himself. He made a start point for me. So I realized I should also do this. If I can fix all problems in one patch, it is good. If not, we could get it little by little. After that, we got several patches merged quickly.&lt;/p>
+&lt;p>Then about the code, except for some minor errors, in my view the mainly things can be said to be memory management and code reuse. For memory stuff, we chose to allocate it on heap and then use AutoDeleter/StackOrHeap to manage memory, since it can free memory automatically. For code reuse, in my mind, actually it is because XFS use B+Tree in different parts and there are always some methods are as same between them. So we got this problem. I just did it by review the code, and tried many times. I think it is also I got from CruxBox, just keep hacking.&lt;/p>
+&lt;p>Then about XFS its own states on Haiku. From my view, it could be said like, now we can provide read support for XFS, incompletely. : (&lt;/p>
+&lt;p>More details I will post on the forum after we arrived phase goals. What&amp;rsquo;s more, after we implement other part of read support basically, I guess we still need to find better way for tests. Now all our tests are based on images shared by CruxBox. Mainly for v4 linux kernel I think. So later we may need more check. I have prepared this will be a long-term job.&lt;/p></description></item><item><title>Haiku, Inc. sponsoring hardware purchases for RISC-V port</title><link>https://www.haiku-os.org/news/2021-07-01_haiku_inc_sponsoring_hardware_purchases_for_risc_v_port/</link><author>leavengood</author><pubDate>Thu, 01 Jul 2021 08:50:00 +0400</pubDate><guid>https://www.haiku-os.org/news/2021-07-01_haiku_inc_sponsoring_hardware_purchases_for_risc_v_port/</guid><description>&lt;p>RISC-V is an interesting, relatively new and open source hardware platform. The inventors of RISC-V created a company called HiFive and that company recently released a desktop-class System on a Chip (SoC) board called &lt;a href="https://www.sifive.com/boards/hifive-unmatched">HiFive Unmatched&lt;/a>. Long before this release Haiku developer Alexander von Gluck (kallisti5) had pre-ordered this board and had begun work on the Haiku port to RISC-V, making some progress on the boot loader, u-boot support and memory mapping.&lt;/p>
+&lt;p>Starting about two months ago Haiku developer X512 also started working on the RISC-V port for Haiku, but from another angle. All the details are too much for this post, but they can be read in &lt;a href="https://discuss.haiku-os.org/t/my-haiku-risc-v-port-progress/10663">his associated Haiku forum post&lt;/a>. To summarize: he ported a small RISC-V emulator called &lt;a href="https://bellard.org/tinyemu/">TinyEmu&lt;/a> to Haiku, wrote a toy operating system and other tools to learn the platform, then he slowly got Haiku working in that emulator, with full GUI support, progressively getting more and more things working. He then started doing similar work in QEMU, which more accurately emulates real hardware. All of this was done in Haiku itself running on an x86 computer.&lt;/p>
+&lt;p>While so far it has all been done in emulation, this is absolutely the furthest Haiku has gotten on any other platform than x86.&lt;/p>
+&lt;p>Given the tremendous progress X512 made on the port with TinyEmu the &lt;a href="https://discuss.haiku-os.org/t/call-for-haiku-inc-and-haiku-community-risc-v-port/10929">community asked if Haiku, Inc. could sponsor the purchase of the HiFive Unmatched board for X512&lt;/a>, and after a short deliberation Haiku, Inc. agreed to do so. X512 has already been sent enough money to purchase the board and he has already ordered it. The board is expected to arrive by July 6, 2021.&lt;/p>
+&lt;p>In addition, even though he did not ask, Haiku, Inc. decided to reimburse Alexander for his purchase of a HiFive Unmatched as well. This was a combination of matching the same sponsorship as was done for X512 and also thanking Alex for his dedication to the community and his tireless efforts on Haiku infrastructure and many other contributions, such as his own work on the RISC-V port.&lt;/p>
+&lt;p>We expect both X512 and Alexander will continue to collaborate on the port, and with both having the same hardware we expect great results.&lt;/p></description></item><item><title>GSoC 2021 Progress Update 2: Coding style checker bot for Gerrit</title><link>https://www.haiku-os.org/blog/ritz/2021-06-27_gsoc_2021_progress_update_2_coding_style_checker_bot_for_gerrit/</link><author>ritz</author><pubDate>Sun, 27 Jun 2021 14:50:01 +0530</pubDate><guid>https://www.haiku-os.org/blog/ritz/2021-06-27_gsoc_2021_progress_update_2_coding_style_checker_bot_for_gerrit/</guid><description>&lt;p>Link to &lt;a href="https://discuss.haiku-os.org/t/gsoc-2021-coding-style-checker-bot-for-gerrit-haiku-project/10772">Introductory blog&lt;/a>&lt;br>
+Link to &lt;a href="https://discuss.haiku-os.org/t/gsoc-2021-progress-update-1-coding-style-checker-bot-for-gerrit-haiku-project/10814">Progress 1&lt;/a>&lt;/p>
+&lt;p>On my quest to finding a way to trigger my jobs anytime a commit happens in gerrit I was looking into &lt;a href="https://github.com/google/concourse-resources/tree/master/gerrit">this repo&lt;/a> and trying to make it work. I tried using it as a resource but it turns out either it&amp;rsquo;s not public anymore or it was deleted. Then I went through the list of forks in that repo and found &lt;a href="https://github.com/ecbaldwin/concourse-resources">this&lt;/a>. He claimed to have a base for a somewhat working resource after he made some changes. I cloned his repo and tried building the Dockerfile but it threw some errors. After struggling on it for quite some time and making some minor changes to the files I finally managed to build it and upload it to dockerhub. Then I tried using it as a resource but it failed to fetch my local gerrit repo. Also, the whole thing was written in go which was totally new to me so I started by learning &amp;ldquo;go&amp;rdquo; and after some time when I got the hang of it, I started the debugging phase.&lt;/p>
+&lt;p>First, I started with the idea of running the docker image manually in local, entering inside its shell and studying the behaviour of &lt;code>check&lt;/code> binary. I struggled a bit and had to look at the concourse documentation to learn about its I/O format. After studying, I created the necessary json input and provided it to &lt;code>check&lt;/code>. Unfortunately, it did not work, since my local gerrit url was not recognised. I found a &lt;code>--network=host&lt;/code> flag for docker run command which solves this issue and was able to get the desired output from the &lt;code>check&lt;/code>. So I concluded that the entire thing seems to be working perfectly when run manually on shell.&lt;/p>
+&lt;p>For reference &lt;code>check&lt;/code> input looks like this&lt;/p>
+&lt;pre>&lt;code>{
+&amp;quot;source&amp;quot;: {
+&amp;quot;url&amp;quot;: &amp;quot;http://hrithik:8090/&amp;quot;,
+&amp;quot;query&amp;quot;: &amp;quot;status:open project:test&amp;quot;
+}
+}
+&lt;/code>&lt;/pre>
+&lt;p>and &lt;code>check&lt;/code> output looks like this&lt;/p>
+&lt;pre>&lt;code>[
+{
+&amp;quot;change_id&amp;quot;: &amp;quot;test~master~I2a33f7448147f9aab068df24e4a31bb7f0e974f4&amp;quot;,
+&amp;quot;revision&amp;quot;: &amp;quot;916609dc2d5f6d4a51bb6510fc37d4366efbae97&amp;quot;,
+&amp;quot;created&amp;quot;: &amp;quot;2021-06-03T15:38:59Z&amp;quot;
+}
+]
+&lt;/code>&lt;/pre>
+&lt;p>But still concourse was not fetching the repo, I read &lt;a href="https://github.com/concourse/registry-image-resource">this&lt;/a> and changed the type from &lt;code>docker-image&lt;/code> to &lt;code>repository-image&lt;/code> with full url of my docker hub image in my concourse pipeline YAML file. Along with this I had to put &lt;code>latest&lt;/code> tag during image push and update my docker image at dockerhub since it was giving manifest errors.&lt;/p>
+&lt;p>After all this struggle, finally it worked! :) I ran various experiments and it seems to be working perfectly i.e. triggering the job anytime a patchset is created. The Docker image can be found &lt;a href="https://hub.docker.com/r/bluedocks/gerrit-resource">here&lt;/a>. Below is my sample pipeline.yml I ran using it.&lt;/p>
+&lt;pre>&lt;code>resource_types:
+- name: gerrit
+type: registry-image
+source:
+repository: docker.io/bluedocks/gerrit-resource
+resources:
+- name: test
+type: gerrit
+source:
+url: &amp;quot;http://hrithik:8090&amp;quot;
+query: &amp;quot;status:open project:test&amp;quot;
+jobs:
+- name: job
+public: true
+plan:
+- get: test
+trigger: true
+- task: list_repo
+config:
+inputs:
+- name: test
+platform: linux
+image_resource:
+type: registry-image
+source:
+repository: busybox
+run:
+path: /bin/sh
+args:
+- -c
+- |
+ls -a test
+&lt;/code>&lt;/pre>
+&lt;p>While my mentors will be testing this docker image, I started working on the next phase of this project i.e. running haiku review tool with every job that gets triggered. For reference the basic parts in which I divided my project are given below:&lt;/p>
+&lt;ul>
+&lt;li>For every event (change, patch etc.), trigger the Concourse CI pipeline.&lt;/li>
+&lt;li>Implement pipeline in concourse CI for fetching the Git repo and running the haiku-format tool on the relevant files and create appropriate report out of the tool.&lt;/li>
+&lt;li>Implement REST API call to post the result back to Gerrit reviews as a robot comment.&lt;/li>
+&lt;/ul>
+&lt;p>Now in order to start working on haiku review tool I cloned this &lt;a href="https://github.com/viveris/llvm-project">repo&lt;/a> and as suggested by my mentor @suhel_mehta ran the necessary commands for building it. I used &lt;code>clang-format&lt;/code> binary on various C++ files and tried to familiarise myself with its working.&lt;/p>
+&lt;p>Since building haiku-review tool might take some time each time concourse is triggered, hence I created a simple server using golang to host the already built &lt;code>clang-format&lt;/code> binary file. Running the tool was an issue in alpine linux, so I had to use ubuntu linux as base docker image. Then I wrote the necessary commands required to run haiku-review tool in my pipeline.yml file and then ran the pipeline and it worked like a charm. Below is a sample pipeline.yml I ran using it.&lt;/p>
+&lt;pre>&lt;code>resource_types:
+- name: gerrit
+type: registry-image
+source:
+repository: docker.io/bluedocks/gerrit-resource
+resources:
+- name: test
+type: gerrit
+source:
+url: &amp;quot;http://hrithik:8090&amp;quot;
+query: &amp;quot;status:open project:test&amp;quot;
+jobs:
+- name: job
+public: true
+plan:
+- get: test
+trigger: true
+- task: haiku_review_tool
+config:
+inputs:
+- name: test
+platform: linux
+image_resource:
+type: registry-image
+source:
+repository: ubuntu
+run:
+path: /bin/sh
+args:
+- -c
+- |
+apt update &amp;amp;&amp;amp; apt install -y wget
+wget http://hrithik:9000//clang-format
+chmod 777 ./clang-format
+./clang-format -style=haiku ./test/*.cpp
+&lt;/code>&lt;/pre>
+&lt;h2 id="suggestion-box">Suggestion Box:&lt;/h2>
+&lt;p>These are couple of observations regarding haiku review tool&lt;/p>
+&lt;ul>
+&lt;li>The llvm project is over a GB in size&lt;/li>
+&lt;li>Building the clang-format tool takes some time&lt;/li>
+&lt;/ul>
+&lt;p>It doesn&amp;rsquo;t look like a good idea to clone llvm project and build it everytime the pipeline is triggered maybe we can provide prebuilt &lt;code>clang-format&lt;/code> hosted somewhere.&lt;/p>
+&lt;p>Also, I would like to hear from devs on what kind of report/analysis (by haiku review tool) will be helpful to present in the gerrit patchset comments (posted by robot)?&lt;/p></description></item><item><title>Important Change Required for Haiku Nightly and R1/Beta2 Users</title><link>https://www.haiku-os.org/news/2021-06-22_important_change_required_for_haiku_nightly_and_r1beta2_users/</link><author>jt15s</author><pubDate>Tue, 22 Jun 2021 09:55:21 +1000</pubDate><guid>https://www.haiku-os.org/news/2021-06-22_important_change_required_for_haiku_nightly_and_r1beta2_users/</guid><description>&lt;div class="alert alert-info">
+&lt;p>
+&lt;strong>HaikuPorts functionality restored&lt;/strong>
+&lt;br>
+Due to the &lt;a href="https://www.haiku-os.org/news/2021-06-22_important_change_required_for_haiku_nightly_and_r1beta2_users/">important change to repository identifiers announced earlier&lt;/a>, the HaikuPorts repository was presenting users with an error reading &lt;code>unarchiving the repo&lt;/code>. This issue has now been fixed and users may need to re-add the HaikuPorts repository again.
+&lt;/p>
+&lt;/div>
+&lt;p>Nightly and Beta2 users will need to “re-add” their release repositories to update to newer versions of Haiku and beyond. This change is part of a long-term improvement of our Haiku/HaikuPorts repository identifiers.&lt;/p>
+&lt;p>These commands need to be run in the terminal.&lt;/p>
+&lt;p>Check your current repositories:&lt;/p>
+&lt;pre>&lt;code>pkgman list-repo
+&lt;/code>&lt;/pre>&lt;h2 id="nightly-users">Nightly Users&lt;/h2>
+&lt;p>Nightly users will need to &amp;ldquo;re-add&amp;rdquo; both their Haiku and HaikuPorts release repositories to be able to update to hrev55184 and beyond.&lt;/p>
+&lt;h3 id="re-add-haikuports-repository">Re-add HaikuPorts repository&lt;/h3>
+&lt;pre>&lt;code>pkgman drop-repo HaikuPorts
+pkgman add-repo https://eu.hpkg.haiku-os.org/haikuports/master/$(getarch)/current
+&lt;/code>&lt;/pre>&lt;h3 id="re-add-haiku-repository">Re-add Haiku repository&lt;/h3>
+&lt;pre>&lt;code>pkgman drop-repo Haiku
+pkgman add-repo https://eu.hpkg.haiku-os.org/haiku/master/$(getarch)/current
+&lt;/code>&lt;/pre>&lt;h2 id="r1beta2-users">R1/Beta2 users&lt;/h2>
+&lt;p>Beta2 users will need to &amp;ldquo;re-add&amp;rdquo; their HaikuPorts release repository to be able to continue installing and updating apps from HaikuPorts.&lt;/p>
+&lt;h3 id="re-add-haikuports-repository-1">Re-add HaikuPorts repository&lt;/h3>
+&lt;pre>&lt;code>pkgman drop-repo HaikuPorts
+pkgman add-repo https://eu.hpkg.haiku-os.org/haikuports/master/$(getarch)/current
+&lt;/code>&lt;/pre>&lt;div class="alert alert-info">&lt;p>&lt;strong>R1/Beta3 users&lt;/strong>&lt;br/>
+This change will not be required for r1/Beta3 users as the changes will be built into the Beta3 release.
+&lt;/p>
+&lt;/div>
+&lt;h2 id="summary">Summary&lt;/h2>
+&lt;p>The “identifier” will change from &lt;code>https://hpkg....&lt;/code> to &lt;code>tag:haiku....&lt;/code> for both Haiku, and HaikuPorts on nightly installs (this identifier will only change for HaikuPorts on R1/Beta2 installs). Once you see the new identifiers, you have been successfully changed over to the new repository ID.&lt;/p></description></item><item><title>Haiku R1/Beta3 Timeline Approved</title><link>https://www.haiku-os.org/news/2021-06-14_haiku_r1beta3_timeline_approved/</link><author>jt15s</author><pubDate>Mon, 14 Jun 2021 16:45:15 +1000</pubDate><guid>https://www.haiku-os.org/news/2021-06-14_haiku_r1beta3_timeline_approved/</guid><description>&lt;p>The release timeline for Haiku R1/Beta 3 has been approved after a 7 day RFC (Request for Comment) period on the mailing list.&lt;/p>
+&lt;div class="alert alert-info">
+&lt;a href="https://dev.haiku-os.org/wiki/R1/Beta3/Timeline" target="_blank">&lt;b>Access the release timeline on the Trac wiki.&lt;/b>&lt;/a> Note that minor changes to the dates may occur.
+&lt;/p>
+&lt;/div>
+&lt;p>If all goes to plan, Beta 3 will be released sometime after the 24th of July. Note that the release will only happen when everything is ready, so there are no final dates and the timeline may change to account for delays.&lt;/p>
+&lt;p>The Promotion Team is currently investigating Beta3 DVDs and USB sticks to order: the Inc. has been notified and quotes have been requested from two possible services.&lt;/p>
+&lt;p>Additional updates will be issued through the &amp;ldquo;News&amp;rdquo; and &amp;ldquo;Blog Posts&amp;rdquo; sections of the website as the release date nears.&lt;/p></description></item><item><title>Translation Work Needed in Preparation for Beta 3</title><link>https://www.haiku-os.org/blog/jt15s/2021-06-08_translation_work_needed_in_preparation_for_beta_3/</link><author>jt15s</author><pubDate>Tue, 08 Jun 2021 14:34:07 +1000</pubDate><guid>https://www.haiku-os.org/blog/jt15s/2021-06-08_translation_work_needed_in_preparation_for_beta_3/</guid><description>&lt;p>As we get closer to the release of Beta 3, it is important we ensure our translations are updated.&lt;/p>
+&lt;h2 id="current-state-of-translation-work">Current State of Translation Work&lt;/h2>
+&lt;ul>
+&lt;li>As of now, no new language has currently reached over 60% since Beta 2 was released last year.&lt;/li>
+&lt;li>Croatian translations are at 58%. &lt;strong>If no progress is made, this translation risks being removed from Beta 3!&lt;/strong>&lt;/li>
+&lt;li>Korean, Hindi, Bulgarian, Czech and Norwegian were already under 60% in beta2 and are still under 60%, somewhere between 45% and 60% complete. &lt;strong>It would be really appreciated if these translations were made more complete so they can be included with the Beta 3 release.&lt;/strong>&lt;/li>
+&lt;li>Languages that are already available on Pootle, but need a lot more work:
+&lt;ul>
+&lt;li>Punjabi&lt;/li>
+&lt;li>Slovenian&lt;/li>
+&lt;li>Arabic (unfortunately this translation can’t be displayed due to lack of right-to-left text support in Haiku)&lt;/li>
+&lt;li>Serbian (both Latin and Cyrillic versions)&lt;/li>
+&lt;li>Macedonian&lt;/li>
+&lt;li>Maori&lt;/li>
+&lt;li>Low German&lt;/li>
+&lt;li>Persian&lt;/li>
+&lt;li>Na’vi&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="pootle">Pootle&lt;/h2>
+&lt;div class="alert alert-info">&lt;p>&lt;strong>Translation Cut-off for Haiku&amp;#39;s User Interface&lt;/strong>&lt;br/>
+The cut-off for interface translations on Pootle remains at 60%.
+&lt;/p>
+&lt;/div>
+&lt;ul>
+&lt;li>&lt;strong>All translators are encouraged to make an extra release-effort to bring their language as close as they can to 100%.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>All language managers are urged to check and approve waiting submissions.&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h2 id="haiku-user-guide-translations">Haiku User Guide Translations&lt;/h2>
+&lt;p>&lt;div class="alert alert-info">&lt;p>&lt;strong>Translation Cut-off for the Haiku User Guide&lt;/strong>&lt;br/>
+The cut-off for User Guide translations on Pootle is higher at 80%.
+&lt;/p>
+&lt;/div>
+Since Beta 2, there have been a few changes here and there to the User Guide, so &lt;strong>languages that were about 100% translated back then will need a few updates to ensure they are fully translated for Beta 3.&lt;/strong>&lt;/p>
+&lt;h2 id="how-can-i-get-started-with-translation">How can I get started with translation?&lt;/h2>
+&lt;p>If you are &lt;strong>fluent&lt;/strong> in another language, &lt;strong>don&amp;rsquo;t hesitate to join in and help translate Haiku&lt;/strong>! By translating, you help us reach more people all over the world. To get started, read the following guides and follow the instructions provided:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://dev.haiku-os.org/wiki/i18n/GUI-Localization">User Interface Translation&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://dev.haiku-os.org/wiki/i18n/UserGuide">Haiku User Guide Translation&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Thanks to all those who have been working hard to ensure Haiku and its user guide are available for people all around the world!&lt;/p></description></item><item><title>GSoC 2021 Progress Update 1: Modernizing Caya</title><link>https://www.haiku-os.org/blog/jadedctrl/2021-06-07_gsoc_2021_progress_update_1_modernizing_caya/</link><author>jadedctrl</author><pubDate>Mon, 07 Jun 2021 09:19:49 -0500</pubDate><guid>https://www.haiku-os.org/blog/jadedctrl/2021-06-07_gsoc_2021_progress_update_1_modernizing_caya/</guid><description>&lt;p>It&amp;rsquo;s the end of the first GSoC period, so it&amp;rsquo;s about time I clutter the blog
+again!&lt;/p>
+&lt;p>A good few changes have been made to Caya― most obviously support for
+multi-user rooms and some UI changes. Multi-protocol add-ons are now supported,
+the program is oriented around &amp;ldquo;Conversations&amp;rdquo; rather than &amp;ldquo;Contacts,&amp;rdquo; basic
+moderation (kicking, banning, muting) works, etc.&lt;/p>
+&lt;p>The &lt;a href="https://github.com/JadedCtrl/Caya/blob/master/application/CayaProtocolMessages.h">protocol API&lt;/a>&amp;lsquo;s
+expanded because of these general changes, and I don&amp;rsquo;t think it could be called
+&amp;ldquo;stable&amp;rdquo; for another couple weeks at least― I still need to document it, and
+some of the new additions might still be consolidated into others.&lt;/p>
+&lt;p>Anyway, it&amp;rsquo;s sometimes better to show than tell. Here&amp;rsquo;s before and after:&lt;/p>
+&lt;p>&lt;a href="./files/blog/jadedctrl/caya_og.png">&lt;img style="max-width: 80%" src="./files/blog/jadedctrl/caya_og.png" />&lt;/a>
+&lt;br />&lt;br />
+&lt;a href="./files/blog/jadedctrl/caya-1.png">&lt;img style="max-width: 80%" src="./files/blog/jadedctrl/caya-1.png" />&lt;/a>&lt;/p>
+&lt;p>… could you tell I&amp;rsquo;m going for &amp;ldquo;Vision-esque?&amp;rdquo; :P&lt;/p>
+&lt;p>I&amp;rsquo;m no UI designer, so any input&amp;rsquo;s greatly appreciated, really. Right now I&amp;rsquo;m
+thinking on moving the &amp;ldquo;send&amp;rdquo; textbox to between the user-list and chat-list,
+and giving each user a specific in-chat color. There should be a way of visually
+marking a user as an arbitrary rank (moderator, admin, etc) in the user-list,
+but I&amp;rsquo;m not sure that might be best done. Maybe custom text-prefixes (e.g., &amp;ldquo;@&amp;rdquo;
+with IRC), or having a rank-based name-color…?&lt;/p>
+&lt;p>There are a couple changes not shown in the screenshot, like displaying a user&amp;rsquo;s
+status. When a chatroom member is marked &amp;ldquo;available,&amp;rdquo; &amp;ldquo;away,&amp;rdquo; or &amp;ldquo;offline,&amp;rdquo; the
+color of their name in the user-list changes accordingly, from normal text color
+to an increasingly lighter/darker tint.&lt;/p>
+&lt;p>Overall, I think some good progress has been made, and I&amp;rsquo;m on track to get
+started on the libpurple add-on. Caya is a good base to work with, and Gloox has
+been surprisingly pleasant to work with.&lt;/p>
+&lt;p>Next up on the agenda, though, are changes that&amp;rsquo;ll give add-ons some much-needed
+flexibility, as well as minor tweaks: Allowing protocols to define custom
+commands/menu items for the room and user right-click menus, room creation with
+custom slots dictated by protocol, room invitations, roster management, etc.&lt;/p>
+&lt;p>You can find the sources on &lt;a href="https://github.com/jadedctrl/caya">Github&lt;/a>, and my
+introductory post &lt;a href="./blog/jadedctrl/2021-05-18_gsoc_2021_project_modernizing_caya/">here&lt;/a>.&lt;/p>
+&lt;p>Cheers!&lt;/p></description></item><item><title>GSoC 2021 Progress Update 1: Coding style checker bot for Gerrit</title><link>https://www.haiku-os.org/blog/ritz/2021-06-05_gsoc_2021_project_update_coding_style_checker_bot_for_gerrit/</link><author>ritz</author><pubDate>Sat, 05 Jun 2021 19:46:42 +0530</pubDate><guid>https://www.haiku-os.org/blog/ritz/2021-06-05_gsoc_2021_project_update_coding_style_checker_bot_for_gerrit/</guid><description>&lt;p>Hey everyone! I am Hrithik (ritz), You can find about my project in my &lt;a href="https://discuss.haiku-os.org/t/gsoc-2021-coding-style-checker-bot-for-gerrit-haiku-project/10772">introductory blog&lt;/a>. Here&amp;rsquo;s what I have done so far.&lt;/p>
+&lt;p>I started by reading Concourse CI documentation in order to get myself familiarise with ci pipeline and various schema involved in it. I also looked at other resources provided by my mentors i.e. Suhel Mehta @suhel_mehta and Alexander von Gluck @kallisti5 . Below are some links if anyone wants to check out.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://concourse-ci.org/docs.html">CI Documentation&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://concourse-ci.org/examples.html">CI Examples&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://concoursetutorial.com/">Concourse tutorial by Stark &amp;amp; Wayne&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.concourse-ci.org/introduction-to-task-inputs-and-outputs/">Blog on task inputs and outputs&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>After setting up Concourse CI and Gerrit instance locally, I started off by trying to implement a basic pipeline integrating both. So I created a test repo in gerrit and wrote a pipeline.yaml file for concourse having a simple job and tried to trigger it manually. Unfortunately I struggled to get the concourse clone the local gerrit repo and faced with errors. So I asked the same to concourse discord help channel and got to know that since concourse runs the job in a container it has a different meaning of &lt;code>localhost&lt;/code> in the url. So I changed the gerrit url in the gerrit.config file by replacing &lt;code>localhost&lt;/code> with my &lt;code>machine-name&lt;/code> and it started working!&lt;/p>
+&lt;p>My next target was to trigger the job automatically whenever a commit happens, so I added &lt;code>trigger:true&lt;/code> property in the get step.
+I ran the whole thing only to later realise that it gets triggered everytime a merge happens in the master branch but not when a patchset towards master is created. I then looked more into how Gerrit works and got to know that commits get stored in &lt;code>refs/changes/&lt;/code> namespace which is created by Gerrit itself so the master never changes unless the commit gets merged hence it doesn&amp;rsquo;t get triggered whenever a patchset is created. Below is my pipeline.yml&lt;/p>
+&lt;pre>&lt;code>resources:
+- name: test
+type: git
+icon: github
+source:
+uri: &amp;quot;http://@hrithik:8090/test&amp;quot;
+branch: master
+jobs:
+- name: job
+public: true
+plan:
+- get: test
+trigger: true
+- get: commit
+trigger: true
+- task: hello
+config:
+inputs:
+- name: test
+platform: linux
+image_resource:
+type: registry-image
+source:
+repository: busybox
+run:
+path: cat
+args: [&amp;quot;./test/help.txt&amp;quot;]
+- task: bye
+config:
+platform: linux
+image_resource:
+type: registry-image
+source:
+repository: busybox
+run:
+path: echo
+args: [&amp;quot;bye&amp;quot;]
+&lt;/code>&lt;/pre>
+&lt;p>I found this docker image on docker hub named &lt;a href="https://hub.docker.com/r/matbain/gerrit-resource">gerrit-resource&lt;/a> so I gave it a try and added it as my resource but it didn&amp;rsquo;t work either.&lt;/p>
+&lt;pre>&lt;code>resource_types:
+- name: gerrit
+image:
+type: docker-image
+source:
+repository: malston/gerrit-resource
+resources:
+- name: test
+type: git
+icon: github
+source:
+uri: &amp;quot;http://@hrithik:8090/test&amp;quot;
+branch: master
+resources:
+- name: commit
+type: gerrit
+source:
+uri: &amp;quot;http://@hrithik:8090/test&amp;quot;
+branch: master
+jobs:
+- name: job
+public: true
+plan:
+- get: test
+trigger: true
+- get: commit
+trigger: true
+- task: hello
+config:
+inputs:
+- name: test
+- name: commit
+platform: linux
+image_resource:
+type: registry-image
+source:
+repository: busybox
+run:
+path: cat
+args: [&amp;quot;./test/help.txt&amp;quot;]
+- task: bye
+config:
+platform: linux
+image_resource:
+type: registry-image
+source:
+repository: busybox
+run:
+path: echo
+args: [&amp;quot;bye&amp;quot;]
+&lt;/code>&lt;/pre>
+&lt;p>Right now I am looking into &lt;a href="https://github.com/google/concourse-resources/tree/master/gerrit">this resource&lt;/a>
+It is starting to look like I might have to create a custom resource type myself if this doesn&amp;rsquo;t work out either.&lt;/p>
+&lt;p>Suggestions and ideas are always welcome :)&lt;/p></description></item></channel></rss>

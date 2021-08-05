@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GSoC 2012 on Haiku Project</title><link>https://www.haiku-os.org/community/gsoc/2012/</link><description>Recent content in GSoC 2012 on Haiku Project</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>2001-2021 Haiku Inc.</copyright><lastBuildDate>Sun, 26 Feb 2012 19:06:04 +0000</lastBuildDate><atom:link href="https://www.haiku-os.org/community/gsoc/2012/index.xml" rel="self" type="application/rss+xml"/><item><title>Accepted Students</title><link>https://www.haiku-os.org/community/gsoc/2012/accepted-students/</link><pubDate>Mon, 23 Apr 2012 04:00:00 +0000</pubDate><guid>https://www.haiku-os.org/community/gsoc/2012/accepted-students/</guid><description>
+&lt;h2>Five students to be mentored by Haiku in Google Summer of Code 2012!&lt;/h2>
+&lt;img src="../../../files/accepted-students.png" border="8" align="right" />
+&lt;p>
+For this year's &lt;a href="http://google-melange.com/">Google Summer of Code&amp;trade;&lt;/a> program, we at Haiku have been allocated five students!
+In 2012, 406 mentoring organizatins applied and 4258 students submitted 6685 proposals.
+&lt;strong>Haiku is proud to be one of the &lt;a href="http://www.google-melange.com/gsoc/accepted_orgs/google/gsoc2012">180 accepted mentoring organizations&lt;/a>,
+with five accepted students.&lt;/strong>
+&lt;/p>
+&lt;p>
+Over the years, Haiku's goals for &lt;em>Google Summer of Code&lt;/em> have evolved.
+Originally the ability to evaluate the students' capabilities was lacking and the attention was simply on choosing projects that filled a need.
+Now, the emphasis is placed on choosing the best students, as they are more important than their short term code contributions.
+During the application process, those students instilled a sense of hope and confidence in Haiku's mentors that they will mature into full project contributors.
+In other words,&lt;strong> this is our opportunity to grow and refine young, intelligent, and highly motivated
+students into people who will continue to develop Haiku in the years to come.&lt;/strong>
+&lt;/p>
+&lt;p>
+For the past three years, students applying to Haiku were (at first encouraged and later) required to submit a code contribution.
+By requiring potential students to submit a code contribution during the application period, Haiku's mentors achieve several things.
+First and foremost, it shows that each student possesses basic skills that many of us take for granted -- using a bug tracker and compiling Haiku's sources.
+More importantly, it provides our mentors with some insight into each individual student's motivation and abilities.
+This year a total of &lt;a href="https://dev.haiku-os.org/query?keywords=~gsoc2012&amp;patch=1">17 patches&lt;/a>
+were submitted during the application period. 13 of which were submitted by our top 5 selected students!
+&lt;/p></description></item><item><title>Ideas</title><link>https://www.haiku-os.org/community/gsoc/2012/ideas/</link><pubDate>Sun, 26 Feb 2012 21:07:18 +0000</pubDate><guid>https://www.haiku-os.org/community/gsoc/2012/ideas/</guid><description>Qualifying students can apply for a Haiku project (see the list of suggested projects below) between March 26th and April 6th, 2012. For details about how to apply, please check out Students: How to Apply for a Haiku Idea.
+According to other mentor organizations, the most successful Google Summer of Code projects are the ones proposed by the students themselves. The following list represents our ideas and wishes of our project.</description></item><item><title>Students</title><link>https://www.haiku-os.org/community/gsoc/2012/students/</link><pubDate>Sun, 26 Feb 2012 19:42:08 +0000</pubDate><guid>https://www.haiku-os.org/community/gsoc/2012/students/</guid><description> This year, 5 students participated into GSoC and all completed their projects
+Yongcong Du - cpuidle support Pawel Dziepak - NFSv4 client Andreas Henriksson - BFS partition resizer Hamish Morrison - OpenJDK (Java) port Alex Smith - x86_64 port</description></item></channel></rss>

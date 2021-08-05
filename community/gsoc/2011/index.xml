@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GSoC 2011 on Haiku Project</title><link>https://www.haiku-os.org/community/gsoc/2011/</link><description>Recent content in GSoC 2011 on Haiku Project</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>2001-2021 Haiku Inc.</copyright><lastBuildDate>Mon, 21 Feb 2011 19:52:55 +0000</lastBuildDate><atom:link href="https://www.haiku-os.org/community/gsoc/2011/index.xml" rel="self" type="application/rss+xml"/><item><title>Accepted Students</title><link>https://www.haiku-os.org/community/gsoc/2011/accepted-students/</link><pubDate>Thu, 21 Apr 2011 22:41:39 +0000</pubDate><guid>https://www.haiku-os.org/community/gsoc/2011/accepted-students/</guid><description>
+&lt;h2>Eight students to be mentored by Haiku in Google Summer of Code 2011!&lt;/h2>
+&lt;img src="../../../files/accepted-students.png" border="8" align="right" />
+&lt;p>
+For this year's &lt;a href="http://google-melange.com/">Google Summer of Code&amp;trade;&lt;/a> program, we at Haiku have been allocated eight students!
+In 2011, 417 mentoring organizations applied and 3731 students submitted 5474 proposals.
+&lt;strong>Haiku is proud to be one of the 175 accepted mentoring organizations, with 35 submitted proposals and 8 accepted students.&lt;/strong>
+&lt;/p>
+&lt;p>
+Over the years, Haiku's goals for &lt;em>Google Summer of Code&lt;/em> have evolved.
+Originally the ability to evaluate the students' capabilities was lacking and the attention was simply on choosing projects that filled a need.
+Now, the emphasis is placed on choosing the best students, as they are more important than their short term code contributions.
+During the application process, those students instilled a sense of hope and confidence in Haiku's mentors that they will mature into full project contributors.
+In other words,&lt;strong> this is our opportunity to grow and refine young, intelligent, and highly motivated
+students into people who will continue to develop Haiku in the years to come.&lt;/strong>
+&lt;/p></description></item><item><title>Ideas</title><link>https://www.haiku-os.org/community/gsoc/2011/ideas/</link><pubDate>Tue, 01 Mar 2011 01:40:26 +0000</pubDate><guid>https://www.haiku-os.org/community/gsoc/2011/ideas/</guid><description>The Haiku Project has been selected to participate in Google Summer of Code&amp;trade; 2011! Qualifying students can apply for a Haiku project (see the list of suggested projects below) between March 28th and April 8th, 2011. For details about how to apply, please check out Students: How to Apply for a Haiku Idea.
+According to other mentor organizations, the most successful Google Summer of Code projects are the ones proposed by the students themselves.</description></item><item><title>Students</title><link>https://www.haiku-os.org/community/gsoc/2011/students/</link><pubDate>Sat, 26 Feb 2011 15:14:25 +0000</pubDate><guid>https://www.haiku-os.org/community/gsoc/2011/students/</guid><description> This year, 4 of the 8 students completed their projects
+Mike Smith - VirtualBox guest additions Nathan Heisey - SDL2 port Gabriel Hartmann - UVC webcam driver Sean Healy - Perl and Python BeAPI bindings Jian Chiang - USB3 support (failed) Jack Laxson - Continuous integration / nightly builds (failed) Ankur Sethi - ZFS support (failed) Dario Casuolinovo - Services and Contacts integration</description></item></channel></rss>

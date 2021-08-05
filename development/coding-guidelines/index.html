@@ -1,0 +1,312 @@
+<!doctype html><html lang=en>
+<!-- Mirrored from www.haiku-os.org/development/coding-guidelines/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Aug 2021 01:32:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=keywords content><meta name=copyright content="2001-2021 Haiku Inc."><meta property="og:site_name" content="Haiku Project"><meta property="og:title" content="Coding Guidelines"><meta property="og:url" content="index.html"><meta property="og:type" content="website"><meta property="og:image" content="../../images/haiku_600x315.png"><title>Coding Guidelines | Haiku Project</title><link rel=canonical href=index.html><link rel="shortcut icon" href=../../favicon.ico><link href=../../css/bootstrap.min.css rel=stylesheet><link href=../../css/bootstrap4_fixes.css rel=stylesheet><link href=../../css/shijin4.css rel=stylesheet></head><body><div id=page><a href=../../index.html><img src=../../images/haiku_logo_white.svg alt=Home id=logo height=100 style=padding-left:3px></a><div id=top-links><a href=../../get-haiku/r1beta3/index.html title="Get Haiku!" class=toggleopacity><img src=../../images/download_32.png text="get haiku!" alt=Download></a>
+<a href=../../contact.html title="Contact the Haiku Project" class=toggleopacity><img src=../../images/App_Mail_32.png text="contact the haiku project" alt=Contact></a>
+<a href=https://www.haiku-inc.org/donate/ title="Make a donation to the Haiku Project" class=toggleopacity><img src=../../images/App_Finance_32.png alt=Donate text="make a donation to the haiku project"></a>
+<a href=https://dev.haiku-os.org/ title="Report bugs" class=toggleopacity><img src=../../images/bug_tracker_32.png alt="Report Bugs" text="report bugs related to haiku"></a>
+<a href=https://depot.haiku-os.org/ title="Download apps for Haiku from HaikuDepot" class=toggleopacity><img src=../../images/installer_32.png alt=HaikuDepot text="download apps for haiku from haikudepot"></a></div><nav class="navbar navbar-expand-sm navbar-light bg-light"><button class="navbar-toggler collapsed" id=navbar-toggler type=button data-toggle=collapse data-target=#navbar-collapseme aria-controls=navbar-collapseme aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbar-collapseme><ul class="navbar-nav mr-auto"><li class=nav-item><a class=nav-link href=../../about/index.html>About</a></li><li class=nav-item><a class=nav-link href=../../community/index.html>Community</a></li><li class=nav-item><a class=nav-link href=../index.html>Development</a></li><li class=nav-item><a class=nav-link href=../../documents/index.html>Documents</a></li></ul><form class=form-inline role=search action=https://duckduckgo.com/><input type=hidden name=sites value=https://www.haiku-os.org><div class=input-group><input type=text class=form-control placeholder=Search name=q>
+<span class=input-group-append><button type=submit class="btn btn-outline-secondary">&#x1f50d;</button></span></div></form></div></nav><div class=row id=main-front><div class=col-sm-12><ol class=breadcrumb><li class=breadcrumb-item><a href=../../index.html>Home</a></li><li class=breadcrumb-item><a href=../index.html>Development</a></li><li class=breadcrumb-item><a href=index.html>Coding Guidelines</a></li></ol></div><div class="col-md-9 order-2"><div class=node><h1 class=title>Coding Guidelines</h1><p><style type=text/css>div.content{tab-size:4;-moz-tab-size:4}</style><p>The document below outlines our code style guidelines. If you have suggestions for things that should be clarified better, etc. please <a href=../../contact.html title="contact form">let us know</a>. Please <em>don&rsquo;t</em> send us suggestions of the kind &ldquo;I like this indenting style better, could we switch?".</p><div class="alert alert-warning">The information in the document below is <b>extremely</b> important. If you will be contributing code or patches to Haiku, you will need to strictly follow the code style guidelines. Code which doesn't follow the guidelines below will <b>not</b> be accepted.</div><p>Some code doesn&rsquo;t match our guidelines in some places, this is mostly due to it being written before the guidelines were defined. Assistance with cleaning up incorrect code is very welcome as long as you notate in the commit that there are &ldquo;no functional changes&rdquo; in this patch (don&rsquo;t bury code changes in style fixes).</p><p>With a continuous stream of external contributions and patches we would like the Haiku code base to remain clean, uniform, and easy to read and maintain.</p><h3 id=general>General</h3><p>Make your code not stick out — make it consistent with the rest of the code you are contributing to. You will see this rule stressed over and over throughout the guidelines and when submitting patches.</p><h3 id=indenting-and-whitespace>Indenting and whitespace</h3><ul><li><strong>Set your editor to 4 spaces per tab.</strong> (<em>This is the standard used for the line-limit and for alignment [e.g. in class definitions], but if you aren&rsquo;t doing either of these things you can set your editor to whatever you want.</em>)</li><li>A line must not have more than 80 columns; when wrapping a line, you usually indent one extra tab, but that can get more depending on the contents.</li><li>Always separate operators with a space on both sides, and use a space after comma.</li><li>Use tabs to indent blocks.</li><li>Lines that need broken up due to length need to have one additional indention.</li><li>Functions/classes in namespaces are not indented.</li><li>In general you use one tab per expression level, see the examples below.</li></ul><p>First, let&rsquo;s use some examples to illustrate the main formatting conventions:</p><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#6ab825;font-weight:700>class</span> <span style=color:#447fcf;text-decoration:underline>Foo</span> : <span style=color:#6ab825;font-weight:700>public</span> Bar {
+<span style=color:#6ab825;font-weight:700>public</span>:
+								Foo(int32);
+	<span style=color:#6ab825;font-weight:700>virtual</span>						~Foo();
+
+	<span style=color:#6ab825;font-weight:700>virtual</span> <span style=color:#6ab825;font-weight:700>void</span>				<span style=color:#447fcf>SomeFunction</span>(SomeType* argument);
+
+	<span style=color:#999;font-style:italic>// indent long argument lists by a tab:
+</span><span style=color:#999;font-style:italic></span>	<span style=color:#6ab825;font-weight:700>virtual</span> <span style=color:#6ab825;font-weight:700>const</span> <span style=color:#6ab825;font-weight:700>char</span>*		 <span style=color:#447fcf>FunctionLotsOfArguments</span>(<span style=color:#6ab825;font-weight:700>const</span> <span style=color:#6ab825;font-weight:700>char</span>* name,
+									<span style=color:#6ab825;font-weight:700>const</span> <span style=color:#6ab825;font-weight:700>char</span>* path, <span style=color:#6ab825;font-weight:700>const</span> <span style=color:#6ab825;font-weight:700>char</span>* user);
+
+<span style=color:#6ab825;font-weight:700>private</span>:
+			int32			   _PrivateMethod();
+	<span style=color:#6ab825;font-weight:700>static</span>  int32			   <span style=color:#447fcf>_SomeStaticPrivateMethod</span>();
+
+<span style=color:#999;font-style:italic>// Redundant private: to separate the fields from the methods:
+</span><span style=color:#999;font-style:italic></span><span style=color:#6ab825;font-weight:700>private</span>:
+	<span style=color:#6ab825;font-weight:700>volatile</span> int32				fMember;
+		<span style=color:#6ab825;font-weight:700>const</span> <span style=color:#6ab825;font-weight:700>char</span>*				fPointerMember;
+};
+
+
+<span style=color:#999;font-style:italic>// The &#39;:&#39; always comes on its own line, initializers following
+</span><span style=color:#999;font-style:italic></span>Foo::Foo(int32 param)
+	:
+	Bar(int32* param),
+	fMember(param),
+	fPointerMember(<span style=color:#24909d>NULL</span>)
+{
+	...
+}
+
+
+<span style=color:#999;font-style:italic>/*! Function descriptions are using doxygen style. Please note, this is not
+</span><span style=color:#999;font-style:italic>	a place for end-user documentation, but for documentation that helps
+</span><span style=color:#999;font-style:italic>	understanding the code, and using the functions correctly.
+</span><span style=color:#999;font-style:italic>*/</span>
+<span style=color:#6ab825;font-weight:700>template</span> <span style=color:#6ab825;font-weight:700>const</span> T*
+Foo::Bar(<span style=color:#6ab825;font-weight:700>const</span> <span style=color:#6ab825;font-weight:700>char</span>* bar1, T bar2)
+{
+	...
+}
+
+
+<span style=color:#999;font-style:italic>// Empty functions in class definitions can be written on a single line
+</span><span style=color:#999;font-style:italic></span><span style=color:#6ab825;font-weight:700>class</span> <span style=color:#447fcf;text-decoration:underline>Example</span>
+{
+		<span style=color:#6ab825;font-weight:700>void</span>			<span style=color:#447fcf>FooFunction</span>() {}
+};
+
+
+<span style=color:#999;font-style:italic>// Empty functions defined outside a class must be formatted the same as other functions
+</span><span style=color:#999;font-style:italic></span><span style=color:#6ab825;font-weight:700>void</span>
+Foo::FooFunction()
+{
+}
+</code></pre></div><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#6ab825;font-weight:700>static</span> int32
+<span style=color:#447fcf>my_static_function</span>()
+{
+	<span style=color:#6ab825;font-weight:700>return</span> <span style=color:#3677a9>42</span>;
+}
+</code></pre></div><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#6ab825;font-weight:700>if</span> (someCondition) {
+	DoSomething();
+		<span style=color:#999;font-style:italic>// Comments that only affect a single line are usually
+</span><span style=color:#999;font-style:italic></span>		<span style=color:#999;font-style:italic>// written after it, and are indented by a single tab
+</span><span style=color:#999;font-style:italic></span>	DoSomethingElse();
+} <span style=color:#6ab825;font-weight:700>else</span> <span style=color:#447fcf>if</span> (someOtherCondition) {
+	DoSomethingElse();
+	DoSomething();
+}
+
+<span style=color:#6ab825;font-weight:700>if</span> (someVeryVeryLongConditionThatBarelyFitsOnALine
+	&amp;&amp; someOtherCondition) {
+	<span style=color:#999;font-style:italic>// &amp;&amp; operator on the beginning of the next line,
+</span><span style=color:#999;font-style:italic></span>	<span style=color:#999;font-style:italic>// indented by a tab
+</span><span style=color:#999;font-style:italic></span>	...
+}
+
+<span style=color:#6ab825;font-weight:700>if</span> (someVeryVeryLongConditionThatBarelyFitsOnALine
+	&amp;&amp; (someVeryLongNestedConditionPart1
+		|| someVeryLongNestedConditionPart2)
+	&amp;&amp; lastPartOfSomeVeryVeryLongCondition
+		!= <span style=color:#3677a9>0</span>) {
+	<span style=color:#999;font-style:italic>// Indent one tab per expression level
+</span><span style=color:#999;font-style:italic></span>	...
+}
+
+<span style=color:#6ab825;font-weight:700>if</span> (fMemberPointer-&gt;VeryLongFunctionCall(uint32 argument1,
+		uint32 argument2, uint32 argument3) != <span style=color:#24909d>NULL</span>
+	&amp;&amp; someOtherCondition) {
+	<span style=color:#999;font-style:italic>// Function call parenthesis count as an expression
+</span><span style=color:#999;font-style:italic></span>	<span style=color:#999;font-style:italic>// level thus the additional tab on the second line.
+</span><span style=color:#999;font-style:italic></span>	...
+
+	localVariable = AnotherLongFunction(uint32 argument1,
+		uint32 argument2, uint32 argument3);
+		<span style=color:#999;font-style:italic>// For this simple assignment though
+</span><span style=color:#999;font-style:italic></span>		<span style=color:#999;font-style:italic>// an additional tab wouldn&#39;t help readability.
+</span><span style=color:#999;font-style:italic></span>
+	anotherVariable = fSomeUselessRGBColor.alpha
+		* (fSomeUselessRGBColor.red + fSomeUselessRGBColor.green
+			+ fSomeUselessRGBColor.green + fOffset.blue)
+		/ <span style=color:#3677a9>3</span> + fBrightness;
+		<span style=color:#999;font-style:italic>// This one spans more than two lines, we add
+</span><span style=color:#999;font-style:italic></span>		<span style=color:#999;font-style:italic>// a tab to distinguish the expression level
+</span><span style=color:#999;font-style:italic></span>		<span style=color:#999;font-style:italic>// in parenthesis.
+</span><span style=color:#999;font-style:italic></span>}
+
+<span style=color:#6ab825;font-weight:700>for</span> (int32 index = <span style=color:#3677a9>0</span>; index &lt; count; index++) {
+	DoSomething(index);
+	DoSomethingElse(index);
+}
+
+<span style=color:#999;font-style:italic>// Omit braces for single line statements, place statement on a new line
+</span><span style=color:#999;font-style:italic>// (but always use braces around multi-line statements)
+</span><span style=color:#999;font-style:italic></span>
+<span style=color:#6ab825;font-weight:700>if</span> (condition)
+	DoOneThingOnly(index);
+
+<span style=color:#6ab825;font-weight:700>for</span> (int32 index = <span style=color:#3677a9>0</span>; index &lt; count; index++)
+	DoOneThingOnly(index);
+
+<span style=color:#999;font-style:italic>// switch statement formatting
+</span><span style=color:#999;font-style:italic></span>
+<span style=color:#6ab825;font-weight:700>switch</span> (condition) {
+	<span style=color:#6ab825;font-weight:700>case</span> label1:
+		DoSomething();
+		<span style=color:#6ab825;font-weight:700>break</span>;
+
+	<span style=color:#6ab825;font-weight:700>case</span> label2:
+	{
+		<span style=color:#999;font-style:italic>// need extra curly brackets here because of count
+</span><span style=color:#999;font-style:italic></span>		<span style=color:#999;font-style:italic>// declaration
+</span><span style=color:#999;font-style:italic></span>		int32 count;
+		...
+		DoSomething();
+		<span style=color:#6ab825;font-weight:700>break</span>;
+	}
+}
+
+...
+	CallingSomeFunction(firstArgument * <span style=color:#3677a9>2</span> + someMoreStuff,
+		secondArgument, thirdArgument);
+		<span style=color:#999;font-style:italic>// Indent long argument lists by a tab
+</span><span style=color:#999;font-style:italic></span>...
+
+	<span style=color:#6ab825;font-weight:700>const</span> rgb_color kNeonBlue = {<span style=color:#3677a9>10</span>, <span style=color:#3677a9>10</span>, <span style=color:#3677a9>50</span>, <span style=color:#3677a9>255</span>};
+</code></pre></div><h3 id=misc-formatting>Misc. formatting</h3><ul><li>Put exactly two blank lines between functions, as well as between includes and defines blocks, and between defines and variable or function definitions.</li><li>Include a newline at every file end.</li></ul><h3 id=identifiers>Identifiers</h3><ul><li>Use self-describing well chosen identifiers whenever possible. Avoid identifiers such as <code>r</code> (hard to search for), <code>aMessage</code>, <code>theView</code>, <code>MyDraw</code> (who&rsquo;s draw?). Avoid identifier pairs such as <code>ProcessMessage</code> and <code>DoProcessMessage</code>, <code>AddTasks</code> and <code>AddTasks1</code>. Use names such as <code>rect</code>, <code>message</code>, <code>invokeMessage</code>, <code>view</code>, <code>targetView</code>, <code>DrawBorder</code>, <code>ProcessMessage</code>, and <code>ProcessMessageInternals</code> or <code>ProcessMessageDetails</code>, etc.</li><li>Classes, structs, type names, namespaces and function names start with uppercase letters and use InterCapsFormatting (no underlines).</li><li>Variables start with lowercase letters and use interCapsFormatting.</li><li>Member variables start with <code>f</code> like so:</li></ul><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>int32 fMemberVariable;
+</code></pre></div><ul><li>Constants start with a k like so:</li></ul><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#6ab825;font-weight:700>const</span> uint32 kOpenFile = <span style=color:#a61717;background-color:#e3d2d2>&#39;</span>open<span style=color:#a61717;background-color:#e3d2d2>&#39;</span>;
+</code></pre></div><dl><dd>(note that this is different from the standard Be API constant names)</dd></dl><ul><li>Global variables are prefixed with a <code>g</code>, static variables with an <code>s</code> using the same scheme as above.</li><li>Private methods are prefixed with an underscore.</li></ul><h3 id=variable-declarations>Variable declarations</h3><ul><li>Declare variables as local in scope where possible, avoid declaring all variables at the top of a function like you have to do in C. The advantages here are it is easier to make sure variables are properly initialized and small code snippets are easier to copy-paste around.</li><li>Use descriptive names, avoid reusing a single temporary variable for different purposes.</li><li>Use full names such as <code>message</code> over abbreviations such as <code>msg</code>. Use <code>rect</code>, <code>frame</code>, <code>bounds</code> over <code>r</code>, <code>menuItem</code> over <code>mi</code>.</li></ul><h3 id=use-haiku-defined-apis-types-etc>Use Haiku-defined APIs, types, etc.</h3><ul><li>Prefer using an Haiku API utility call over &ldquo;rolling your own&rdquo;.</li><li>Prefer using BObjectList over BList. BObjectList provides type-safety, optional item ownership and is designed such that additional template instantiations will not grow the code considerably.</li><li>Prefer BString over malloc, strdup, free, etc. for string operations.</li><li>Prefer BString&rsquo;s <code>&lt;&lt;</code> operators and SetToFormat() over fixed size buffers and sprintf.</li><li>Prefer using types defined in SupportDefs.h such as int32, uint32, over int, long, etc. Use status_t over int, int32 where errors are returned. Use off_t over int64 where appropriate.</li></ul><h3 id=comments>Comments</h3><ul><li>Comment your code properly.</li><li>Prefer C++ style comments.</li><li>Comment properly but not excessively. (some examples of excessive commenting:)</li></ul><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>	...
+	index++; <span style=color:#999;font-style:italic>// increment the index
+</span><span style=color:#999;font-style:italic></span>	...
+
+	...
+	<span style=color:#999;font-style:italic>/* InitProgress
+</span><span style=color:#999;font-style:italic>	 *
+</span><span style=color:#999;font-style:italic>	 */</span>
+	<span style=color:#6ab825;font-weight:700>void</span>
+	InitProgress(<span style=color:#6ab825;font-weight:700>int</span> param1)
+	{
+	...
+</code></pre></div><ul><li>Prefer commenting over and under the commented line (over when a comment relates to a chunk of code, under and indented by a tab when it relates to one specific line.</li></ul><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>	<span style=color:#999;font-style:italic>// the trash window needs to display a union of all the
+</span><span style=color:#999;font-style:italic></span>	<span style=color:#999;font-style:italic>// trash folders from all the mounted volumes
+</span><span style=color:#999;font-style:italic></span>	<span style=color:#999;font-style:italic>// (comment about a block of code)
+</span><span style=color:#999;font-style:italic></span>	BVolumeRoster volumeRoster;
+	volumeRoster.Rewind();
+	BVolume volume;
+	<span style=color:#6ab825;font-weight:700>while</span> (volumeRoster.GetNextVolume(&amp;volume) == B_OK) {
+		<span style=color:#6ab825;font-weight:700>if</span> (!volume.IsPersistent())
+			<span style=color:#6ab825;font-weight:700>continue</span>;
+		...
+	}
+</code></pre></div><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>	...
+	BPoseView::WatchNewNode(&amp;itemNode, watchMask, lock.Target());
+		<span style=color:#999;font-style:italic>// have to node monitor ahead of time because
+</span><span style=color:#999;font-style:italic></span>		<span style=color:#999;font-style:italic>// Model will cache up the file type and preferred
+</span><span style=color:#999;font-style:italic></span>		<span style=color:#999;font-style:italic>// app (comment about the above line)
+</span></code></pre></div><ul><li>Avoid comments on the same line that create long lines (prefer comments on a separate line in general):</li></ul><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>	...
+	<span style=color:#6ab825;font-weight:700>if</span> (<span style=color:#6ab825;font-weight:700>this</span> &lt; is &amp;&amp; a &lt; very &amp;&amp; <span style=color:#6ab825;font-weight:700>long</span> != condition) { <span style=color:#999;font-style:italic>// ...
+</span></code></pre></div><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>	...
+	<span style=color:#6ab825;font-weight:700>if</span> (<span style=color:#6ab825;font-weight:700>this</span> &lt; is &amp;&amp; a &lt; very &amp;&amp; <span style=color:#6ab825;font-weight:700>long</span> != condition) {
+		<span style=color:#999;font-style:italic>// this comment is about the long condition
+</span><span style=color:#999;font-style:italic></span>		<span style=color:#999;font-style:italic>// above and is much easier to read!
+</span><span style=color:#999;font-style:italic></span>	...
+</code></pre></div><ul><li>Do not annotate your comments with your name or initials — when your patch gets submitted, Git will have your name and email in the log. Anyone can identify your code that way.</li><li>Avoid expressing your sentiments in comments, do not include comments like this:</li></ul><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>	<span style=color:#999;font-style:italic>// this is a hack!
+</span></code></pre></div><dl><dd>Instead explain why you consider the respective code a hack:</dd></dl><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>	<span style=color:#999;font-style:italic>// the following code is fragile because it doesn&#39;t
+</span><span style=color:#999;font-style:italic></span>	<span style=color:#999;font-style:italic>// handle overflows properly
+</span></code></pre></div><h3 id=license-and-copyright>License and Copyright</h3><ul><li>The <strong>preferred</strong> format for source file copyright and license notices is:</li></ul><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#999;font-style:italic>/*
+</span><span style=color:#999;font-style:italic> * Copyright 2004-2007 Haiku, Inc. All rights reserved.
+</span><span style=color:#999;font-style:italic> * Distributed under the terms of the MIT License.
+</span><span style=color:#999;font-style:italic> *
+</span><span style=color:#999;font-style:italic> * Authors:
+</span><span style=color:#999;font-style:italic> *		Jonathan Smith, optional@email
+</span><span style=color:#999;font-style:italic> *		Developer Name, optional@email
+</span><span style=color:#999;font-style:italic> */</span>
+</code></pre></div><dl><dd>In case everything is copyrighted to "Haiku, Inc." and authors are listed in lexicographic order by last name.</dd></dl><ul><li><p><strong>Public headers</strong> should always be copyrighted to &ldquo;Haiku, Inc.&rdquo; without listing any authors.</p></li><li><p>In case you prefer to keep the copyright to yourself, the license header should look like the following; multiple authors can be listed like in this example:</p></li></ul><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#999;font-style:italic>/*
+</span><span style=color:#999;font-style:italic> * Copyright 2007 Jane Doe, optional@email
+</span><span style=color:#999;font-style:italic> * Copyright 2003-2005 Some Developer, optional@email
+</span><span style=color:#999;font-style:italic> * All rights reserved. Distributed under the terms of the MIT License.
+</span><span style=color:#999;font-style:italic> */</span>
+</code></pre></div><ul><li>In some cases you might have to extend the copyright list of an existing file. Instead of using the alternative scheme like in the latter example the <strong>preferred</strong> method is to add a copyright line for &ldquo;Haiku, Inc.&rdquo; and then list authors like in the first example.</li><li>In header files, there is no blank line between the license text and the header guard.</li><li>After the copyright header (including the header guard in header files), there are exactly two blank lines before the rest contents.</li></ul><h3 id=dead-code-and-debugging-code>Dead code and Debugging code</h3><ul><li>Do not leave dead, commented, or <code>#if 0</code>'ed code behind just because you are not sure about your contribution. Your change should be top quality to begin with, improving the code you are replacing. Should there be a reason to back your change out or used for a reference, this can be done using the source control tools.</li><li>Do not leave simple commented out debugging printfs behind. These days bdb does a great job eliminating the need for most debugging printfs. Use <code>ASSERT</code>s for debugging purposes. Include debugging code in <code>#if DEBUG</code> blocks. Make sure debugging code compiles (make sure your change doesn&rsquo;t break existing debugging code, if it does, fix the debugging code as a part of the change) without warnings and stays correct. Use all the other tools from <code>Debug.h</code> to your advantage.</li></ul><h3 id=miscellaneous>Miscellaneous</h3><ul><li>Use C++ casts (<code>dynamic_cast</code>, <code>static_cast</code>, <code>const_cast</code>, <code>reinterpret_cast</code>) over C casts.</li><li>Use <code>const</code> properly.</li><li>Prefer stack-allocated objects over heap-allocated ones whenever possible.</li><li>Use <code>AutoLock</code>, etc. for all locking and other resource acquisition, don&rsquo;t use <code>Lock()</code> and <code>Unlock()</code> on a <code>BLocker</code> directly. Don&rsquo;t use <code>BAutolock</code>, use the <code>AutoLock</code> template instead.</li><li>Don&rsquo;t assign in <code>if</code> and <code>while</code> statements:</li></ul><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>	<span style=color:#999;font-style:italic>// wrong
+</span><span style=color:#999;font-style:italic></span>	<span style=color:#6ab825;font-weight:700>if</span> ((err = entry.GetRef(&amp;ref)) == B_OK)
+		...
+</code></pre></div><ul><li>Avoid using assignments in <code>while</code> loops:</li></ul><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>	<span style=color:#999;font-style:italic>// wrong
+</span><span style=color:#999;font-style:italic></span>	BMenuItem* item;
+	int32 index = <span style=color:#3677a9>0</span>;
+	<span style=color:#6ab825;font-weight:700>while</span> ((item = ItemAt(index++)) != <span style=color:#24909d>NULL</span>) {
+		...
+</code></pre></div><dl><dd>Instead use the wordier but just as efficient `for`:</dd></dl><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>	<span style=color:#6ab825;font-weight:700>for</span> (int32 index = <span style=color:#3677a9>0</span>; ; index++) {
+		BMenuItem* item = ItemAt(index);
+		<span style=color:#6ab825;font-weight:700>if</span> (item == <span style=color:#24909d>NULL</span>)
+			<span style=color:#6ab825;font-weight:700>break</span>;
+		...
+</code></pre></div><ul><li>Don&rsquo;t check for <code>NULL</code> before <code>delete</code> and <code>free</code>:</li></ul><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>	<span style=color:#999;font-style:italic>// wrong
+</span><span style=color:#999;font-style:italic></span>	<span style=color:#6ab825;font-weight:700>if</span> (fIcon != <span style=color:#24909d>NULL</span>)
+		<span style=color:#6ab825;font-weight:700>delete</span> fIcon;
+
+	<span style=color:#999;font-style:italic>// wrong
+</span><span style=color:#999;font-style:italic></span>	<span style=color:#6ab825;font-weight:700>if</span> (fIconBuffer != <span style=color:#24909d>NULL</span>)
+		free(fIconBuffer);
+</code></pre></div><ul><li>Don&rsquo;t put parentheses around return values:</li></ul><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>	<span style=color:#999;font-style:italic>// wrong
+</span><span style=color:#999;font-style:italic></span>	<span style=color:#6ab825;font-weight:700>return</span> (fList.ItemAt(index));
+</code></pre></div><ul><li>Don&rsquo;t put redundant parentheses in <code>if</code> statements:</li></ul><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>	<span style=color:#999;font-style:italic>// wrong
+</span><span style=color:#999;font-style:italic></span>	<span style=color:#6ab825;font-weight:700>if</span> ((a == <span style=color:#3677a9>3</span>) &amp;&amp; (b != <span style=color:#3677a9>4</span>))
+		...
+</code></pre></div><ul><li>However, use parenthesis when checking bitmasks, and always use this form:</li></ul><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>	<span style=color:#6ab825;font-weight:700>if</span> ((a &amp; <span style=color:#3677a9>3</span>) != <span style=color:#3677a9>0</span> &amp;&amp; (b &amp; <span style=color:#3677a9>4</span>) == <span style=color:#3677a9>0</span>)
+		...
+
+	<span style=color:#999;font-style:italic>// wrong - C/C++ operator precedence works differently
+</span><span style=color:#999;font-style:italic></span>	<span style=color:#6ab825;font-weight:700>if</span> (a &amp; <span style=color:#3677a9>3</span> &amp;&amp; xyz)
+		...
+</code></pre></div><ul><li>Always use boolean conditions, instead of pointer/integer logic:</li></ul><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>	<span style=color:#999;font-style:italic>// This is how it should look like:
+</span><span style=color:#999;font-style:italic></span>	<span style=color:#6ab825;font-weight:700>if</span> (pointer != <span style=color:#24909d>NULL</span> || anotherPointer == <span style=color:#24909d>NULL</span> || intValue != <span style=color:#3677a9>0</span>)
+		...
+
+int32 value;
+<span style=color:#6ab825;font-weight:700>bool</span> doThings = (value != <span style=color:#3677a9>0</span>);
+
+	<span style=color:#999;font-style:italic>// wrong - don&#39;t use the following style
+</span><span style=color:#999;font-style:italic></span>	<span style=color:#6ab825;font-weight:700>if</span> (pointer || !anotherPointer || intValue)
+		...
+
+int32 value;
+<span style=color:#6ab825;font-weight:700>bool</span> doThings = value;
+</code></pre></div><ul><li>Use inlines sparingly.</li><li>Use constructor initializer lists over initializing members inside the constructor body</li><li>When you return in an <code>if</code>-block, don&rsquo;t use <code>else</code> — it&rsquo;s superfluous, and reduces the clarity of the code:</li></ul><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>	<span style=color:#999;font-style:italic>// This is how it should look like -- notice, no &#39;else&#39;:
+</span><span style=color:#999;font-style:italic></span>	<span style=color:#6ab825;font-weight:700>if</span> (something) {
+		...
+		<span style=color:#6ab825;font-weight:700>return</span> <span style=color:#24909d>true</span>;
+	}
+	<span style=color:#6ab825;font-weight:700>if</span> (somethingElse) {
+		...
+		<span style=color:#6ab825;font-weight:700>return</span> <span style=color:#24909d>true</span>;
+	}
+	<span style=color:#6ab825;font-weight:700>return</span> <span style=color:#24909d>false</span>;
+
+	<span style=color:#999;font-style:italic>// Wrong - don&#39;t use code like below:
+</span><span style=color:#999;font-style:italic></span>	<span style=color:#6ab825;font-weight:700>if</span> (something) {
+		...
+		<span style=color:#6ab825;font-weight:700>return</span> <span style=color:#24909d>true</span>;
+	} <span style=color:#6ab825;font-weight:700>else</span> <span style=color:#447fcf>if</span> (somethingElse) {
+		...
+		<span style=color:#6ab825;font-weight:700>return</span> <span style=color:#24909d>true</span>;
+	} <span style=color:#6ab825;font-weight:700>else</span>
+		<span style=color:#6ab825;font-weight:700>return</span> <span style=color:#24909d>false</span>;
+</code></pre></div><ul><li>Use the built-in <code>false</code>/<code>true</code> instead of the <code>FALSE</code>/<code>TRUE</code> <code>#defines</code>.</li><li>Alphabetize <code>#include</code> statements, group <code>"includes"</code> and <code>&lt;includes>&lt;/includes></code> separately.</li><li>While the header that belongs to a source file should be included first to ensure self containment, all other headers are specified from most general (POSIX) to most specific (local directory). In order to alphabetize them, please group them by API origin, like (but without the comments, of course):</li></ul><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#cd2828;font-weight:700>#include</span> <span style=color:#cd2828;font-weight:700>&#34;ThisClass.h&#34;</span><span style=color:#cd2828;font-weight:700>
+</span><span style=color:#cd2828;font-weight:700></span>
+<span style=color:#999;font-style:italic>// POSIX API headers
+</span><span style=color:#999;font-style:italic></span><span style=color:#cd2828;font-weight:700>#include</span> <span style=color:#cd2828;font-weight:700>&lt;stdio.h&gt;</span><span style=color:#cd2828;font-weight:700>
+</span><span style=color:#cd2828;font-weight:700>#include</span> <span style=color:#cd2828;font-weight:700>&lt;string.h&gt;</span><span style=color:#cd2828;font-weight:700>
+</span><span style=color:#cd2828;font-weight:700></span>
+<span style=color:#999;font-style:italic>// Haiku API headers
+</span><span style=color:#999;font-style:italic></span><span style=color:#cd2828;font-weight:700>#include</span> <span style=color:#cd2828;font-weight:700>&lt;file.h&gt;</span><span style=color:#cd2828;font-weight:700>
+</span><span style=color:#cd2828;font-weight:700>#include</span> <span style=color:#cd2828;font-weight:700>&lt;os.h&gt;</span><span style=color:#cd2828;font-weight:700>
+</span><span style=color:#cd2828;font-weight:700></span>
+<span style=color:#cd2828;font-weight:700>#include</span> <span style=color:#cd2828;font-weight:700>&lt;privateheader.h&gt;</span><span style=color:#cd2828;font-weight:700>
+</span><span style=color:#cd2828;font-weight:700></span>
+<span style=color:#cd2828;font-weight:700>#include</span> <span style=color:#cd2828;font-weight:700>&#34;OtherLocalHeaders.h&#34;</span><span style=color:#cd2828;font-weight:700>
+</span></code></pre></div><ul><li>Don&rsquo;t use <code>&lt;pathname/include.h></code> if they aren&rsquo;t necessary; (like for <code>&lt;sys/stat.h></code>).</li><li>Use <code>NULL</code> instead of <code>0</code> for pointers.</li><li>Avoid gotos.</li><li>Don&rsquo;t use constructor call syntax for initializing pointers, etc. to <code>NULL</code> like this:</li></ul><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#999;font-style:italic>// wrong
+</span><span style=color:#999;font-style:italic></span>BView* <span style=color:#447fcf>view</span>(<span style=color:#24909d>NULL</span>);
+</code></pre></div><dl><dd>Use the more traditional assignment:</dd></dl><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>	BView* view = <span style=color:#24909d>NULL</span>;
+</code></pre></div><dl><dd>(Don't confuse this with the appropriate use of constructor calls for stack based objects and objects allocated with new).</dd></dl><ul><li>When comparing a function call result/variable with a constant, don&rsquo;t place the constant on the left side of the comparison like this:</li></ul><div class=highlight><pre style=color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp>	<span style=color:#6ab825;font-weight:700>if</span> (B_OK == file.InitCheck()) <span style=color:#999;font-style:italic>// don&#39;t use this style
+</span><span style=color:#999;font-style:italic></span>		...
+</code></pre></div><dl><dd>Programmers use this to make sure they do not end up assigning instead of comparing. The notation is a bit unusual though, placing the more important function call/variable to the less prominent position on the right. Haiku does not use this notation, a mistaken assignment will get caught by a warning.</dd></dl><ul><li>Prefer C-style headers (string.h, stdlib.h) over their C++ equivalents (cstring, cstdlib): Haiku&rsquo;s headers are generally C++ safe, and don&rsquo;t need this workaround.</li></ul><h3 id=style-checker-tools>Style Checker Tools</h3><p>While the following tools still miss some issues and sometimes report false positives, they are most of the time correct and help to spot the most common issues. Those are still in development and improvements are of course welcomed.</p><ul><li><p><a href=https://github.com/owenca/haiku-format>haiku-format</a> is a clang-format based automatic code formatter.</p></li><li><p>checkstyle.py is a stand-alone python program (found in the Haiku source tree in src/tools/checkstyle/). It reports style problems on the standard output and also generates an easy to read highlighted html report. Example:</p><pre>python src/tools/checkstyle/checkstyle.py src/apps/deskcalc</pre><p>(supposing you&rsquo;re at the root of the haiku tree) this will check the src/apps/deskcalc directory recursively. Try the &ndash;help option to see the usage.</p></li><li><p><a href=https://cgit.haiku-os.org/haiku/plain/3rdparty/pulkomandy/checkstyle.vim>checkstyle.vim</a> is a script that integrates with the Vim text editor.</p></li></ul></p></div></div><div class="col-md-3 order-1"><div class=card><div class=card-heading><div class=block-icon style="background:url(../../images/folder_haiku_48.png)no-repeat 0"></div><h4 class=title>Menu</h4></div><ul><li><a href=../faq.html>Development FAQ</a></li><li><a href=../getting-started.html>Getting Started</a></li><li><a href=../coding-guidelines.html>Coding Guidelines</a></li><li><a href=../icon-guidelines.html>Icon Guidelines</a></li></ul></div></div></div><footer><div style=float:right><a href=https://www.netlify.com/><img src=https://www.netlify.com/img/global/badges/netlify-dark.svg alt="Deploys by Netlify"></a></div><p>&copy; 2001-2021 Haiku, Inc. &mdash; Haiku&reg; and the HAIKU logo&reg; are registered trademarks of <a href=https://www.haiku-inc.org/ target=_blank>Haiku, Inc.</a></p><p class=last><a href=../../index.xml>Main feed</a> |
+<a href=../../blog/index.xml>Blog-O-Sphere feed</a> |
+<a href=../../community/organization/policies/index.html>Community policies</a> |
+<a href=https://twitter.com/haikuOS>Twitter</a> |
+<a href=https://mastodon.xyz/@haiku>Mastodon</a> |
+<a href=https://www.linkedin.com/company/haiku-inc->LinkedIn</a></p></footer></div><link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel=stylesheet><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel=stylesheet><script src=../../js/navbar.js></script><!-- Fathom -->
+<script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '../../../metrics.haiku-os.org/tracker.js', 'fathom');
+fathom('trackPageview');
+</script>
+<!-- / Fathom --></body>
+<!-- Mirrored from www.haiku-os.org/development/coding-guidelines/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Aug 2021 01:32:55 GMT -->
+</html>

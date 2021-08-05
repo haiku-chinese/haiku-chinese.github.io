@@ -1,0 +1,93 @@
+<!doctype html><html lang=en>
+<!-- Mirrored from www.haiku-os.org/news/2010-09-12_google_summer_code_2010_wrap_report by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Aug 2021 01:39:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=keywords content="gsoc,gsoc2010"><meta name=copyright content="2001-2021 Haiku Inc."><meta property="og:site_name" content="Haiku Project"><meta property="og:title" content="Google Summer of Code 2010: Wrap up report"><meta property="og:url" content="2010-09-12_google_summer_code_2010_wrap_report/index.html"><meta property="og:type" content="article"><meta property="og:description" content="In the past four years, the Haiku Project has had both the honor and privilege of being a Mentoring Organization in Google Summer of Code&amp;trade;. This is a wonderful opportunity for the Project, as it exposes Haiku to many potential youthful and …"><meta property="og:published_time" content="2010-09-12 15:36:09 +0000 UTC"><title>Google Summer of Code 2010: Wrap up report | Haiku Project</title><link rel=canonical href=2010-09-12_google_summer_code_2010_wrap_report/index.html><link rel="shortcut icon" href=../favicon.ico><link href=../css/bootstrap.min.css rel=stylesheet><link href=../css/bootstrap4_fixes.css rel=stylesheet><link href=../css/shijin4.css rel=stylesheet></head><body><div id=page><a href=../index.html><img src=../images/haiku_logo_white.svg alt=Home id=logo height=100 style=padding-left:3px></a><div id=top-links><a href=../get-haiku/r1beta3/index.html title="Get Haiku!" class=toggleopacity><img src=../images/download_32.png text="get haiku!" alt=Download></a>
+<a href=../contact.html title="Contact the Haiku Project" class=toggleopacity><img src=../images/App_Mail_32.png text="contact the haiku project" alt=Contact></a>
+<a href=../community/donating_to_haiku title="Make a donation to the Haiku Project" class=toggleopacity><img src=../images/App_Finance_32.png alt=Donate text="make a donation to the haiku project"></a>
+<a href=https://dev.haiku-os.org/ title="Report bugs" class=toggleopacity><img src=../images/bug_tracker_32.png alt="Report Bugs" text="report bugs related to haiku"></a>
+<a href=https://depot.haiku-os.org/ title="Download apps for Haiku from HaikuDepot" class=toggleopacity><img src=../images/installer_32.png alt=HaikuDepot text="download apps for haiku from haikudepot"></a></div><nav class="navbar navbar-expand-sm navbar-light bg-light"><button class="navbar-toggler collapsed" id=navbar-toggler type=button data-toggle=collapse data-target=#navbar-collapseme aria-controls=navbar-collapseme aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbar-collapseme><ul class="navbar-nav mr-auto"><li class=nav-item><a class=nav-link href=../about/index.html>About</a></li><li class=nav-item><a class=nav-link href=../community/index.html>Community</a></li><li class=nav-item><a class=nav-link href=../development/index.html>Development</a></li><li class=nav-item><a class=nav-link href=../documents/index.html>Documents</a></li></ul><form class=form-inline role=search action=https://duckduckgo.com/><input type=hidden name=sites value=https://www.haiku-os.org><div class=input-group><input type=text class=form-control placeholder=Search name=q>
+<span class=input-group-append><button type=submit class="btn btn-outline-secondary">&#x1f50d;</button></span></div></form></div></nav><div class=row id=main-front><div class="col-md-9 order-2"><div class=node><h1 class=title>Google Summer of Code 2010: Wrap up report</h1><div class=meta>News posted on Sun, 2010-09-12 15:36<div class=terms><a href=../tags/gsoc.html rel=tag>gsoc</a>,
+<a href=../tags/gsoc2010.html rel=tag>gsoc2010</a></div></div><p>In the larger scope of <i>Google Summer of Code</i>, here is a passage by Carol Smith from
+<a href=http://google-opensource.blogspot.com/2010/08/our-6th-google-summer-of-code-has-come.html>Google's Open Source Blog</a>:<br><i>Over 2000 mentors and over 1000 students from 69 countries began working together on over 150 open source software projects, and we're happy to announce that 89% of our student participants have received passing final evaluations, which is about 4% better than 2009. This is our <a href=http://code.google.com/p/google-summer-of-code/wiki/ProgramStatistics>best success rate to date</a>.</i></p><p>Specifically for the Haiku Project in 2010, seven students were allotted.
+Of those, five students successfully passed the program!
+During the program, one student (Alex Wilson) was granted commit access to the Haiku Project.
+Additionally, numerous students have expressed plans to continue contributing in the future.</p><h2>Student Summaries</h2><h3 class=icon-people-medium>Atis Elsts</h3><ul><li class=icon-ide-project><a href=../blog/kfx/2010-04-28_gsoc_ipv6_implementation_haiku.html>Implementing IPv6</a></li><li class=icon-archive><a href="http://code.google.com/p/google-summer-of-code-2010-haiku/downloads/detail?name=Atis_Elsts.tar.gz&amp;can=2&amp;q=">Google Code Submission</a></li></ul><p>At the moment, IPv6 is not included in default images.
+However, basic IP address assignment, ICMP, and ping6 is working.
+Some code, which includes NetServer and ifconfig has yet to be merged
+and is accessible at his github account: <a href=http://github.com/kfx/haikuipv6>haikuipv6</a>.</p><p>Atis plans to continue working on the existing problems in the network stack
+(e.g., <a href=https://dev.haiku-os.org/ticket/6502>#6502</a>)
+and to eventually bring IPv6 to a fully working status.</p><h3 class=icon-people-medium>Janito Vaqueiro Ferreira Filho</h3><ul><li class=icon-ide-project><a href=../blog/jvff/2010-04-28_my_gsoc_application_implement_ext23_read_and_write_support_haiku.html>Implementing ext3 support</a></li><li class=icon-archive><a href="http://code.google.com/p/google-summer-of-code-2010-haiku/downloads/detail?name=Janito_Vaqueiro_Ferreira_Filho.tar.gz&amp;can=2&amp;q=">Google Code Submission</a></li></ul><p>Ext3 Indexed Directory Lookup was committed in <a href=https://dev.haiku-os.org/changeset/37295>r37295</a>
+and was needed for implementing read support.
+For write support, the <a href=../blog/jvff/2010-08-05_ext3_journal_implementation.html>basics of journaling is implemented</a>, but needs more thorough testing. The majority of his code was committed earlier in
+the week as <a href=https://dev.haiku-os.org/changeset/38573>r38573</a>.
+In addition to working on ext support, Janito fixed some issues relating to BFS and the block cache.
+(<a href=https://dev.haiku-os.org/changeset/37899>r37899</a>, <a href=https://dev.haiku-os.org/changeset/38103>r38103</a> )</p><h3 class=icon-people-medium>Lucian Adrian Grijincu</h3><ul><li class=icon-ide-project><a href=../blog/lucian/2010-04-28_haiku_file_system_drivers_any_linux_supported_file_system.html>lkl-haiku-fsd</a></li></ul><p>Lucian was one of the most promising students during the initial selection phase and
+a clear majority of our mentors voiced votes of confidence in him.
+However, he did not receive a passing evaluation at midterms.
+This was due to a combination of both failing to reply to his mentor's inquiries for a period several weeks
+and the code produced not being reflective of the time leading upto midterms.
+The code is hosted on his github account:
+<a href=http://github.com/luciang/lkl-linux-2.6>lkl-linux-2.6</a>,
+<a href=http://github.com/luciang/haiku>lkl-haiku-fs</a>.</p><h3 class=icon-people-medium>Christopher Humphries</h3><ul><li class=icon-ide-project><a href=../blog/engleek/2010-04-28_gsoc_improve_and_extend_media_player.html>Improve and Extend Media Player</a></li><li class=icon-archive><a href="http://code.google.com/p/google-summer-of-code-2010-haiku/downloads/detail?name=Christopher_Humphries.tar.gz&amp;can=2&amp;q=">Google Code Submission</a></li></ul><p>Shortly after the start of the coding period,
+Christopher received news that his university had retracted their word on accepting
+<i>Google Summer of Code</i> as a valid internship.
+This necessitated changes to his project proposal -- specifically reducing the scope of the project to DVD support.</p><p>Originally, he started out making a media plug-in, but finally opted for an add-on.
+The latter provided better interfacing and control for application -- mostly because the library needs path information.
+Other problems cropped up, such as the absence of a demuxing node and faulty mpeg decoding.
+This led to the realization that the kit needs more before it can do the job.
+Christopher has even presented some thoughts
+<a href=https://www.freelists.org/post/haiku-development/Pitching-Media-Kit-ideas>Pitching Media Kit ideas</a>
+<a href=https://www.freelists.org/post/haiku-development/Alternatives-to-plugin-sniffing>Alternatives to plug-in sniffing</a>
+<a href=https://www.freelists.org/post/haiku-development/A-true-streaming-equivalent-of-BDataIO>A true streaming equivalent of BDataIO</a>
+His code is hosted on his github account: <a href=http://github.com/engleek/Haiku-DVD-addon/>Haiku-DVD-addon</a></p><h3 class=icon-people-medium>Christophe Huriaux</h3><ul><li class=icon-ide-project><a href=../blog/shisui/2010-04-28_gsoc_proposal_creating_services_kit_core_elements.html>Creating Services Kit core elements</a></li><li class=icon-archive><a href="http://code.google.com/p/google-summer-of-code-2010-haiku/downloads/detail?name=Christophe_Huriaux.tar.gz&amp;can=2&amp;q=">Google Code Submission</a></li></ul><p>As mentioned in his <a href=../blog/shisui/2010-08-19_services_kit_features_overview.html>recent blog post</a>,
+the Services Kit is capable of handling HTTP requests (file uploading, POST requests, authentication, cookie support, ...).
+It supports asynchronous as well as synchronous requests. Lastly, Christophe has started updating WebPositive to utilize Services Kit.
+This provides a real world test-bed scenario & will improve WebPositive by replacing the cURL backend with native API.</p><h3 class=icon-people-medium>Nathan Mentley</h3><ul><li class=icon-ide-project><a href=../blog/nmentley/2010-04-28_gsoc_x86_64_port.html>x86_64 Port</a></li></ul><p>Nathan did not receive a passing evaluation at finals.
+Maintaining regular communication and providing in-progress patches were the two big factors leading to that decision.
+As for the project status, overall the kernel is not completed.
+The majority of the code is stubbed out, but important bits, such as vm86 & SMP are not implemented.
+	Additionally, paging and jumping into long mode have issues that need to be resolved.
+Nathan has mentioned that, the project "proved to be a more difficult challenge that [he] expected."
+An older set of patches are available on Trac:
+<a href=https://dev.haiku-os.org/ticket/6306>#6306</a>,
+<a href=https://dev.haiku-os.org/ticket/6307>#6307</a>,
+<a href=https://dev.haiku-os.org/ticket/6308>#6308</a>,
+<a href=https://dev.haiku-os.org/ticket/6309>#6309</a>,
+<a href=https://dev.haiku-os.org/ticket/6310>#6310</a>.</p><h3 class=icon-people-medium>Alex Wilson</h3><ul><li class=icon-ide-project><a href=../blog/yourpalal/2010-04-28_taking_haiku_layout_api_public.html>Taking the Haiku Layout API public</a></li><li class=icon-archive><a href="http://code.google.com/p/google-summer-of-code-2010-haiku/downloads/detail?name=Alex_Wilson.tar.gz&amp;can=2&amp;q=">Google Code Submission</a></li></ul><p>This involved archiving of BLayout, BLayoutItem and subclasses (<a href=https://dev.haiku-os.org/ticket/5525>#5525</a>),
+deriving BLayout from BLayoutItem (<a href=https://dev.haiku-os.org/ticket/6407>#6407</a>), and
+updating numerous applications to use the new Layout API.
+In addition to his original proposal, numerous archiving features were implemented as part of
+<a href=https://dev.haiku-os.org/ticket/6256>#6256</a>
+(<a href=https://api.haiku-os.org/classBArchiver.html>BArchiver</a>,
+<a href=https://api.haiku-os.org/classBUnarchiver.html>BUnarchiver</a>,
+<a href=https://api.haiku-os.org/classBArchivable.html>BArchivable</a>)</p><p>Alex was also granted commit access halfway through the coding period!
+In the future, he plans to working towards making the Layout API suitable for public consumption.</p><h2>In closing ...</h2><p>As always, many thanks to: Google for sponsoring this program and allowing the Haiku Project to participate, <a href=http://news.softpedia.com/news/Softpedia-Exclusive-Interview-Carol-Smith-Google-Summer-of-Code-Program-Administrator-151140.shtml>Carol Smith</a> (Google Summer of Code Program Administrator), and our mentors who helped make this endeavor successful.</p><p>More important than the short-term code contributions is that the students are now more experienced open source developers --
+specifically for Haiku. One student is now a full fledged contributor to the Project, and several others show promise of growing
+into contributors. This empowers them with the confidence and ability to continue making valued contributions to Haiku
+(or any open source project for that matter). As an open source project that develops an operating system, our pool of active committers is relatively small and being able to embrace new contributors is literally a wonderful thing.</p><p>As with every year of participating in <i>Google Summer of Code</i> as a Mentoring Organization,
+we try to identify areas that can be improved for next year.</p><ul><li>what we as a Mentoring Organization want to achieve
+(from both <i>Google Summer of Code</i> overall and from each student)</li><li>the concept of our Mentor Pool, as opposed to a strict "This is my mentor" mentality</li><li>expectations and guidelines for students
+(how their progress is evaluated for pass/fail, the expected interactions, ...)</li><li>introducing more milestones
+(to make the time more manageable for the students)</li><li>re-organizing the student application template
+(requiring a timeline, what the student expects from the mentor, ...)</li></ul><p>All in all, this was another successful year for Haiku. Congratulations to all who have participated!</p></p></div><br><div id=discourse-comments></div><script type=text/javascript>var discourseUrl='2010-09-12_google_summer_code_2010_wrap_report.html\/\/discuss.haiku-os.org\/',discourseEmbedUrl='2010-09-12_google_summer_code_2010_wrap_report.html\/\/www.haiku-os.org\/news\/2010-09-12_google_summer_code_2010_wrap_report\/';(function(){var d=document.createElement('script');d.type='text/javascript';d.async=true;d.src=discourseUrl+'javascripts/embed.js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(d);})();</script></div><div class="col-md-3 order-1"><div class=card><div class=card-heading><div class=block-icon style="background:url(../images/microphone_48.png)no-repeat 0"></div><h4 class=title><a href=index.html>News</a></h4></div><ul><li><a href=2021-07-26_media_release_the_haiku_project_celebrates_the_release_of_beta_3/index.html>Media Release: The Haiku Project Celebrates the Release of Beta 3</a></li><li><a href=2021-07-13_haiku_r1beta3_timeline_update/index.html>Haiku R1/Beta3 Timeline Update</a></li><li><a href=2021-07-01_haiku_inc_sponsoring_hardware_purchases_for_risc_v_port/index.html>Haiku, Inc. sponsoring hardware purchases for RISC-V port</a></li><li><a href=2021-06-22_important_change_required_for_haiku_nightly_and_r1beta2_users/index.html>Important Change Required for Haiku Nightly and R1/Beta2 Users</a></li><li><a href=2021-06-14_haiku_r1beta3_timeline_approved/index.html>Haiku R1/Beta3 Timeline Approved</a></li><li><a href=2021-05-19_haiku_is_moving_to_oftc/index.html>Haiku's IRC channels are moving to OFTC!</a></li><li><a href=2021-05-17_haiku_mentors_4_students_in_gsoc/index.html>Haiku to mentor 4 students in Google Summer of Code 2021</a></li><li><a href=2020-12-07-contest-results/index.html>System Sounds Contest Wrap-up</a></li><li><a href=2020-10-04-wallpaper-contest/index.html>Call for Wallpapers</a></li><li><a href=2020-09-11-system-sound-contest/index.html>Contest for System Sounds</a></li></ul></div></div></div><footer><div style=float:right><a href=https://www.netlify.com/><img src=https://www.netlify.com/img/global/badges/netlify-dark.svg alt="Deploys by Netlify"></a></div><p>&copy; 2001-2021 Haiku, Inc. &mdash; Haiku&reg; and the HAIKU logo&reg; are registered trademarks of <a href=https://www.haiku-inc.org/ target=_blank>Haiku, Inc.</a></p><p class=last><a href=../index.xml>Main feed</a> |
+<a href=../blog/index.xml>Blog-O-Sphere feed</a> |
+<a href=../community/organization/policies/index.html>Community policies</a> |
+<a href=https://twitter.com/haikuOS>Twitter</a> |
+<a href=https://mastodon.xyz/@haiku>Mastodon</a> |
+<a href=https://www.linkedin.com/company/haiku-inc->LinkedIn</a></p></footer></div><link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel=stylesheet><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel=stylesheet><script src=../js/navbar.js></script><!-- Fathom -->
+<script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '../../metrics.haiku-os.org/tracker.js', 'fathom');
+fathom('trackPageview');
+</script>
+<!-- / Fathom --></body>
+<!-- Mirrored from www.haiku-os.org/news/2010-09-12_google_summer_code_2010_wrap_report by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Aug 2021 01:40:05 GMT -->
+</html>

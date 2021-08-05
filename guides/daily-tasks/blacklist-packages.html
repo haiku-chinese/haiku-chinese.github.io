@@ -1,0 +1,51 @@
+<!doctype html><html lang=en>
+<!-- Mirrored from www.haiku-os.org/guides/daily-tasks/blacklist-packages by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Aug 2021 02:03:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=keywords content><meta name=copyright content="2001-2021 Haiku Inc."><meta property="og:site_name" content="Haiku Project"><meta property="og:title" content="Disabling components of packages"><meta property="og:url" content="blacklist-packages/index.html"><meta property="og:type" content="website"><meta property="og:image" content="../../images/haiku_600x315.png"><title>Disabling components of packages | Haiku Project</title><link rel=canonical href=blacklist-packages/index.html><link rel="shortcut icon" href=../../favicon.ico><link href=../../css/bootstrap.min.css rel=stylesheet><link href=../../css/bootstrap4_fixes.css rel=stylesheet><link href=../../css/shijin4.css rel=stylesheet></head><body><div id=page><a href=../../index.html><img src=../../images/haiku_logo_white.svg alt=Home id=logo height=100 style=padding-left:3px></a><div id=top-links><a href=../../get-haiku/r1beta3/index.html title="Get Haiku!" class=toggleopacity><img src=../../images/download_32.png text="get haiku!" alt=Download></a>
+<a href=../../contact.html title="Contact the Haiku Project" class=toggleopacity><img src=../../images/App_Mail_32.png text="contact the haiku project" alt=Contact></a>
+<a href=../../community/donating_to_haiku title="Make a donation to the Haiku Project" class=toggleopacity><img src=../../images/App_Finance_32.png alt=Donate text="make a donation to the haiku project"></a>
+<a href=https://dev.haiku-os.org/ title="Report bugs" class=toggleopacity><img src=../../images/bug_tracker_32.png alt="Report Bugs" text="report bugs related to haiku"></a>
+<a href=https://depot.haiku-os.org/ title="Download apps for Haiku from HaikuDepot" class=toggleopacity><img src=../../images/installer_32.png alt=HaikuDepot text="download apps for haiku from haikudepot"></a></div><nav class="navbar navbar-expand-sm navbar-light bg-light"><button class="navbar-toggler collapsed" id=navbar-toggler type=button data-toggle=collapse data-target=#navbar-collapseme aria-controls=navbar-collapseme aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbar-collapseme><ul class="navbar-nav mr-auto"><li class=nav-item><a class=nav-link href=../../about/index.html>About</a></li><li class=nav-item><a class=nav-link href=../../community/index.html>Community</a></li><li class=nav-item><a class=nav-link href=../../development/index.html>Development</a></li><li class=nav-item><a class=nav-link href=../../documents/index.html>Documents</a></li></ul><form class=form-inline role=search action=https://duckduckgo.com/><input type=hidden name=sites value=https://www.haiku-os.org><div class=input-group><input type=text class=form-control placeholder=Search name=q>
+<span class=input-group-append><button type=submit class="btn btn-outline-secondary">&#x1f50d;</button></span></div></form></div></nav><div class=row id=main-front><div class=col-sm-12><ol class=breadcrumb><li class=breadcrumb-item><a href=../../index.html>Home</a></li><li class=breadcrumb-item><a href=../index.html>Haiku Guides</a></li><li class=breadcrumb-item><a href=index.html>Daily Tasks</a></li><li class=breadcrumb-item><a href=blacklist-packages/index.html>Disabling components of packages</a></li></ol></div><div class=col-md-12><div class=node><h1 class=title>Disabling components of packages</h1><p><p>With the advent of package management and <a href="https://cgit.haiku-os.org/haiku/commit/?id=3a7e0b00147f7a33bc52cb75a56bde8d9652d92a">hrev46391</a>, it has become possible to prevent a packaged file from being extracted at boot time.</p><p>In Haiku's <a href=../../docs/userguide/en/bootloader.html>Boot Options menu</a>, there is a 'Disable components' option available. However, this method will only let you disable components of system packages, and only until the next time you reboot.</p><p>As you may know, package management has made some Haiku folders practically read-only, so unlike in the past, it is no longer possible to just delete or rename a problematic driver or library. The functionality to disable components of packages addresses this issue without requiring any editing of package file content.</p><p>Let's go through the few steps needed:</p><ol><li>Figure out which package contains the file that you want to disable, and whether the file is in a package located in the system or user file hierarchy. You can find the containing package name with "Get info' from Tracker's context menu on that file; look for 'SYS:PACKAGE' in its 'Attributes' tab.</li><li>Next step is to create a text file named 'packages' in /boot/system/settings, or in /boot/home/config/settings/global. The first folder is used for disabling components in system packages, the second for user packages.</li><li>And finally, in the 'packages' file, we put something like:<pre>Package 'packagename' {
+	EntryBlacklist {
+		'entrypath'
+		...
+	}
+}
+ <ul>
+  <li>'packagename' is the name of the package without version, for example 'haiku'.</li>
+  <li>'entrypath' is the relative path to the installation location, e.g. "add-ons/Translators/FooTranslator".</li>
+ </ul>
+
+</pre>For example, to disable the intel_extreme driver and the xhci driver, which are both part of the 'haiku' system package, the 'packages' file looks like this:<pre>Package haiku  {
+	EntryBlacklist {
+		add-ons/kernel/drivers/bin/intel_extreme
+		add-ons/kernel/busses/usb/xhci
+	}
+}
+</pre></li></ol><p>Any disabled entries will be ignored by packagefs and will no longer appear in the file system.</p><h3>Example</h3><p>Let's look at a practical example, disabling the broadcom570x driver. We create a 'packages' text file in /boot/system/settings with the following content:<pre>Package haiku {
+	EntryBlacklist {
+		add-ons/kernel/drivers/bin/broadcom570x
+	}
+}</pre></p><p>We then save the file and reboot. Once Haiku starts again, the package is re-mounted and the file is ignored by packagefs.<p></br></br><p><em>Originally published by <a href=../../blog/barrett/2013-12-15_how_permanently_blacklist_package_file.html>Barrett</a>.</em></p></p></div></div></div><footer><div style=float:right><a href=https://www.netlify.com/><img src=https://www.netlify.com/img/global/badges/netlify-dark.svg alt="Deploys by Netlify"></a></div><p>&copy; 2001-2021 Haiku, Inc. &mdash; Haiku&reg; and the HAIKU logo&reg; are registered trademarks of <a href=https://www.haiku-inc.org/ target=_blank>Haiku, Inc.</a></p><p class=last><a href=../../index.xml>Main feed</a> |
+<a href=../../blog/index.xml>Blog-O-Sphere feed</a> |
+<a href=../../community/organization/policies/index.html>Community policies</a> |
+<a href=https://twitter.com/haikuOS>Twitter</a> |
+<a href=https://mastodon.xyz/@haiku>Mastodon</a> |
+<a href=https://www.linkedin.com/company/haiku-inc->LinkedIn</a></p></footer></div><link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel=stylesheet><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel=stylesheet><script src=../../js/navbar.js></script><!-- Fathom -->
+<script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '../../../metrics.haiku-os.org/tracker.js', 'fathom');
+fathom('trackPageview');
+</script>
+<!-- / Fathom --></body>
+<!-- Mirrored from www.haiku-os.org/guides/daily-tasks/blacklist-packages by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Aug 2021 02:03:31 GMT -->
+</html>
