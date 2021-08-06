@@ -7,6 +7,11 @@
 <p align="center">
 Haikuos</a>.
 </p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Maintained%3F-Yes-green?style=flat-square">
+  <img src="https://img.shields.io/github/stars/haiku-chinese/haiku-chinese.github.io?style=flat-square">
+  <img src="https://img.shields.io/github/issues/haiku-chinese/haiku-chinese.github.io?color=violet&style=flat-square">
+</p>
 
 <p align="center">
 <a href="https://haiku-chinese.github.io/">Homepage</a> | 
