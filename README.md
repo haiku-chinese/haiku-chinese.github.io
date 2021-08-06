@@ -25,13 +25,13 @@ Haikuos</a>.
 我是一个心向往Haikuos的中国用户。心之所愿，无所不成。这个Haikuos的站我可以很骄傲很自豪的说不会半途而废
 ## 背景
 Haikuos 在中国 鲜有社区支持。 github上一个与我们抱有同样想法的团队Haiku-cn 于2015年到2017年 不再更新
-</a>
+</p>
 我们要帮助Haiku社区建立，完善好相关的中文社区！
-</a>
+</p>
 由于Haiku-i18n-zh的邮件列表年久失修，不方便交流
-</a>
+</p>
 本社区为了方便交流建立了新的邮件列表： https://www.freelists.org/list/haiku-i18-zh （按照haiku-i18-uk这个名字取的 感觉不对）
-</a>
+</p>
 其他联系方式：暂定QQ群，Skype，Telegram
   
 
