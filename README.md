@@ -1,4 +1,4 @@
-# haikuos-chinese.github.io
+# 欢迎来到Haikuos的中文站点
 <p align="center">
 <a href="https://archcraft.io"><img src="https://haiku-chinese.github.io/images/haiku_600x315.png" height="315" width="600" alt="Haikuos中文社区"></a>
 </p>
@@ -21,5 +21,5 @@ Haikuos</a>.
 
 ---
 
-### Latest Blog Posts
-           empty
+### 简要
+ 
