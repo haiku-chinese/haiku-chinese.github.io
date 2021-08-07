@@ -35,6 +35,7 @@ Telegram :
 TG开发群組： https://t.me/joinchat/U8wFEvVAl0IwN2I1
 </p>
 TG頻道： https://t.me/haikuchinesechannel
+</p>
 其他联系方式：QQ群，Skype
 
  
