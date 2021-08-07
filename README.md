@@ -30,7 +30,9 @@ Haikuos 在中国 鲜有社区支持。 github上一个与我们抱有同样想�
 </p>
 本社区为了方便交流建立了新的邮件列表： https://www.freelists.org/list/haiku-i18-zh （按照haiku-i18-uk这个名字取的 感觉不对）
 </p>
-其他联系方式：暂定QQ群，Skype，Telegram
+Telegram : [TG开发群組](https://t.me/joinchat/U8wFEvVAl0IwN2I1) [TG頻道](https://t.me/haikuchinesechannel)  
+</p>
+其他联系方式：暂定QQ群，Skype
   
 
  
